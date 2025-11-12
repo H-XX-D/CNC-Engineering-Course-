@@ -4,10 +4,12 @@ Generate PDFs for CNC Engineering Course
 Creates individual PDFs for each module and a comprehensive table of contents
 """
 
-import os
+import re
+import re
+import shutil
 import subprocess
 from pathlib import Path
-from typing import Optional, List, Tuple
+from typing import Optional, List
 
 # Base directory
 BASE_DIR = Path(__file__).parent
@@ -15,10 +17,16 @@ MODULES_DIR = BASE_DIR / "Modules"
 APPENDICES_DIR = MODULES_DIR / "Appendices"
 PRINT_DIR = BASE_DIR / "Print"
 PDF_DIR = BASE_DIR / "PDFs"
+OPTIMIZED_PDF_DIR = PDF_DIR / "optimized"
 TEMP_DIR = BASE_DIR / "tmp_pdf"
+PANDOC_HEADER = BASE_DIR / "pandoc-header.tex"
+
+PANDOC = shutil.which("pandoc")
+TECTONIC = shutil.which("tectonic")
 
 # Ensure PDF directory exists
 PDF_DIR.mkdir(exist_ok=True)
+OPTIMIZED_PDF_DIR.mkdir(exist_ok=True)
 TEMP_DIR.mkdir(exist_ok=True)
 
 # Map problematic Unicode characters to ASCII-safe equivalents for LaTeX
@@ -48,10 +56,48 @@ REPLACEMENTS = {
     "\u2088": "_8",
     "\u2089": "_9",
     "\u03bc": "mu",
-    "\u03b8": "theta",
+    "\u03b1": "alpha",
+    "\u03b2": "beta",
+    "\u03b3": "gamma",
+    "\u03b4": "delta",
+    "\u03b5": "epsilon",
+    "\u03b6": "zeta",
     "\u03b7": "eta",
+    "\u03b8": "theta",
+    "\u03bb": "lambda",
+    "\u03bc": "mu",
+    "\u03c0": "pi",
     "\u03c1": "rho",
+    "\u03c3": "sigma",
+    "\u03c4": "tau",
+    "\u03c6": "phi",
+    "\u03c8": "psi",
+    "\u03c9": "omega",
+    "\u0394": "Delta",
     "\u03a9": "Ohms",
+    "𝛥": "$$\\Delta$$",
+    "𝛼": "$$\\alpha$$",
+    "𝛽": "$$\\beta$$",
+    "𝛾": "$$\\gamma$$",
+    "𝛿": "$$\\delta$$",
+    "𝜀": "$$\\epsilon$$",
+    "𝜁": "$$\\zeta$$",
+    "𝜂": "$$\\eta$$",
+    "𝜃": "$$\\theta$$",
+    "𝜆": "$$\\lambda$$",
+    "𝜇": "$$\\mu$$",
+    "𝜈": "$$\\nu$$",
+    "𝜋": "$$\\pi$$",
+    "𝜌": "$$\\rho$$",
+    "𝜎": "$$\\sigma$$",
+    "𝜏": "$$\\tau$$",
+    "𝜙": "$$\\phi$$",
+    "𝜓": "$$\\psi$$",
+    "𝜔": "$$\\omega$$",
+    "𝜖": "$$\\epsilon$$",
+    "𝜛": "$$\\upsilon$$",
+    "𝝅": "$$\\pi$$",
+    "𝝍": "$$\\psi$$",
     "\u2713": "[check]",
     "\u2610": "[ ]",
     "\u25a1": "[ ]",
@@ -68,6 +114,7 @@ REPLACEMENTS = {
     "\u253c": "+",
     "\u2014": "--",
     "\u2013": "-",
+    "\u2248": "approx",
     "\u2192": "->",
     "\u2190": "<-",
     "\u00d7": "x",
@@ -79,19 +126,49 @@ REPLACEMENTS = {
     "\u2120": "SM",
     "\xae": "(R)",
     "\uff0c": ",",
-    "\uff1a": ":",
-    "$": "\\$"
+    "\uff1a": ":"
 }
 
 def sanitize_text(text: str) -> str:
-    """Replace problematic characters with LaTeX-safe alternatives"""
+    """Replace problematic characters with LaTeX-safe alternatives and handle math delimiters"""
+    # Heuristic: Escape $ in table lines (containing |)
+    lines = text.split('\n')
+    processed_lines = []
+    for line in lines:
+        if '|' in line:
+            processed_line = line.replace('$', r'\$')
+        else:
+            processed_line = line
+        processed_lines.append(processed_line)
+    text = '\n'.join(processed_lines)
+    
+    # Convert display math $$...$$ to \[...\]
+    text = re.sub(r'\$\$(.+?)\$\$', r'\\[\1\\]', text, flags=re.DOTALL)
+    
+    # Convert inline math $...$ to \(...\)
+    text = re.sub(r'(?<!\\)\$(.+?)(?<!\\)\$', r'\\(\1\\)', text)
+    
+    # Apply Unicode replacements
     for old, new in REPLACEMENTS.items():
         text = text.replace(old, new)
+    
     return text
 
 def sanitize_title(title: str) -> str:
     """Sanitize title strings for LaTeX metadata"""
     return title.replace("&", "and").strip()
+
+def ensure_pandoc_header() -> None:
+    """Ensure the Pandoc header file exists with layout tuning commands."""
+    if PANDOC_HEADER.exists():
+        return
+    PANDOC_HEADER.write_text(
+        r"""% Pandoc header tweaks to help LaTeX line breaking
+\setlength{\emergencystretch}{3em}
+\sloppy
+""",
+        encoding="utf-8",
+    )
 
 def prepare_temp_file(source_path: Path, temp_name: Optional[str] = None) -> Path:
     """Create a sanitized copy of the markdown file for PDF conversion"""
@@ -126,19 +203,27 @@ def get_module_name(module_num):
     return module_names.get(module_num, f"Module {module_num}")
 
 def convert_to_pdf(markdown_file, output_pdf, title: str = "", include_toc: bool = True):
-    """Convert markdown file to PDF using pandoc with a Unicode-capable engine"""
+    """Convert markdown file to PDF using pandoc with the Tectonic engine"""
+    if PANDOC is None:
+        print("✗ pandoc not found. Please install pandoc to generate PDFs.")
+        return False
+
+    if TECTONIC is None:
+        print("✗ tectonic not found. Install it for LaTeX-based PDF output.")
+        return False
+
     try:
         clean_title = sanitize_title(title) if title else ""
+        ensure_pandoc_header()
         cmd = [
-            'pandoc',
+            PANDOC,
             str(markdown_file),
             '-o', str(output_pdf),
-            '--pdf-engine=tectonic',
-            '-V', 'geometry:margin=1in',
-            '-V', 'fontsize=11pt',
-            '-V', 'mainfont=Helvetica Neue',
-            '-V', 'monofont=Menlo',
-            '--standalone'
+            '--standalone',
+            '--pdf-engine', 'tectonic',
+            '--from', 'markdown+smart+pipe_tables+grid_tables+multiline_tables',
+            '--variable', 'geometry:margin=1in',
+            '--include-in-header', str(PANDOC_HEADER)
         ]
 
         if include_toc:
@@ -146,6 +231,11 @@ def convert_to_pdf(markdown_file, output_pdf, title: str = "", include_toc: bool
 
         if clean_title:
             cmd.extend(['--metadata', f'title={clean_title}'])
+
+        cmd.extend([
+            '--metadata', r'header-includes=\setlength{\emergencystretch}{3em}',
+            '--metadata', r'header-includes=\sloppy'
+        ])
         
         result = subprocess.run(cmd, capture_output=True, text=True)
         
@@ -160,19 +250,52 @@ def convert_to_pdf(markdown_file, output_pdf, title: str = "", include_toc: bool
         print(f"✗ Error creating {output_pdf.name}: {e}")
         return False
 
+def combine_markdown_files(parts: List[Path], output_file: Path) -> None:
+    """Concatenate multiple markdown files into a single file with page breaks"""
+    with open(output_file, 'w', encoding='utf-8') as combined:
+        for idx, part in enumerate(parts):
+            with open(part, 'r', encoding='utf-8') as src:
+                combined.write(src.read().strip())
+            if idx != len(parts) - 1:
+                combined.write("\n\n\\newpage\n\n")
+
+def optimize_pdf(input_pdf: Path, output_pdf: Path) -> bool:
+    """Compress PDF size using Ghostscript"""
+    cmd = [
+        'gs',
+        '-sDEVICE=pdfwrite',
+        '-dCompatibilityLevel=1.4',
+        '-dPDFSETTINGS=/ebook',
+        '-dNOPAUSE',
+        '-dQUIET',
+        '-dBATCH',
+        '-sOutputFile=' + str(output_pdf),
+        str(input_pdf)
+    ]
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    if result.returncode == 0:
+        print(f"✓ Optimized: {output_pdf.name}")
+        return True
+    else:
+        print(f"✗ Optimization failed for {input_pdf.name}: {result.stderr[:200]}")
+        return False
+
 def merge_module_files(module_dir, output_file):
     """Merge all section files in a module into one file for PDF generation"""
-    sections = []
-    
-    for file in sorted(module_dir.glob("*.md")):
-        if file.name.startswith("module-") or file.name == output_file.name:
-            continue
-        
+    sections: List[str] = []
+    section_files = [
+        file
+        for file in sorted(module_dir.glob("*.md"))
+        if not file.name.startswith("module-") and file.name != output_file.name
+    ]
+
+    for idx, file in enumerate(section_files):
         with open(file, 'r', encoding='utf-8') as f:
             content = sanitize_text(f.read())
-            sections.append(content)
-            sections.append("\n\n---\n\n")  # Page break
-    
+            sections.append(content.strip())
+        if idx != len(section_files) - 1:
+            sections.append("\n\n\\newpage\n\n")  # Force page break between sections
+
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("\n".join(sections))
 
@@ -262,7 +385,7 @@ def generate_toc():
 
     # Convert TOC to PDF
     toc_pdf = PDF_DIR / "00-Table-of-Contents.pdf"
-    convert_to_pdf(sanitized_toc, toc_pdf, "CNC Engineering Course - Table of Contents")
+    convert_to_pdf(sanitized_toc, toc_pdf, "CNC Engineering Course - Table of Contents", include_toc=False)
     
     return sanitized_toc
 
@@ -271,9 +394,15 @@ def main():
     print("CNC Engineering Course - PDF Generation")
     print("=" * 60)
     
+    foreword_md: Optional[Path] = None
+    acknowledgments_md: Optional[Path] = None
+    thank_you_md: Optional[Path] = None
+    module_markdowns: List[Path] = []
+    appendix_markdowns: List[Path] = []
+
     # Generate Table of Contents
     print("\n📄 Generating Table of Contents...")
-    generate_toc()
+    sanitized_toc = generate_toc()
     
     # Generate Front Matter PDFs
     print("\n📄 Generating Front Matter PDFs...")
@@ -289,7 +418,14 @@ def main():
         if source.exists():
             output_pdf = PDF_DIR / pdf_name
             temp_md = prepare_temp_file(source, f"{source.stem}-sanitized.md")
-            convert_to_pdf(temp_md, output_pdf, title)
+            convert_to_pdf(temp_md, output_pdf, title, include_toc=False)
+            stem_lower = source.stem.lower()
+            if "foreword" in stem_lower:
+                foreword_md = temp_md
+            elif "acknowledgments" in stem_lower:
+                acknowledgments_md = temp_md
+            elif "thank-you" in stem_lower:
+                thank_you_md = temp_md
         else:
             print(f"⚠ Warning: {source} not found")
     
@@ -306,15 +442,13 @@ def main():
         module_name = get_module_name(module_num)
         
         # Create merged module file
-        merged_file = module_dir / f"module-{module_num:02d}-complete.md"
+        merged_file = TEMP_DIR / f"module-{module_num:02d}-complete.md"
         merge_module_files(module_dir, merged_file)
+        module_markdowns.append(merged_file)
         
         # Convert to PDF
         output_pdf = PDF_DIR / f"Module-{module_num:02d}-{module_name.replace(' ', '-').replace('&', 'and')}.pdf"
-        convert_to_pdf(merged_file, output_pdf, f"Module {module_num}: {module_name}")
-        
-        # Clean up merged file
-        merged_file.unlink()
+        convert_to_pdf(merged_file, output_pdf, f"Module {module_num}: {module_name}", include_toc=False)
     
     # Generate Appendix PDFs
     print("\n📄 Generating Appendix PDFs...")
@@ -324,15 +458,57 @@ def main():
         name = ' '.join(appendix_file.stem.split('-')[2:]).title()
         
         temp_md = prepare_temp_file(appendix_file, f"{appendix_file.stem}-sanitized.md")
+        appendix_markdowns.append(temp_md)
         output_pdf = PDF_DIR / f"Appendix-{letter}-{appendix_file.stem.split('-', 2)[2]}.pdf"
-        convert_to_pdf(temp_md, output_pdf, f"Appendix {letter}: {name}")
+        convert_to_pdf(temp_md, output_pdf, f"Appendix {letter}: {name}", include_toc=False)
+
+    # Build combined course PDF
+    print("\n📄 Building compiled course PDF...")
+
+    combined_sections: List[Path] = []
+    if sanitized_toc:
+        combined_sections.append(sanitized_toc)
+    if foreword_md:
+        combined_sections.append(foreword_md)
+    else:
+        print("⚠ Warning: Foreword not found; compiled PDF will omit it")
+
+    combined_sections.extend(module_markdowns)
+    combined_sections.extend(appendix_markdowns)
+
+    if acknowledgments_md:
+        combined_sections.append(acknowledgments_md)
+    else:
+        print("⚠ Warning: Acknowledgments not found; compiled PDF will omit it")
+
+    if thank_you_md:
+        combined_sections.append(thank_you_md)
+    else:
+        print("⚠ Warning: Thank You to AI not found; compiled PDF will omit it")
+
+    combined_md = TEMP_DIR / "cnc-engineering-course-combined.md"
+    combine_markdown_files(combined_sections, combined_md)
+
+    combined_pdf = PDF_DIR / "CNC-Engineering-Course-Complete.pdf"
+    convert_to_pdf(combined_md, combined_pdf, "CNC Engineering Course", include_toc=False)
+
+    # Optimize PDFs
+    print("\n📦 Optimizing PDFs for upload...")
+    if shutil.which('gs'):
+        for pdf_file in PDF_DIR.glob("*.pdf"):
+            optimized_path = OPTIMIZED_PDF_DIR / pdf_file.name
+            optimize_pdf(pdf_file, optimized_path)
+    else:
+        print("⚠ Ghostscript not found; skipping PDF optimization step.")
     
     print("\n" + "=" * 60)
     print("✅ PDF Generation Complete!")
     print(f"📁 PDFs saved to: {PDF_DIR}")
+    print(f"📁 Optimized PDFs saved to: {OPTIMIZED_PDF_DIR}")
     # Clean up temporary markdown files
-    for temp_file in TEMP_DIR.iterdir():
-        temp_file.unlink()
+    for temp_file in list(TEMP_DIR.iterdir()):
+        if temp_file.is_file():
+            temp_file.unlink()
     print("=" * 60)
 
 if __name__ == "__main__":
