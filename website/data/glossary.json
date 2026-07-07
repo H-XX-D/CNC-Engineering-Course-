@@ -1,0 +1,1430 @@
+[
+  {
+    "id": "term-backlash",
+    "term": "Backlash",
+    "category": "Mechanical Design Terms",
+    "definition": "Lost motion in mechanical systems due to clearances between components (measured in mm or inches). Target: <0.05mm for precision CNC. Anti-backlash compensation: ball screw preload, spring-loaded nuts."
+  },
+  {
+    "id": "term-ball-screw",
+    "term": "Ball Screw",
+    "category": "Mechanical Design Terms",
+    "definition": "Precision lead screw using recirculating ball bearings to convert rotary to linear motion with high efficiency (90-95%) and low backlash (<0.01mm). Grades: C10 (\u00b152\u03bcm/300mm) to C2 (\u00b18\u03bcm/300mm)."
+  },
+  {
+    "id": "term-bearing-types",
+    "term": "Bearing Types",
+    "category": "Mechanical Design Terms",
+    "definition": "Angular Contact: High-speed spindle bearings with contact angle 15-40\u00b0. Preload required. Deep Groove Ball: General-purpose radial/thrust bearing. Most common type. Tapered Roller: Heavy radial and thrust loads. Used in large gantries. Linear Ball Bearing: Recirculating ball bearing for linear motion on hardened shafts."
+  },
+  {
+    "id": "term-cantilever",
+    "term": "Cantilever",
+    "category": "Mechanical Design Terms",
+    "definition": "Beam supported at one end only. Z-axis spindle head is cantilever load. Deflection = FL\u00b3/(3EI)."
+  },
+  {
+    "id": "term-compliance",
+    "term": "Compliance",
+    "category": "Mechanical Design Terms",
+    "definition": "Inverse of stiffness (\u03bcm/N). Higher compliance = more deflection under load."
+  },
+  {
+    "id": "term-critical-damping",
+    "term": "Critical Damping",
+    "category": "Mechanical Design Terms",
+    "definition": "Damping ratio \u03b6=1. System returns to equilibrium without oscillation. Under-damped: \u03b6<1 (oscillates), Over-damped: \u03b6>1 (slow return)."
+  },
+  {
+    "id": "term-datum",
+    "term": "Datum",
+    "category": "Mechanical Design Terms",
+    "definition": "Reference surface, line, or point from which measurements are made. Critical for alignment and repeatability. Kinematic datum: 3-2-1 constraint principle (6 DOF constraint)."
+  },
+  {
+    "id": "term-degrees-of-freedom-dof",
+    "term": "Degrees of Freedom (DOF)",
+    "category": "Mechanical Design Terms",
+    "definition": "Number of independent motions. Rigid body: 6 DOF (3 translation + 3 rotation). CNC mill: 3 DOF (XYZ), 5-axis: 5 DOF."
+  },
+  {
+    "id": "term-dynamic-load-rating-c",
+    "term": "Dynamic Load Rating (C)",
+    "category": "Mechanical Design Terms",
+    "definition": "Load capacity of bearing/guide that allows 1 million meters of travel (or 1 million revolutions for rotary bearings) before fatigue failure (90% reliability, L10 life)."
+  },
+  {
+    "id": "term-elastic-modulus-young-s-modulus",
+    "term": "Elastic Modulus (Young's Modulus)",
+    "category": "Mechanical Design Terms",
+    "definition": "Material stiffness (stress/strain ratio). Steel: 200 GPa, Aluminum: 69 GPa, Cast Iron: 100-140 GPa."
+  },
+  {
+    "id": "term-fastener-preload",
+    "term": "Fastener Preload",
+    "category": "Mechanical Design Terms",
+    "definition": "Tensile force applied during bolt tightening. Prevents joint separation and improves fatigue life. Target: 75-90% of proof load."
+  },
+  {
+    "id": "term-gantry",
+    "term": "Gantry",
+    "category": "Mechanical Design Terms",
+    "definition": "Bridge structure spanning machine bed, carrying Y-axis and Z-axis. Types: open (one rail) vs. closed (two rails). Closed gantry: better torsional rigidity."
+  },
+  {
+    "id": "term-hysteresis",
+    "term": "Hysteresis",
+    "category": "Mechanical Design Terms",
+    "definition": "Lag between input and output in mechanical systems. Ball screw hysteresis: <2\u03bcm typical. Caused by micro-slip in contacts."
+  },
+  {
+    "id": "term-inertia-moment-of",
+    "term": "Inertia (Moment of)",
+    "category": "Mechanical Design Terms",
+    "definition": "Resistance to rotational acceleration. I = mr\u00b2 for point mass. Critical for motor sizing and resonance analysis."
+  },
+  {
+    "id": "term-kerf",
+    "term": "Kerf",
+    "category": "Mechanical Design Terms",
+    "definition": "Width of material removed by cutting process. Plasma: 1-3mm, Fiber Laser: 0.1-0.5mm, Waterjet: 0.5-1.5mm, Router: tool diameter + deflection."
+  },
+  {
+    "id": "term-kinematic-coupling",
+    "term": "Kinematic Coupling",
+    "category": "Mechanical Design Terms",
+    "definition": "Exact-constraint mounting using 3 spheres on 3 V-grooves (or equivalents). Provides repeatable positioning <1\u03bcm. Used in precision fixtures."
+  },
+  {
+    "id": "term-lead",
+    "term": "Lead",
+    "category": "Mechanical Design Terms",
+    "definition": "Linear travel per revolution of screw. Ball screw: 5mm, 10mm, 20mm typical. Lead \u2260 pitch for multi-start screws."
+  },
+  {
+    "id": "term-linear-guide-profiled-rail",
+    "term": "Linear Guide (Profiled Rail)",
+    "category": "Mechanical Design Terms",
+    "definition": "Precision bearing system with hardened rail and ball-bearing carriage. Accuracy: \u00b15-15\u03bcm over 300mm. Load ratings: 5-200 kN."
+  },
+  {
+    "id": "term-load-capacity",
+    "term": "Load Capacity",
+    "category": "Mechanical Design Terms",
+    "definition": "Dynamic (C): For moving loads, L10 life calculation. Static (C\u2080): Maximum load at standstill without permanent deformation. Moment Loads (M): Torque about carriage axes. Causes premature wear."
+  },
+  {
+    "id": "term-natural-frequency",
+    "term": "Natural Frequency",
+    "category": "Mechanical Design Terms",
+    "definition": "Frequency at which structure vibrates freely. fn = (1/2\u03c0)\u221a(k/m). Avoid excitation near fn (resonance amplification)."
+  },
+  {
+    "id": "term-pitch",
+    "term": "Pitch",
+    "category": "Mechanical Design Terms",
+    "definition": "Distance between screw threads. Ball screw: pitch \u00d7 starts = lead. Rack & pinion: pitch circle diameter/# teeth."
+  },
+  {
+    "id": "term-preload",
+    "term": "Preload",
+    "category": "Mechanical Design Terms",
+    "definition": "Internal force applied to bearing or screw to eliminate clearance and increase stiffness. Ball screw: 3-7% of dynamic load. Linear guide: light/medium/heavy preload options."
+  },
+  {
+    "id": "term-rack-and-pinion",
+    "term": "Rack and Pinion",
+    "category": "Mechanical Design Terms",
+    "definition": "Linear drive converting pinion rotation to rack translation. Module 1.5-3mm typical. Backlash: 0.1-0.3mm (larger than ball screw)."
+  },
+  {
+    "id": "term-repeatability",
+    "term": "Repeatability",
+    "category": "Mechanical Design Terms",
+    "definition": "Ability to return to same position. Spec: \u00b110\u03bcm typical for CNC. Better than accuracy (absolute position error)."
+  },
+  {
+    "id": "term-resolution",
+    "term": "Resolution",
+    "category": "Mechanical Design Terms",
+    "definition": "Minimum increment of motion. Encoder: 0.1-1\u03bcm typical. Stepper: microstep size (e.g., 1/8 step = 0.025mm for 5mm lead)."
+  },
+  {
+    "id": "term-runout-tir",
+    "term": "Runout (TIR)",
+    "category": "Mechanical Design Terms",
+    "definition": "Total Indicator Reading - maximum deviation of rotating component from true circular path. Spindle target: <5 \u03bcm TIR at nose. Collet runout: <10 \u03bcm."
+  },
+  {
+    "id": "term-static-load-rating-c",
+    "term": "Static Load Rating (C\u2080)",
+    "category": "Mechanical Design Terms",
+    "definition": "Maximum load bearing/guide can support without permanent deformation (0.0001\u00d7 bearing diameter deformation criterion)."
+  },
+  {
+    "id": "term-stiffness",
+    "term": "Stiffness",
+    "category": "Mechanical Design Terms",
+    "definition": "Resistance to deflection under load, measured in N/\u03bcm. Higher = better precision under cutting forces. System stiffness: series springs (1/ktotal = 1/k\u2081 + 1/k\u2082 + ...)."
+  },
+  {
+    "id": "term-straightness",
+    "term": "Straightness",
+    "category": "Mechanical Design Terms",
+    "definition": "Maximum deviation from true straight line over specified length. Linear rail: 20\u03bcm/m typical. Measured with autocollimator or laser interferometer."
+  },
+  {
+    "id": "term-structural-loop",
+    "term": "Structural Loop",
+    "category": "Mechanical Design Terms",
+    "definition": "Load path from cutting tool to workpiece through machine structure. Shorter/stiffer loop = higher rigidity and accuracy."
+  },
+  {
+    "id": "term-thermal-growth",
+    "term": "Thermal Growth",
+    "category": "Mechanical Design Terms",
+    "definition": "Dimensional change due to temperature. Aluminum: 23.6 \u03bcm/(m\u00b7\u00b0C). Critical for precision machines - requires thermal compensation or cooling."
+  },
+  {
+    "id": "term-tramming",
+    "term": "Tramming",
+    "category": "Mechanical Design Terms",
+    "definition": "Squaring spindle axis perpendicular to table. Indicator sweep method. Target: <0.01mm over 300mm diameter."
+  },
+  {
+    "id": "term-torsional-rigidity",
+    "term": "Torsional Rigidity",
+    "category": "Mechanical Design Terms",
+    "definition": "Resistance to twisting under torque. Hollow tube 4-8\u00d7 better than solid shaft of same weight. Critical for gantry beams."
+  },
+  {
+    "id": "term-whipping",
+    "term": "Whipping",
+    "category": "Mechanical Design Terms",
+    "definition": "High-frequency vibration of unsupported screw section. Occurs above critical speed: Ncrit = (4.76 \u00d7 10\u2076 \u00d7 d) / L\u00b2 (RPM, mm). Requires center support."
+  },
+  {
+    "id": "term-ac-servo-motor",
+    "term": "AC Servo Motor",
+    "category": "Electrical and Control Terms",
+    "definition": "Brushless motor with encoder feedback for closed-loop control. Higher power density than steppers. Typical: 0.1-15 kW per axis."
+  },
+  {
+    "id": "term-absolute-encoder",
+    "term": "Absolute Encoder",
+    "category": "Electrical and Control Terms",
+    "definition": "Position sensor providing unique code for each position. Retains position after power loss. Resolution: 17-25 bit (130k-33M positions/rev)."
+  },
+  {
+    "id": "term-bus-voltage",
+    "term": "Bus Voltage",
+    "category": "Electrical and Control Terms",
+    "definition": "DC link voltage in servo drive (rectified AC). Typically 300-400V DC from 230V AC, 600-800V DC from 480V AC."
+  },
+  {
+    "id": "term-commutation",
+    "term": "Commutation",
+    "category": "Electrical and Control Terms",
+    "definition": "Switching current between motor windings to produce rotation. Stepper: external drive. Servo: internal with encoder feedback (field-oriented control)."
+  },
+  {
+    "id": "term-current-loop",
+    "term": "Current Loop",
+    "category": "Electrical and Control Terms",
+    "definition": "Innermost control loop in servo drive. Bandwidth: 1-3 kHz. Controls motor torque proportional to commanded current."
+  },
+  {
+    "id": "term-duty-cycle",
+    "term": "Duty Cycle",
+    "category": "Electrical and Control Terms",
+    "definition": "Percentage of time component operates vs. rests. Servo peak torque: 30s duty cycle typical (3\u00d7 continuous). Intermittent: cycles <10 min."
+  },
+  {
+    "id": "term-electromagnetic-compatibility-emc",
+    "term": "Electromagnetic Compatibility (EMC)",
+    "category": "Electrical and Control Terms",
+    "definition": "Ability of equipment to operate without EM interference. CE marking requires EMC testing per IEC 61000 series."
+  },
+  {
+    "id": "term-electromagnetic-interference-emi",
+    "term": "Electromagnetic Interference (EMI)",
+    "category": "Electrical and Control Terms",
+    "definition": "Unwanted electromagnetic radiation from electrical components interfering with signals. Mitigation: shielded cables, star grounding, ferrites, filters."
+  },
+  {
+    "id": "term-encoder",
+    "term": "Encoder",
+    "category": "Electrical and Control Terms",
+    "definition": "Incremental: Outputs A/B pulses (position change). Requires homing. Z-index pulse per revolution. Typical: 2500-10,000 PPR. Absolute: Direct position reading. Battery-backed or multi-turn (magnetic gearing). 17-bit = 131,072 counts/rev = 0.0027\u00b0. Resolver: Analog rotary transformer. Robust but low resolution. Used in harsh environments."
+  },
+  {
+    "id": "term-ethercat",
+    "term": "EtherCAT",
+    "category": "Electrical and Control Terms",
+    "definition": "Real-time Ethernet protocol for motion control. 1000 axes at 1 kHz cycle time. Beckhoff, Delta, many drives support."
+  },
+  {
+    "id": "term-field-oriented-control-foc",
+    "term": "Field-Oriented Control (FOC)",
+    "category": "Electrical and Control Terms",
+    "definition": "Advanced servo algorithm controlling flux and torque independently. Enables maximum torque/amp efficiency."
+  },
+  {
+    "id": "term-grounding",
+    "term": "Grounding",
+    "category": "Electrical and Control Terms",
+    "definition": "Connecting electrical circuits to earth potential. Types: Safety Ground: Green/yellow wire, protects against shock. Signal Ground: Common reference for signals. Star topology prevents ground loops. Chassis Ground: Frame/enclosure ground. Bonds to safety ground."
+  },
+  {
+    "id": "term-hall-effect-sensor",
+    "term": "Hall Effect Sensor",
+    "category": "Electrical and Control Terms",
+    "definition": "Magnetic position sensor. Used for commutation in brushless motors (3 sensors, 60\u00b0 apart). Binary output."
+  },
+  {
+    "id": "term-holding-torque",
+    "term": "Holding Torque",
+    "category": "Electrical and Control Terms",
+    "definition": "Maximum torque stepper motor can produce at standstill (0 RPM). Decreases with speed (torque curves)."
+  },
+  {
+    "id": "term-incremental-encoder",
+    "term": "Incremental Encoder",
+    "category": "Electrical and Control Terms",
+    "definition": "See Encoder (Incremental). Requires limit switch homing on power-up. More common than absolute (lower cost)."
+  },
+  {
+    "id": "term-inductance",
+    "term": "Inductance",
+    "category": "Electrical and Control Terms",
+    "definition": "Opposition to current change in coil. Motor inductance: 1-50 mH. Limits acceleration capability (voltage = L \u00d7 di/dt)."
+  },
+  {
+    "id": "term-inrush-current",
+    "term": "Inrush Current",
+    "category": "Electrical and Control Terms",
+    "definition": "Initial surge current when powering equipment. Servo drive: 20-100\u00d7 steady-state. Requires soft-start or pre-charge resistor."
+  },
+  {
+    "id": "term-isolation-optical",
+    "term": "Isolation (Optical)",
+    "category": "Electrical and Control Terms",
+    "definition": "Galvanic separation using LED/phototransistor. Isolates sensitive circuits from high-voltage/noisy circuits. Typical: 2500V isolation."
+  },
+  {
+    "id": "term-jerk",
+    "term": "Jerk",
+    "category": "Electrical and Control Terms",
+    "definition": "Rate of acceleration change (m/s\u00b3). High jerk causes vibration. S-curve acceleration profiles limit jerk for smooth motion."
+  },
+  {
+    "id": "term-latency",
+    "term": "Latency",
+    "category": "Electrical and Control Terms",
+    "definition": "Delay between command and response. Motion control: <1ms required. Ethernet latency: 0.1-1ms depending on protocol."
+  },
+  {
+    "id": "term-microstepping",
+    "term": "Microstepping",
+    "category": "Electrical and Control Terms",
+    "definition": "Dividing motor full steps into smaller increments (1/2, 1/4, 1/8, 1/16, 1/32, 1/64, 1/128). Smoother motion but lower torque and positional accuracy at high microstep ratios."
+  },
+  {
+    "id": "term-mosfet",
+    "term": "MOSFET",
+    "category": "Electrical and Control Terms",
+    "definition": "Metal-Oxide-Semiconductor Field-Effect Transistor. Fast switching device in motor drives. Low on-resistance (Rdson: 5-50 m\u03a9)."
+  },
+  {
+    "id": "term-optical-isolation",
+    "term": "Optical Isolation",
+    "category": "Electrical and Control Terms",
+    "definition": "See Isolation (Optical). Protects control circuits from motor noise and voltage spikes."
+  },
+  {
+    "id": "term-pid-control",
+    "term": "PID Control",
+    "category": "Electrical and Control Terms",
+    "definition": "Proportional-Integral-Derivative feedback controller. Standard servo tuning: Kp (position gain), Ki (integral - removes steady-state error), Kd (derivative - damping)."
+  },
+  {
+    "id": "term-position-loop",
+    "term": "Position Loop",
+    "category": "Electrical and Control Terms",
+    "definition": "Outermost servo control loop. Bandwidth: 10-100 Hz. Compares commanded vs. actual position (encoder), outputs velocity command."
+  },
+  {
+    "id": "term-power-factor",
+    "term": "Power Factor",
+    "category": "Electrical and Control Terms",
+    "definition": "Ratio of real power to apparent power. Inductive loads (motors): 0.6-0.9 typical. Unity (1.0) is ideal. VFDs improve power factor."
+  },
+  {
+    "id": "term-pwm-pulse-width-modulation",
+    "term": "PWM (Pulse Width Modulation)",
+    "category": "Electrical and Control Terms",
+    "definition": "Motor drive technique varying duty cycle to control average voltage/current. Frequency: 4-20 kHz typical (above audible range)."
+  },
+  {
+    "id": "term-regenerative-braking",
+    "term": "Regenerative Braking",
+    "category": "Electrical and Control Terms",
+    "definition": "Converting motor kinetic energy back to electrical energy during deceleration. Requires braking resistor (dissipate) or bus sharing (return to supply)."
+  },
+  {
+    "id": "term-resolver",
+    "term": "Resolver",
+    "category": "Electrical and Control Terms",
+    "definition": "See Encoder (Resolver). Analog rotary position sensor. Rugged but requires resolver-to-digital converter (RDC) chip."
+  },
+  {
+    "id": "term-rms-root-mean-square",
+    "term": "RMS (Root Mean Square)",
+    "category": "Electrical and Control Terms",
+    "definition": "Effective value of AC waveform. Motor continuous ratings in RMS amps/volts. Peak = \u221a2 \u00d7 RMS for sine wave."
+  },
+  {
+    "id": "term-servo",
+    "term": "Servo",
+    "category": "Electrical and Control Terms",
+    "definition": "Closed-loop motor system with encoder feedback for precise position/velocity control. Corrects for disturbances (cutting forces, friction)."
+  },
+  {
+    "id": "term-shielding",
+    "term": "Shielding",
+    "category": "Electrical and Control Terms",
+    "definition": "Conductive layer around cable preventing EM radiation. Braid (80-95% coverage) or foil (100% coverage). Ground shield at ONE end only (avoid ground loops)."
+  },
+  {
+    "id": "term-slip",
+    "term": "Slip",
+    "category": "Electrical and Control Terms",
+    "definition": "Difference between synchronous speed and actual speed in AC induction motors. 2-5% at full load. Servo motors: zero slip (synchronous)."
+  },
+  {
+    "id": "term-stepper-motor",
+    "term": "Stepper Motor",
+    "category": "Electrical and Control Terms",
+    "definition": "Open-loop motor moving in discrete steps. Holding torque: 0.3-30 N\u00b7m. Steps/rev: 200 (1.8\u00b0) or 400 (0.9\u00b0) typical. Loses steps if overloaded."
+  },
+  {
+    "id": "term-transistor-ratings",
+    "term": "Transistor Ratings",
+    "category": "Electrical and Control Terms",
+    "definition": "Vds: Drain-source voltage rating (e.g., 600V MOSFET). Ids: Continuous drain current (e.g., 50A MOSFET). Rdson: On-resistance (e.g., 10 m\u03a9 = 0.5W at 10A)."
+  },
+  {
+    "id": "term-trajectory-planning",
+    "term": "Trajectory Planning",
+    "category": "Electrical and Control Terms",
+    "definition": "Calculation of position/velocity/acceleration profiles. Trapezoidal profile: constant accel/decel. S-curve: limited jerk."
+  },
+  {
+    "id": "term-tuning",
+    "term": "Tuning",
+    "category": "Electrical and Control Terms",
+    "definition": "Adjusting PID gains for optimal servo response. Manual (Ziegler-Nichols, Lambda), Auto-tune (drive feature). Goal: fast settling without overshoot."
+  },
+  {
+    "id": "term-velocity-loop",
+    "term": "Velocity Loop",
+    "category": "Electrical and Control Terms",
+    "definition": "Middle servo control loop. Bandwidth: 100-500 Hz. Compares commanded vs. actual velocity (encoder derivative), outputs current command."
+  },
+  {
+    "id": "term-vfd-variable-frequency-drive",
+    "term": "VFD (Variable Frequency Drive)",
+    "category": "Electrical and Control Terms",
+    "definition": "Electronic controller varying AC motor speed by adjusting frequency and voltage (V/Hz control). Spindle control: 0-400 Hz = 0-24,000 RPM."
+  },
+  {
+    "id": "term-absolute-positioning-g90",
+    "term": "Absolute Positioning (G90)",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Coordinates specified relative to fixed origin (work zero). Example: G90 G01 X100 \u2192 move to X=100."
+  },
+  {
+    "id": "term-arc-circular-interpolation",
+    "term": "Arc (Circular Interpolation)",
+    "category": "CNC Control and Programming Terms",
+    "definition": "G02 (CW) or G03 (CCW) circular path. Parameters: I/J (center offset) or R (radius). Requires XY plane (G17)."
+  },
+  {
+    "id": "term-automatic-tool-changer-atc",
+    "term": "Automatic Tool Changer (ATC)",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Mechanism swapping tools automatically. Carousel type: 8-40 tools. Arm type: 10-20s tool change. ISO 30/40/50 taper."
+  },
+  {
+    "id": "term-axis-naming",
+    "term": "Axis Naming",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Primary (X, Y, Z): Linear translation axes. Z typically vertical (spindle axis). Right-hand rule. Rotary (A, B, C): Rotation about X, Y, Z respectively. 4th axis: rotary table. 5-axis: A+C or B+C."
+  },
+  {
+    "id": "term-canned-cycles",
+    "term": "Canned Cycles",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Pre-programmed routines for common operations. G81 (drilling), G83 (peck drilling), G84 (tapping), G73 (high-speed peck)."
+  },
+  {
+    "id": "term-compensation",
+    "term": "Compensation",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Tool Length (G43): Offset Z position by tool length in table. G43 H01 = use tool 1 length. Tool Radius (G41/G42): Offset path left/right by tool radius. Climb milling: G41. Conventional: G42. Backlash Compensation: Software correction for mechanical backlash. LinuxCNC: [AXIS0]BACKLASH parameter."
+  },
+  {
+    "id": "term-contour-error-following-error",
+    "term": "Contour Error (Following Error)",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Difference between commanded and actual position during motion. Servo: <0.1mm typical. Exceeding limit triggers alarm."
+  },
+  {
+    "id": "term-coordinate-system",
+    "term": "Coordinate System",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Machine (G53): Absolute position relative to home switches. Fixed reference. Work (G54-G59): User-defined origins for parts. G54 most common. G10 L2 sets offsets."
+  },
+  {
+    "id": "term-dry-run",
+    "term": "Dry Run",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Test mode running program at reduced speed without tool engaged. Verify program before cutting."
+  },
+  {
+    "id": "term-dxf-drawing-exchange-format",
+    "term": "DXF (Drawing Exchange Format)",
+    "category": "CNC Control and Programming Terms",
+    "definition": "CAD file format. 2D vector graphics. Common CAM input format for plasma/laser/waterjet."
+  },
+  {
+    "id": "term-feed-rate",
+    "term": "Feed Rate",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Speed of tool movement through material (mm/min or in/min). Programmed with F-word. Higher = faster machining but more tool wear. Inverse time (G93) for 5-axis."
+  },
+  {
+    "id": "term-feed-per-tooth-chipload",
+    "term": "Feed Per Tooth (Chipload)",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Material removed per cutter tooth. Formula: fz = F / (N \u00d7 RPM) where F=feedrate, N=# teeth. Aluminum: 0.05-0.15 mm/tooth."
+  },
+  {
+    "id": "term-g-code",
+    "term": "G-Code",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Machine programming language (RS-274). G00 (rapid), G01 (linear), G02/G03 (arc), G90/G91 (absolute/incremental)."
+  },
+  {
+    "id": "term-hal-hardware-abstraction-layer",
+    "term": "HAL (Hardware Abstraction Layer)",
+    "category": "CNC Control and Programming Terms",
+    "definition": "LinuxCNC real-time software layer connecting G-code to hardware. Configuration: .hal files. Signals: bit/float/s32/u32 types."
+  },
+  {
+    "id": "term-home-switch",
+    "term": "Home Switch",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Limit switch establishing machine origin. Homing sequence: rapid to switch, slow off switch, zero position. Index pulse optional (repeatable to 0.1\u03bcm)."
+  },
+  {
+    "id": "term-incremental-positioning-g91",
+    "term": "Incremental Positioning (G91)",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Coordinates specified relative to current position. Example: G91 G01 X10 \u2192 move 10mm from current X."
+  },
+  {
+    "id": "term-interpolation",
+    "term": "Interpolation",
+    "category": "CNC Control and Programming Terms",
+    "definition": "CNC calculating intermediate points between programmed endpoints. Linear (G01): straight line. Circular (G02/G03): arc. NURBS: complex curves."
+  },
+  {
+    "id": "term-inverse-kinematics",
+    "term": "Inverse Kinematics",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Calculating joint positions for desired tool position. Required for robotic arms, delta robots. LinuxCNC: genserkins, pumakins."
+  },
+  {
+    "id": "term-jog-mode",
+    "term": "Jog Mode",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Manual axis movement via buttons/handwheel. Continuous (hold button) or incremental (0.001\", 0.01\", 0.1\" steps)."
+  },
+  {
+    "id": "term-look-ahead",
+    "term": "Look-Ahead",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Controller analyzing upcoming G-code to optimize velocity. Prevents overshoot at corners. Depth: 100-1000 segments typical."
+  },
+  {
+    "id": "term-m-code",
+    "term": "M-Code",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Auxiliary machine functions (not motion). M03 (spindle CW), M08 (coolant on), M06 (tool change), M30 (program end)."
+  },
+  {
+    "id": "term-machine-coordinates",
+    "term": "Machine Coordinates",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Absolute position relative to machine home (physical limits). G53 ignores work offsets. Used for tool changes, safe positions."
+  },
+  {
+    "id": "term-mdi-manual-data-input",
+    "term": "MDI (Manual Data Input)",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Keyboard entry of single G-code commands. Useful for setup, probing, jogging to position."
+  },
+  {
+    "id": "term-modal",
+    "term": "Modal",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Command remains active until cancelled. G01 (linear mode), G90 (absolute mode). Non-modal: G04 (dwell), G28 (home)."
+  },
+  {
+    "id": "term-offsets",
+    "term": "Offsets",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Work Coordinate (G54-G59): Part origin locations. G10 L2 P1 X10 Y20 = set G54 to X+10, Y+20. Tool Length (G43): Z compensation for tool length. Measured from gage line to tool tip. Tool Diameter (G41/G42): Radius compensation around programmed path."
+  },
+  {
+    "id": "term-override",
+    "term": "Override",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Real-time adjustment of programmed values. Feed override: 0-200% typical. Spindle override: 50-120%. Lets operator fine-tune."
+  },
+  {
+    "id": "term-parametric-programming",
+    "term": "Parametric Programming",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Using variables in G-code. #1=10 (assignment), G01 X#1 (use variable). Loops with WHILE, conditionals with IF."
+  },
+  {
+    "id": "term-post-processor",
+    "term": "Post-Processor",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Software converting CAM toolpaths to machine-specific G-code. Custom posts for each control (Fanuc, Haas, LinuxCNC, Mach3)."
+  },
+  {
+    "id": "term-probe-touch-probe",
+    "term": "Probe (Touch Probe)",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Precision switch for automatic workpiece/tool measurement. Renishaw: repeatability 0.5\u03bcm. G38.2 (probe toward), G38.4 (probe away)."
+  },
+  {
+    "id": "term-program-stop",
+    "term": "Program Stop",
+    "category": "CNC Control and Programming Terms",
+    "definition": "M00 (mandatory stop), M01 (optional stop - requires operator enable). Spindle/coolant off, requires cycle start to continue."
+  },
+  {
+    "id": "term-rapid-g00",
+    "term": "Rapid (G00)",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Non-cutting move at maximum feedrate. Not guaranteed straight line (may move axes sequentially). No F-word."
+  },
+  {
+    "id": "term-real-time",
+    "term": "Real-Time",
+    "category": "CNC Control and Programming Terms",
+    "definition": "System guaranteeing response within specified time. LinuxCNC: 1ms servo cycle, 25\u03bcs base thread (steppers). RTAI or Preempt-RT kernel."
+  },
+  {
+    "id": "term-scaling-g51",
+    "term": "Scaling (G51)",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Proportionally increase/decrease programmed dimensions. G51 X2 Y2 = double size. G50 cancels. Useful for families of parts."
+  },
+  {
+    "id": "term-single-block",
+    "term": "Single Block",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Execution mode pausing after each G-code line. Used for program verification and debugging."
+  },
+  {
+    "id": "term-spindle-synchronization",
+    "term": "Spindle Synchronization",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Coordinating spindle rotation with linear motion. Rigid tapping (G33.1): spindle encoder required. Thread milling: G02/G03 with helical interpolation."
+  },
+  {
+    "id": "term-subprogram",
+    "term": "Subprogram",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Reusable G-code block called with M98 P1234 (call program O1234). M99 returns. Useful for repeated patterns (bolt holes)."
+  },
+  {
+    "id": "term-tool-offset",
+    "term": "Tool Offset",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Compensation for tool length/diameter differences. Length offset (G43): Z-axis. Radius compensation (G41/G42): XY plane. Stored in tool table."
+  },
+  {
+    "id": "term-tool-table",
+    "term": "Tool Table",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Database of tool dimensions. Tool # (T), length offset (H), diameter (D), pocket (P). G10 L1 sets values. G43 H01 applies tool 1 length."
+  },
+  {
+    "id": "term-trajectory-planner",
+    "term": "Trajectory Planner",
+    "category": "CNC Control and Programming Terms",
+    "definition": "Calculates smooth motion profiles respecting velocity/acceleration limits. Acceleration: 0.5-5 m/s\u00b2 typical. Jerk limiting optional."
+  },
+  {
+    "id": "term-work-offset-g54-g59",
+    "term": "Work Offset (G54-G59)",
+    "category": "CNC Control and Programming Terms",
+    "definition": "User-defined origin for part coordinates. G54 most common (work offset 1), allows multiple fixtures/setups. Extended: G54.1 P1-P9 (G59.3)."
+  },
+  {
+    "id": "term-abrasive-waterjet-awj",
+    "term": "Abrasive Waterjet (AWJ)",
+    "category": "Machining and Cutting Terms",
+    "definition": "Waterjet with garnet abrasive (80 mesh typical). Cuts metals, stone, ceramics. Pressure: 55,000-90,000 PSI. Kerf: 0.8-1.5mm."
+  },
+  {
+    "id": "term-adaptive-clearing",
+    "term": "Adaptive Clearing",
+    "category": "Machining and Cutting Terms",
+    "definition": "CAM toolpath maintaining constant tool engagement. Varies feedrate and stepover for consistent chip load. Reduces tool wear 30-50%."
+  },
+  {
+    "id": "term-built-up-edge-bue",
+    "term": "Built-Up Edge (BUE)",
+    "category": "Machining and Cutting Terms",
+    "definition": "Material welding to tool edge at low speeds. Causes poor finish and tool failure. Solution: increase speed or use coated tools."
+  },
+  {
+    "id": "term-chip-evacuation",
+    "term": "Chip Evacuation",
+    "category": "Machining and Cutting Terms",
+    "definition": "Removing chips from cutting zone. Methods: flood coolant (washing), air blast, vacuum, chip conveyor. Poor evacuation causes recutting and heat."
+  },
+  {
+    "id": "term-chipload",
+    "term": "Chipload",
+    "category": "Machining and Cutting Terms",
+    "definition": "Thickness of chip removed per tooth. Formula: Chipload = Feed / (RPM \u00d7 # teeth). Aluminum roughing: 0.10-0.20 mm/tooth. Finishing: 0.03-0.08 mm/tooth."
+  },
+  {
+    "id": "term-chatter",
+    "term": "Chatter",
+    "category": "Machining and Cutting Terms",
+    "definition": "Self-excited vibration causing poor surface finish and tool breakage. Frequency: 100-5000 Hz. Causes: low rigidity, excessive DOC/WOC, tool runout. Solutions: reduce DOC, change RPM, increase rigidity."
+  },
+  {
+    "id": "term-climb-milling-down-milling",
+    "term": "Climb Milling (Down Milling)",
+    "category": "Machining and Cutting Terms",
+    "definition": "Cutter rotation direction matches feed direction. Chip thickness: thick to thin. Advantages: better finish, lower forces, longer tool life. Requires backlash elimination."
+  },
+  {
+    "id": "term-conventional-milling-up-milling",
+    "term": "Conventional Milling (Up Milling)",
+    "category": "Machining and Cutting Terms",
+    "definition": "Cutter rotation opposes feed direction. Chip thickness: thin to thick. Advantages: works with backlash. Disadvantages: lifts workpiece, more tool wear."
+  },
+  {
+    "id": "term-coolant",
+    "term": "Coolant",
+    "category": "Machining and Cutting Terms",
+    "definition": "Fluid for cooling tool and workpiece. Types: water-soluble (emulsion, 5-20:1 dilution), synthetic, straight oil, MQL. Functions: cooling, lubrication, chip evacuation."
+  },
+  {
+    "id": "term-cutter-compensation",
+    "term": "Cutter Compensation",
+    "category": "Machining and Cutting Terms",
+    "definition": "Tool radius offset (G41/G42). Programming to part edge, controller offsets by tool radius. Enables tool wear compensation without reprogramming."
+  },
+  {
+    "id": "term-cutting-force",
+    "term": "Cutting Force",
+    "category": "Machining and Cutting Terms",
+    "definition": "Resistance of material to cutting. Components: tangential (Ft), radial (Fr), axial (Fa). Ft = Ks \u00d7 DOC \u00d7 WOC \u00d7 fz^n (specific cutting force Ks from tables)."
+  },
+  {
+    "id": "term-cutting-speed-vc",
+    "term": "Cutting Speed (Vc)",
+    "category": "Machining and Cutting Terms",
+    "definition": "Velocity at tool cutting edge. Formula: Vc = \u03c0 \u00d7 D \u00d7 N where D=diameter (mm), N=RPM. Steel: 100-300 m/min HSS, 150-500 m/min carbide."
+  },
+  {
+    "id": "term-depth-of-cut-doc",
+    "term": "Depth of Cut (DOC)",
+    "category": "Machining and Cutting Terms",
+    "definition": "Axial depth tool enters material. Symbol: ap. Roughing: 3-10mm or 50-100% of tool diameter. Finishing: 0.1-0.5mm."
+  },
+  {
+    "id": "term-edm-electrical-discharge-machining",
+    "term": "EDM (Electrical Discharge Machining)",
+    "category": "Machining and Cutting Terms",
+    "definition": "Material removal by electrical sparks. Wire EDM: 0.1-0.3mm wire cuts intricate shapes. Sinker EDM: shaped electrode. Surface finish: 0.1-3\u03bcm Ra."
+  },
+  {
+    "id": "term-feeds-and-speeds",
+    "term": "Feeds and Speeds",
+    "category": "Machining and Cutting Terms",
+    "definition": "Feed rate (mm/min or IPM) and spindle speed (RPM) for specific material/tool combination. Calculate from chipload, # teeth, cutting speed."
+  },
+  {
+    "id": "term-fixture",
+    "term": "Fixture",
+    "category": "Machining and Cutting Terms",
+    "definition": "Device holding workpiece during machining. Types: vise, toe clamps, vacuum table, custom (3-2-1 locating). Rigidity critical - workpiece stiffness > machine stiffness."
+  },
+  {
+    "id": "term-flood-coolant",
+    "term": "Flood Coolant",
+    "category": "Machining and Cutting Terms",
+    "definition": "High-volume coolant delivery (5-50 GPM). Nozzles at tool-workpiece interface. Removes heat and chips. Requires sump, pump, filtration."
+  },
+  {
+    "id": "term-garnet-abrasive",
+    "term": "Garnet (Abrasive)",
+    "category": "Machining and Cutting Terms",
+    "definition": "Crushed mineral for abrasive waterjet cutting. Mesh size: 50 (coarse), 80 (standard), 120 (fine). Cost: $0.10-$0.30/lb. Consumption: 0.3-1.0 lb/min."
+  },
+  {
+    "id": "term-heat-affected-zone-haz",
+    "term": "Heat-Affected Zone (HAZ)",
+    "category": "Machining and Cutting Terms",
+    "definition": "Region near cut edge with altered microstructure. Plasma/laser: 0.5-2mm HAZ. Waterjet/router: zero HAZ (cold cutting)."
+  },
+  {
+    "id": "term-high-speed-machining-hsm",
+    "term": "High-Speed Machining (HSM)",
+    "category": "Machining and Cutting Terms",
+    "definition": "Cutting at 5-10\u00d7 conventional speeds. Aluminum: 15,000-30,000 RPM. Steel: 8,000-15,000 RPM. Requires rigid machine, balanced tools, high-performance spindle."
+  },
+  {
+    "id": "term-kerf",
+    "term": "Kerf",
+    "category": "Machining and Cutting Terms",
+    "definition": "Width of material removed by cutting process. Compensation: program 0.5\u00d7 kerf inside (internal features) or outside (external features)."
+  },
+  {
+    "id": "term-lead-in-lead-out",
+    "term": "Lead-In/Lead-Out",
+    "category": "Machining and Cutting Terms",
+    "definition": "Ramp or arc entry/exit to cut to avoid plunge marks. Circular lead-in: radius 1-5mm. Helps tool engagement and surface finish."
+  },
+  {
+    "id": "term-material-removal-rate-mrr",
+    "term": "Material Removal Rate (MRR)",
+    "category": "Machining and Cutting Terms",
+    "definition": "Volume of material removed per unit time. MRR = DOC \u00d7 WOC \u00d7 Feed (mm\u00b3/min). Roughing: maximize MRR. Finishing: minimize (better surface)."
+  },
+  {
+    "id": "term-minimum-quantity-lubrication-mql",
+    "term": "Minimum Quantity Lubrication (MQL)",
+    "category": "Machining and Cutting Terms",
+    "definition": "Micro-mist lubrication (0.01-0.1 mL/hr oil + air). Replaces flood coolant. Benefits: dry chips (recyclable), no disposal, cleaner. Aluminum, cast iron applications."
+  },
+  {
+    "id": "term-nesting",
+    "term": "Nesting",
+    "category": "Machining and Cutting Terms",
+    "definition": "Arranging parts on material sheet to minimize waste. CAM nesting software. Common spacing: 3-10mm between parts (avoid thermal effects in plasma/laser)."
+  },
+  {
+    "id": "term-pierce",
+    "term": "Pierce",
+    "category": "Machining and Cutting Terms",
+    "definition": "Initial penetration of material before cutting. Plasma: 2-5 seconds pierce time, height above work (pierce height = 2\u00d7 cut height). Laser: oxygen assist for thick steel."
+  },
+  {
+    "id": "term-power-spindle",
+    "term": "Power (Spindle)",
+    "category": "Machining and Cutting Terms",
+    "definition": "P = (Ks \u00d7 DOC \u00d7 WOC \u00d7 Feed) / (60 \u00d7 \u03b7) where Ks=specific cutting force (N/mm\u00b2), \u03b7=efficiency (0.7-0.9). Steel: 0.5-10 kW typical."
+  },
+  {
+    "id": "term-radial-immersion",
+    "term": "Radial Immersion",
+    "category": "Machining and Cutting Terms",
+    "definition": "Percentage of cutter diameter engaged in material. Full slot: 100%. Half slot: 50%. Light finish: 10-30%. Affects cutting forces and tool life."
+  },
+  {
+    "id": "term-roughing",
+    "term": "Roughing",
+    "category": "Machining and Cutting Terms",
+    "definition": "High-MRR material removal leaving finishing stock. Larger DOC/WOC, faster feed, 0.1-0.5mm stock remaining. Surface finish: 3-10 \u03bcm Ra."
+  },
+  {
+    "id": "term-scallop-height",
+    "term": "Scallop Height",
+    "category": "Machining and Cutting Terms",
+    "definition": "Residual cusps between toolpath passes. Smaller stepover = smaller scallop. Formula: h = stepover\u00b2 / (8R) for ball end mill radius R."
+  },
+  {
+    "id": "term-speeds-and-feeds",
+    "term": "Speeds and Feeds",
+    "category": "Machining and Cutting Terms",
+    "definition": "See Feeds and Speeds. Critical for tool life and surface finish. Too fast: excessive heat/wear. Too slow: built-up edge, poor finish."
+  },
+  {
+    "id": "term-sfm-surface-feet-per-minute",
+    "term": "SFM (Surface Feet per Minute)",
+    "category": "Machining and Cutting Terms",
+    "definition": "Cutting speed at tool edge (imperial). Formula: SFM = (\u03c0 \u00d7 D \u00d7 RPM) / 12 (D in inches). Metric equivalent: Vc (m/min)."
+  },
+  {
+    "id": "term-stepover",
+    "term": "Stepover",
+    "category": "Machining and Cutting Terms",
+    "definition": "Lateral offset between toolpath passes. Percentage of tool diameter. Roughing: 40-60%. Finishing: 5-20%. Smaller = better finish, longer cycle time."
+  },
+  {
+    "id": "term-surface-finish-ra",
+    "term": "Surface Finish (Ra)",
+    "category": "Machining and Cutting Terms",
+    "definition": "Arithmetic average roughness. Typical: Roughing 3-10 \u03bcm, General 0.8-3 \u03bcm, Precision 0.2-0.8 \u03bcm, Grinding <0.2 \u03bcm. Measured with profilometer."
+  },
+  {
+    "id": "term-through-spindle-coolant-tsc",
+    "term": "Through-Spindle Coolant (TSC)",
+    "category": "Machining and Cutting Terms",
+    "definition": "High-pressure coolant (50-100 PSI) through hollow spindle and tool. Essential for deep hole drilling (>3\u00d7 diameter). Rotary union seals coolant to rotating spindle."
+  },
+  {
+    "id": "term-trochoidal-milling",
+    "term": "Trochoidal Milling",
+    "category": "Machining and Cutting Terms",
+    "definition": "Circular toolpath with advancing motion. Maintains small radial engagement (10-20%). Benefits: longer tool life, higher MRR in hard materials, deeper cuts."
+  },
+  {
+    "id": "term-width-of-cut-woc",
+    "term": "Width of Cut (WOC)",
+    "category": "Machining and Cutting Terms",
+    "definition": "Radial depth (stepover in one pass). Symbol: ae. Slotting: 100% diameter. Roughing: 40-60% diameter. Finishing: 10-30% diameter."
+  },
+  {
+    "id": "term-work-hardening",
+    "term": "Work Hardening",
+    "category": "Machining and Cutting Terms",
+    "definition": "Material surface hardening from plastic deformation. Austenitic stainless (304/316): severe work hardening. Requires positive rake tools and adequate feedrates (avoid rubbing)."
+  },
+  {
+    "id": "term-alloy",
+    "term": "Alloy",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Metal mixture improving properties. Steel: C + Fe + Mn/Cr/Ni. Aluminum: 6061 (Mg+Si), 7075 (Zn). Properties vary widely by composition."
+  },
+  {
+    "id": "term-annealing",
+    "term": "Annealing",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Heat treatment reducing hardness and internal stress. Process: heat to 700-900\u00b0C, slow cool. Makes material easier to machine."
+  },
+  {
+    "id": "term-austenite",
+    "term": "Austenite",
+    "category": "Material and Metallurgy Terms",
+    "definition": "FCC crystal structure of iron (stable above 912\u00b0C). Non-magnetic. Retained in stainless 304/316 (austenitic stainless)."
+  },
+  {
+    "id": "term-carbide-cemented-carbide",
+    "term": "Carbide (Cemented Carbide)",
+    "category": "Material and Metallurgy Terms",
+    "definition": "WC particles in Co binder. Hardness: 1500-2000 HV (vs. 800 HV HSS). Cutting tools: grades C1-C8 (ISO K, M, P). Brittle but heat-resistant."
+  },
+  {
+    "id": "term-case-hardening",
+    "term": "Case Hardening",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Surface hardening via carburizing/nitriding. Hard exterior (50-62 HRC), tough core (30-40 HRC). Gears, bearing races."
+  },
+  {
+    "id": "term-cast-iron",
+    "term": "Cast Iron",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Fe-C alloy with 2-4% carbon. Types: Gray (graphite flakes, good damping), Ductile (nodular graphite), White (cementite, very hard). Machinable without coolant."
+  },
+  {
+    "id": "term-ferrite",
+    "term": "Ferrite",
+    "category": "Material and Metallurgy Terms",
+    "definition": "BCC crystal structure of iron (stable <912\u00b0C). Soft, magnetic. Pure iron mostly ferrite at room temperature."
+  },
+  {
+    "id": "term-grain-size",
+    "term": "Grain Size",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Crystal size in material. Finer grain = stronger (Hall-Petch effect). Coarse grain: easier to machine but weaker. ASTM grain size number: 5-8 typical."
+  },
+  {
+    "id": "term-hardness",
+    "term": "Hardness",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Resistance to deformation. Scales: Rockwell (HRC 20-65), Brinell (HB 100-650), Vickers (HV 100-1000). Conversion tables available. Harder materials require lower feeds/speeds."
+  },
+  {
+    "id": "term-heat-treatment",
+    "term": "Heat Treatment",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Controlled heating/cooling altering microstructure. Types: annealing (soften), normalizing (refine grain), quenching (harden), tempering (toughness)."
+  },
+  {
+    "id": "term-high-speed-steel-hss",
+    "term": "High-Speed Steel (HSS)",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Tool steel with W, Mo, Cr, V. Hardness: 62-65 HRC. Cutting tools: drills, taps, end mills. Lower cost than carbide but lower heat resistance."
+  },
+  {
+    "id": "term-martensite",
+    "term": "Martensite",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Hard, brittle phase formed by rapid quenching steel from austenite. BCT structure. 58-65 HRC typical. Requires tempering to reduce brittleness."
+  },
+  {
+    "id": "term-precipitation-hardening",
+    "term": "Precipitation Hardening",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Strengthening via precipitate formation. Aluminum 6061-T6: Mg\u2082Si precipitates. Stainless 17-4PH: copper precipitates. Age hardening process."
+  },
+  {
+    "id": "term-quenching",
+    "term": "Quenching",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Rapid cooling from austenite temperature forming martensite. Media: water (fastest, cracking risk), oil (moderate), air (slow). Hardness depends on cooling rate."
+  },
+  {
+    "id": "term-rockwell-hardness-hrc",
+    "term": "Rockwell Hardness (HRC)",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Hardness scale using diamond cone indenter. HRC 20 (mild steel), HRC 30-40 (prehardened steel), HRC 50-60 (hardened steel, cutting tools). Converted to HB, HV."
+  },
+  {
+    "id": "term-stainless-steel",
+    "term": "Stainless Steel",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Fe-Cr alloy (>10.5% Cr) forming passive oxide layer. Types: Austenitic (304, 316): Non-magnetic, corrosion-resistant, work-hardens severely. Difficult to machine. Ferritic (430): Magnetic, less corrosion resistance, easier to machine. Martensitic (410, 420): Hardenable, magnetic, moderate corrosion resistance."
+  },
+  {
+    "id": "term-temper",
+    "term": "Temper",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Designation of aluminum heat treatment. T6: solution treated + artificially aged (peak strength). T4: solution treated + naturally aged. O: annealed (soft)."
+  },
+  {
+    "id": "term-tempering",
+    "term": "Tempering",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Reheating quenched steel to reduce brittleness and stress. Temperature: 150-650\u00b0C. Higher temp = softer but tougher. Required after quenching to avoid cracking."
+  },
+  {
+    "id": "term-thermal-conductivity",
+    "term": "Thermal Conductivity",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Heat transfer rate. Aluminum: 205 W/(m\u00b7K), Steel: 50 W/(m\u00b7K), Stainless: 15 W/(m\u00b7K). Higher = better coolant effectiveness, less thermal damage."
+  },
+  {
+    "id": "term-toughness",
+    "term": "Toughness",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Energy absorption before fracture. Opposite of brittleness. Charpy/Izod impact tests. Tempered martensite: tough. Untempered martensite: brittle."
+  },
+  {
+    "id": "term-ultimate-tensile-strength-uts",
+    "term": "Ultimate Tensile Strength (UTS)",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Maximum stress before failure. Mild steel: 400 MPa. 4140 steel: 655 MPa (annealed) to 1800 MPa (quenched). Design safety factor: 2-4\u00d7."
+  },
+  {
+    "id": "term-yield-strength",
+    "term": "Yield Strength",
+    "category": "Material and Metallurgy Terms",
+    "definition": "Stress causing permanent deformation (0.2% offset). Design limit for structures. Mild steel: 250 MPa. Aluminum 6061-T6: 276 MPa. Factor of safety applied."
+  },
+  {
+    "id": "term-arc-flash",
+    "term": "Arc Flash",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Explosive electrical fault creating plasma arc. Energy: up to 40 cal/cm\u00b2 (lethal). Protection: arc-rated PPE, proper clearances, lockout/tagout."
+  },
+  {
+    "id": "term-ansi-american-national-standards-institute",
+    "term": "ANSI (American National Standards Institute)",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Standards organization. B11 series: machine tool safety. Z87.1: eye protection. Z49.1: welding safety."
+  },
+  {
+    "id": "term-ce-marking",
+    "term": "CE Marking",
+    "category": "Safety and Regulatory Terms",
+    "definition": "EU declaration of conformity to safety directives. Required for machinery sold in Europe. Self-certification or notified body assessment."
+  },
+  {
+    "id": "term-confined-space",
+    "term": "Confined Space",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Area with limited egress and not designed for continuous occupancy. Sump, tank interiors. OSHA 1910.146: permit required, atmosphere testing, rescue plan."
+  },
+  {
+    "id": "term-double-insulation",
+    "term": "Double Insulation",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Two independent layers of insulation protecting against shock. Class II equipment (no ground required). Symbol: square within square."
+  },
+  {
+    "id": "term-e-stop-emergency-stop",
+    "term": "E-Stop (Emergency Stop)",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Immediately removes power to motion/spindle. Required by ISO 13850 on all machines. Type: Category 0 (uncontrolled stop) or Category 1 (controlled stop then power off). Red mushroom button with yellow background."
+  },
+  {
+    "id": "term-enabling-device",
+    "term": "Enabling Device",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Three-position switch for pendant operation. Squeezed: machine enabled. Fully pressed or released: machine disabled. Prevents unintended motion."
+  },
+  {
+    "id": "term-fall-protection",
+    "term": "Fall Protection",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Arrest system for work >4 feet height (OSHA). Full-body harness + lanyard + anchor. Machine access platforms require guardrails or personal fall arrest."
+  },
+  {
+    "id": "term-ground-fault-circuit-interrupter-gfci",
+    "term": "Ground Fault Circuit Interrupter (GFCI)",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Detects current imbalance (leakage to ground) and trips circuit. 5 mA threshold, <25ms trip time. Required for temporary/outdoor 120V circuits."
+  },
+  {
+    "id": "term-guarding",
+    "term": "Guarding",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Physical barrier preventing access to hazards. Fixed (permanent), interlocked (door switch), adjustable. ANSI B11.19 specifies distances and openings."
+  },
+  {
+    "id": "term-hazard-analysis",
+    "term": "Hazard Analysis",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Systematic identification of dangers. Risk = Severity \u00d7 Probability. ISO 12100 risk assessment. Mitigation hierarchy: eliminate, guard, warn, train, PPE."
+  },
+  {
+    "id": "term-interlock",
+    "term": "Interlock",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Safety device preventing machine operation unless conditions met (door closed, guards in place). Positive opening (mechanically driven to open state). Monitored by safety relay/PLC."
+  },
+  {
+    "id": "term-iso-international-organization-for-standardization",
+    "term": "ISO (International Organization for Standardization)",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Global standards body. ISO 12100: machinery safety principles. ISO 13849-1: safety control systems. ISO 13850: emergency stop."
+  },
+  {
+    "id": "term-light-curtain",
+    "term": "Light Curtain",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Optical safety device creating invisible barrier. 14mm spacing between beams typical. Safety category 2 or 4. Response time: 10-30ms. Replaces physical guarding."
+  },
+  {
+    "id": "term-lockout-tagout-loto",
+    "term": "Lockout/Tagout (LOTO)",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Procedure isolating energy sources during maintenance (OSHA 1910.147). Lock device on disconnects, tags identifying worker. De-energize, dissipate stored energy, verify zero energy."
+  },
+  {
+    "id": "term-machine-guarding",
+    "term": "Machine Guarding",
+    "category": "Safety and Regulatory Terms",
+    "definition": "See Guarding. OSHA 1910.212 general requirements. Point of operation guarding: distance to hazard vs. opening size tables (1/4\" opening = 4\" distance minimum)."
+  },
+  {
+    "id": "term-nfpa-national-fire-protection-association",
+    "term": "NFPA (National Fire Protection Association)",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Fire safety standards. NFPA 70 (National Electrical Code), NFPA 79 (Industrial Machinery Electrical Standard), NFPA 654 (Combustible Dust)."
+  },
+  {
+    "id": "term-osha-occupational-safety-and-health-administration",
+    "term": "OSHA (Occupational Safety and Health Administration)",
+    "category": "Safety and Regulatory Terms",
+    "definition": "US workplace safety enforcement. 29 CFR 1910: General Industry standards. 1910.212: machine guarding, 1910.147: LOTO, 1910.1000: air contaminants."
+  },
+  {
+    "id": "term-pel-permissible-exposure-limit",
+    "term": "PEL (Permissible Exposure Limit)",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Maximum airborne concentration of substance allowed (OSHA). Oil mist: 5 mg/m\u00b3 (8-hr TWA). Hexavalent chromium (welding stainless): 5 \u03bcg/m\u00b3."
+  },
+  {
+    "id": "term-performance-level-pl",
+    "term": "Performance Level (PL)",
+    "category": "Safety and Regulatory Terms",
+    "definition": "ISO 13849-1 safety reliability rating. PLa (lowest) to PLe (highest). PLd/PLe: redundant channels, diagnostics, fault tolerance. Emergency stops: typically PLd."
+  },
+  {
+    "id": "term-ppe-personal-protective-equipment",
+    "term": "PPE (Personal Protective Equipment)",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Safety gear required for operation. Hierarchy: last resort (engineering controls preferred). Minimum CNC: Z87.1 safety glasses, hearing protection >85 dB, steel-toe boots."
+  },
+  {
+    "id": "term-residual-current-device-rcd",
+    "term": "Residual Current Device (RCD)",
+    "category": "Safety and Regulatory Terms",
+    "definition": "European term for GFCI. 30 mA threshold typical for personnel protection. 300 mA for equipment protection (fire prevention)."
+  },
+  {
+    "id": "term-risk-assessment",
+    "term": "Risk Assessment",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Evaluating hazard severity and probability. ISO 12100 methodology. Risk matrix: severity (1-4) \u00d7 probability (1-4) = risk (1-16). Acceptable risk: <6 typical."
+  },
+  {
+    "id": "term-safety-category",
+    "term": "Safety Category",
+    "category": "Safety and Regulatory Terms",
+    "definition": "IEC 60204-1 classification of emergency stop reliability. Category 0: uncontrolled stop (immediate power removal). Category 1: controlled stop, then power removal. Category 2: controlled stop, power maintained."
+  },
+  {
+    "id": "term-safety-integrity-level-sil",
+    "term": "Safety Integrity Level (SIL)",
+    "category": "Safety and Regulatory Terms",
+    "definition": "IEC 61508 classification of safety system reliability. SIL 1 (10\u207b\u00b9 to 10\u207b\u00b2 failure probability) to SIL 4 (10\u207b\u2075 to 10\u207b\u2074). Industrial machinery: typically SIL 2."
+  },
+  {
+    "id": "term-safety-relay",
+    "term": "Safety Relay",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Redundant relay module monitoring safety circuits. Dual-channel inputs, force-guided contacts (mechanically linked NO/NC). Pilz, Phoenix Contact manufacturers."
+  },
+  {
+    "id": "term-two-hand-control",
+    "term": "Two-Hand Control",
+    "category": "Safety and Regulatory Terms",
+    "definition": "Operator must use both hands on buttons to activate machine. Prevents hands in hazard zone. Anti-tie-down: buttons <300mm apart, must press within 0.5s."
+  },
+  {
+    "id": "term-accuracy",
+    "term": "Accuracy",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Closeness of measurement to true value. Specification: \u00b110 \u03bcm/300mm typical for CNC. Systematic error (calibrated out with compensation)."
+  },
+  {
+    "id": "term-autocollimator",
+    "term": "Autocollimator",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Optical instrument measuring angular deviation. Resolution: 0.1 arc-second (0.5 \u03bcm/m). Leveling precision machines, measuring spindle axis alignment."
+  },
+  {
+    "id": "term-calibration",
+    "term": "Calibration",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Comparison to known standard. Traceable to NIST/NPL national standards. Period: annual for production equipment, quarterly for metrology. Adjustment if out of tolerance."
+  },
+  {
+    "id": "term-coordinate-measuring-machine-cmm",
+    "term": "Coordinate Measuring Machine (CMM)",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Precision measurement device with touch probe on 3-axis gantry. Accuracy: 2-5 \u03bcm typical. Temperature-controlled room (20\u00b0C \u00b11\u00b0C)."
+  },
+  {
+    "id": "term-dial-indicator",
+    "term": "Dial Indicator",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Contact probe with 0.001\" (0.01mm) resolution. Long-range (1-3\"), continuous dial. Used for setup, runout measurement, tramming spindle."
+  },
+  {
+    "id": "term-feeler-gauge",
+    "term": "Feeler Gauge",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Precision thickness blades for measuring gaps. 0.001\" (0.025mm) to 0.040\" (1mm) typical set. Used for gap setting, workpiece leveling."
+  },
+  {
+    "id": "term-gauge-block-jo-block",
+    "term": "Gauge Block (Jo Block)",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Precision length standard. Grade 0: \u00b10.05 \u03bcm, Grade 1: \u00b10.1 \u03bcm, Grade 2: \u00b10.2 \u03bcm. Wrung together to create exact lengths. Calibration reference."
+  },
+  {
+    "id": "term-interferometry-laser",
+    "term": "Interferometry (Laser)",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Optical measurement using light wave interference. Accuracy: <1 ppm (1 \u03bcm/m). Renishaw XL-80 laser: 0.5 ppm linear accuracy. Machine tool calibration."
+  },
+  {
+    "id": "term-micrometer",
+    "term": "Micrometer",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Precision screw-threaded measuring instrument. 0.001\" (0.01mm) graduation, 0.0001\" (0.001mm) vernier. Outside, inside, depth types. Thimble friction ratchet for consistent force."
+  },
+  {
+    "id": "term-parallax-error",
+    "term": "Parallax Error",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Measurement error from viewing dial at angle. Avoided by perpendicular viewing or mirror scale (align pointer with reflection)."
+  },
+  {
+    "id": "term-precision",
+    "term": "Precision",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Repeatability of measurements (scatter). Standard deviation of repeated measurements. High precision with poor accuracy: systematic error (bias)."
+  },
+  {
+    "id": "term-repeatability",
+    "term": "Repeatability",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Ability to return to same position. Spec: \u00b110 \u03bcm typical for CNC. Better than accuracy (absolute position error). Critical for production machining."
+  },
+  {
+    "id": "term-resolution",
+    "term": "Resolution",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Minimum increment of motion or measurement. Encoder: 0.1-1 \u03bcm typical. Stepper: microstep size. Display resolution \u2260 accuracy."
+  },
+  {
+    "id": "term-straightedge",
+    "term": "Straightedge",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Precision flat reference. Grade A: 50 \u03bcm/m, Grade AA: 15 \u03bcm/m. Camelback beam shape (self-weight sag compensation). Used with feeler gauges, height gauges."
+  },
+  {
+    "id": "term-surface-plate",
+    "term": "Surface Plate",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Precision flat reference surface. Granite (Grade A, AA, AAA). Grade A: 25 \u03bcm over 600\u00d7900mm plate. Temperature-stable (20\u00b0C). Inspection and layout."
+  },
+  {
+    "id": "term-test-indicator-dial-test-indicator",
+    "term": "Test Indicator (Dial Test Indicator)",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Horizontal plunger indicator with 0.0001\"-0.001\" graduation. Small contact point. Used for fine centering, edge finding, small radii."
+  },
+  {
+    "id": "term-tolerance",
+    "term": "Tolerance",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Acceptable variation from nominal dimension. \u00b10.1mm typical. ISO 2768: general tolerances (fine, medium, coarse). Geometric tolerances: position, flatness, perpendicularity (GD&T)."
+  },
+  {
+    "id": "term-traceability",
+    "term": "Traceability",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Documented chain to national standards. Calibration certificate from NIST-accredited lab. Required for AS9100 aerospace, ISO 17025 metrology labs."
+  },
+  {
+    "id": "term-vernier-scale",
+    "term": "Vernier Scale",
+    "category": "Measurement and Metrology Terms",
+    "definition": "Secondary scale for interpolation between main scale graduations. 0.02mm or 0.001\" resolution typical. Used on calipers, height gauges, protractors."
+  },
+  {
+    "id": "term-abrasive-waterjet-awj",
+    "term": "Abrasive Waterjet (AWJ)",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "See Waterjet terminology. Garnet cutting hard materials (steel, titanium, stone, glass)."
+  },
+  {
+    "id": "term-assist-gas",
+    "term": "Assist Gas",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "Gas flow during laser cutting improving quality and speed. Oxygen (steel: exothermic oxidation), Nitrogen (stainless, aluminum: inert, no oxidation), Air (mild steel, budget option)."
+  },
+  {
+    "id": "term-beam-divergence",
+    "term": "Beam Divergence",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "Laser beam spreading with distance. <0.1 mrad typical for fiber lasers. Affects focal position sensitivity and cut edge taper."
+  },
+  {
+    "id": "term-consumables-plasma",
+    "term": "Consumables (Plasma)",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "Electrode, nozzle, swirl ring, shield cap. Life: 1-4 hours piercing heavy plate, 10-50 hours cutting thin sheet. Cost: $5-$30 per set depending on amperage."
+  },
+  {
+    "id": "term-cutting-height",
+    "term": "Cutting Height",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "Nozzle standoff from workpiece. Plasma: 3-6mm (initial height controllers maintain). Laser: focal point at or below surface. Waterjet: 2-5mm (abrasive jet spread)."
+  },
+  {
+    "id": "term-dross",
+    "term": "Dross",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "Solidified slag on cut edge underside. Plasma/laser: oxidized metal. Minimized by proper parameters (speed, gas flow, height). Removal: grinding, wire wheel."
+  },
+  {
+    "id": "term-focal-length",
+    "term": "Focal Length",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "Distance from laser lens to focal point. Common: 5\" (127mm), 7.5\" (190mm). Shorter = smaller spot, thinner material. Longer = more working distance, less sensitive."
+  },
+  {
+    "id": "term-heat-affected-zone-haz",
+    "term": "Heat-Affected Zone (HAZ)",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "See Machining Terms. Plasma: 1-2mm HAZ with hardness changes. Laser: 0.3-1mm HAZ. Waterjet: zero HAZ (cold process)."
+  },
+  {
+    "id": "term-hypertherm",
+    "term": "Hypertherm",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "Leading plasma system manufacturer. PowerMax (handheld), Powermax (light duty), HPR (heavy duty). Market standard for CNC plasma."
+  },
+  {
+    "id": "term-kerf-width",
+    "term": "Kerf Width",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "See General terms. Plasma: 1-3mm depending on amperage (45A-200A). Laser: 0.1-0.5mm (1-6 kW fiber). Waterjet: 0.8-1.5mm (orifice + abrasive expansion)."
+  },
+  {
+    "id": "term-nozzle-plasma",
+    "term": "Nozzle (Plasma)",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "Copper component focusing plasma arc. Orifice size: 0.8-2mm depending on amperage. Cools rapidly during cutting. Replace when orifice eroded >25%."
+  },
+  {
+    "id": "term-orifice-waterjet",
+    "term": "Orifice (Waterjet)",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "Sapphire or diamond jewel forming high-pressure water stream. Diameter: 0.010\"-0.020\" (0.25-0.50mm). Life: sapphire 50-100 hrs, diamond 800-2000 hrs."
+  },
+  {
+    "id": "term-pierce-plasma-laser",
+    "term": "Pierce (Plasma/Laser)",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "Initial penetration before cutting. Plasma: 1-5 seconds at 1.5-2\u00d7 cut height to avoid blowback. Laser: 0.1-2 seconds depending on power and thickness."
+  },
+  {
+    "id": "term-power-density",
+    "term": "Power Density",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "Laser power per unit area. 10\u2076-10\u2078 W/cm\u00b2 for cutting. Higher = faster cutting speeds. Focused fiber laser: 10\u00d7 CO\u2082 laser power density."
+  },
+  {
+    "id": "term-preheat-plasma",
+    "term": "Preheat (Plasma)",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "Lower-amperage arc stabilization before main arc transfer. 10-30A preheat. Improves arc starts and consumable life."
+  },
+  {
+    "id": "term-taper-cut-edge",
+    "term": "Taper (Cut Edge)",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "Angle deviation from vertical. Plasma: 0-3\u00b0 typical. Laser: 0-2\u00b0. Waterjet: trailing edge (jet lag). Minimized by slow speeds and proper standoff."
+  },
+  {
+    "id": "term-thc-torch-height-control",
+    "term": "THC (Torch Height Control)",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "Automated nozzle height adjustment during cutting. Capacitive sensor (non-contact) or arc voltage (plasma). Maintains constant height over warped sheets."
+  },
+  {
+    "id": "term-transfer-arc",
+    "term": "Transfer Arc",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "Main plasma cutting arc (vs. pilot arc). Workpiece completes electrical circuit. Higher efficiency than non-transfer arc (gouging)."
+  },
+  {
+    "id": "term-wavelength",
+    "term": "Wavelength",
+    "category": "Plasma, Laser, and Waterjet Terms",
+    "definition": "Laser light wavelength. CO\u2082: 10.6 \u03bcm (infrared). Fiber/Nd:YAG: 1.06 \u03bcm (near-infrared). Fiber absorbed better by metals (higher cutting efficiency)."
+  }
+]

@@ -28,13 +28,16 @@ jobs:
           python-version: "3.x"
 
       - name: Build website content
-        run: python3 website/build.py
+        run: |
+          python3 website/build.py
+          python3 tools/site/build_indexes.py
 
       - name: Assemble Pages artifact
         run: |
           mkdir -p _site
           cp website/index.html _site/index.html
           cp -R website/content _site/content
+          cp -R website/data _site/data
           cp -R PDFs _site/PDFs
           touch _site/.nojekyll
 

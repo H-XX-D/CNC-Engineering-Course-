@@ -134,6 +134,12 @@ python3 website/build.py
 
 The repository includes `.github/workflows/pages.yml`, which builds `website/content/` from the root-level `Module-XX-*` folders and publishes the static site from `website/`. The workflow also copies `PDFs/` into the Pages artifact so module PDF links work on the live site while the PDF files remain in the repository's `PDFs/` folder.
 
+The live site also publishes generated reference data from `website/data/`:
+
+- `glossary.json` - searchable glossary terms from Appendix M
+- `resources.json` - structured books, tools, standards, communities, and suppliers from Appendix L
+- `link-graph.json` - module, glossary, resource, and appendix relationships for graph exploration
+
 ---
 
 ## 🤝 Contributing

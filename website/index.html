@@ -287,6 +287,69 @@
             align-items: center;
             gap: 0.5rem;
         }
+
+        .tool-row {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin: 1rem 0 1.5rem;
+        }
+
+        .tool-input {
+            width: min(100%, 420px);
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            color: var(--text);
+            border-radius: 6px;
+            padding: 0.75rem 0.85rem;
+            font: inherit;
+        }
+
+        .result-item {
+            border-top: 1px solid var(--border);
+            padding: 1rem 0;
+        }
+
+        .result-meta {
+            color: var(--accent-hover);
+            font-size: 0.8rem;
+            margin-bottom: 0.35rem;
+        }
+
+        .graph-wrap {
+            width: 100%;
+            overflow-x: auto;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--bg-secondary);
+            margin: 1rem 0 1.5rem;
+        }
+
+        .graph-svg {
+            display: block;
+            min-width: 760px;
+            width: 100%;
+            height: 520px;
+        }
+
+        .graph-edge {
+            stroke: var(--border);
+            stroke-width: 1.5;
+        }
+
+        .graph-node {
+            stroke: var(--bg);
+            stroke-width: 2;
+        }
+
+        .graph-label {
+            fill: var(--text);
+            font-size: 12px;
+            paint-order: stroke;
+            stroke: var(--bg-secondary);
+            stroke-width: 4px;
+            stroke-linejoin: round;
+        }
     </style>
 </head>
 <body>
@@ -339,6 +402,36 @@
         ];
         
         const moduleCache = {};
+        const dataCache = {};
+
+        function escapeHtml(value) {
+            return String(value ?? '').replace(/[&<>"']/g, ch => ({
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#39;'
+            }[ch]));
+        }
+
+        async function loadJson(path) {
+            if (!dataCache[path]) {
+                const resp = await fetch(path);
+                if (!resp.ok) throw new Error(`Could not load ${path}`);
+                dataCache[path] = await resp.json();
+            }
+            return dataCache[path];
+        }
+
+        function setActive(selector) {
+            document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
+            document.querySelector(selector)?.classList.add('active');
+        }
+
+        function closeSidebar() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+        }
         
         function toggleSidebar() {
             document.getElementById('sidebar').classList.toggle('open');
@@ -356,17 +449,22 @@
             });
             
             html += '</div>';
+            html += `<div class="nav-section">
+                <div class="nav-section-title">Reference</div>
+                <a class="nav-item" data-view="home" onclick="showHome()">Course Home</a>
+                <a class="nav-item" data-view="glossary" onclick="showGlossary()">Glossary</a>
+                <a class="nav-item" data-view="resources" onclick="showResources()">Resources</a>
+                <a class="nav-item" data-view="graph" onclick="showLinkGraph()">Link Graph</a>
+            </div>`;
             nav.innerHTML = html;
         }
         
         async function loadModule(num) {
             // Update nav
-            document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
-            document.querySelector(`[data-mod="${num}"]`)?.classList.add('active');
+            setActive(`[data-mod="${num}"]`);
             
             // Close mobile sidebar
-            document.getElementById('sidebar').classList.remove('open');
-            document.getElementById('overlay').classList.remove('show');
+            closeSidebar();
             
             const content = document.getElementById('content');
             content.innerHTML = '<div class="loading">Loading module</div>';
@@ -397,12 +495,186 @@
                 `;
             }
         }
+
+        function glossaryMatches(item, query) {
+            if (!query) return true;
+            const haystack = `${item.term} ${item.category} ${item.definition}`.toLowerCase();
+            return haystack.includes(query);
+        }
+
+        function renderGlossaryResults() {
+            const query = document.getElementById('glossary-search')?.value.toLowerCase().trim() ?? '';
+            const data = window.glossaryData ?? [];
+            const matches = data.filter(item => glossaryMatches(item, query)).slice(0, 120);
+            document.getElementById('glossary-results').innerHTML = matches.map(item => `
+                <div class="result-item">
+                    <div class="result-meta">${escapeHtml(item.category)}</div>
+                    <h3>${escapeHtml(item.term)}</h3>
+                    <p>${escapeHtml(item.definition)}</p>
+                </div>
+            `).join('') || '<p>No glossary terms found.</p>';
+        }
+
+        async function showGlossary() {
+            setActive('[data-view="glossary"]');
+            closeSidebar();
+            const content = document.getElementById('content');
+            content.innerHTML = '<div class="loading">Loading glossary</div>';
+            const data = await loadJson('data/glossary.json');
+            window.glossaryData = data;
+            content.innerHTML = `
+                <h1>Glossary</h1>
+                <p>${data.length} CNC engineering terms from Appendix M.</p>
+                <div class="tool-row">
+                    <input id="glossary-search" class="tool-input" type="search" placeholder="Search terms, categories, definitions" oninput="renderGlossaryResults()">
+                    <a href="PDFs/Appendix-M-glossary.pdf" target="_blank" rel="noopener">Download glossary PDF</a>
+                </div>
+                <div id="glossary-results"></div>
+            `;
+            renderGlossaryResults();
+        }
+
+        function resourceMatches(item, query) {
+            if (!query) return true;
+            const haystack = `${item.title} ${item.category} ${item.description}`.toLowerCase();
+            return haystack.includes(query);
+        }
+
+        function renderResourceResults() {
+            const query = document.getElementById('resource-search')?.value.toLowerCase().trim() ?? '';
+            const data = window.resourceData ?? [];
+            const matches = data.filter(item => resourceMatches(item, query));
+            document.getElementById('resource-results').innerHTML = matches.map(item => {
+                const title = item.url
+                    ? `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a>`
+                    : escapeHtml(item.title);
+                return `
+                    <div class="result-item">
+                        <div class="result-meta">${escapeHtml(item.category)}</div>
+                        <h3>${title}</h3>
+                        <p>${escapeHtml(item.description)}</p>
+                    </div>
+                `;
+            }).join('') || '<p>No resources found.</p>';
+        }
+
+        async function showResources() {
+            setActive('[data-view="resources"]');
+            closeSidebar();
+            const content = document.getElementById('content');
+            content.innerHTML = '<div class="loading">Loading resources</div>';
+            const data = await loadJson('data/resources.json');
+            window.resourceData = data;
+            content.innerHTML = `
+                <h1>Resources</h1>
+                <p>${data.length} books, communities, tools, standards, suppliers, and learning resources from Appendix L.</p>
+                <div class="tool-row">
+                    <input id="resource-search" class="tool-input" type="search" placeholder="Search books, software, standards, communities" oninput="renderResourceResults()">
+                    <a href="PDFs/Appendix-L-resources.pdf" target="_blank" rel="noopener">Download resources PDF</a>
+                </div>
+                <div id="resource-results"></div>
+            `;
+            renderResourceResults();
+        }
+
+        function nodeColor(kind) {
+            return {
+                module: '#3b82f6',
+                term: '#22c55e',
+                resource: '#f59e0b',
+                appendix: '#a855f7'
+            }[kind] || '#94a3b8';
+        }
+
+        function drawGraph(selectedId) {
+            const graph = window.linkGraphData;
+            const nodeMap = Object.fromEntries(graph.nodes.map(node => [node.id, node]));
+            const relatedEdges = graph.edges
+                .filter(edge => edge.source === selectedId || edge.target === selectedId)
+                .sort((a, b) => (b.weight ?? 1) - (a.weight ?? 1))
+                .slice(0, 32);
+            const relatedIds = [...new Set([selectedId, ...relatedEdges.flatMap(edge => [edge.source, edge.target])])];
+            const nodes = relatedIds.map(id => nodeMap[id]).filter(Boolean);
+            const center = { x: 380, y: 250 };
+            const radius = 190;
+            const positions = {};
+            positions[selectedId] = center;
+            const outer = nodes.filter(node => node.id !== selectedId);
+            outer.forEach((node, index) => {
+                const angle = (Math.PI * 2 * index) / Math.max(outer.length, 1) - Math.PI / 2;
+                positions[node.id] = {
+                    x: center.x + Math.cos(angle) * radius,
+                    y: center.y + Math.sin(angle) * radius
+                };
+            });
+
+            const lines = relatedEdges.map(edge => {
+                const a = positions[edge.source];
+                const b = positions[edge.target];
+                if (!a || !b) return '';
+                return `<line class="graph-edge" x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}"></line>`;
+            }).join('');
+            const circles = nodes.map(node => {
+                const pos = positions[node.id];
+                const label = node.label.length > 34 ? `${node.label.slice(0, 31)}...` : node.label;
+                const size = node.id === selectedId ? 17 : 11;
+                return `
+                    <g>
+                        <circle class="graph-node" cx="${pos.x}" cy="${pos.y}" r="${size}" fill="${nodeColor(node.kind)}"></circle>
+                        <text class="graph-label" x="${pos.x + 15}" y="${pos.y + 4}">${escapeHtml(label)}</text>
+                    </g>
+                `;
+            }).join('');
+            document.getElementById('graph-canvas').innerHTML = `${lines}${circles}`;
+
+            document.getElementById('graph-list').innerHTML = relatedEdges.map(edge => {
+                const otherId = edge.source === selectedId ? edge.target : edge.source;
+                const other = nodeMap[otherId];
+                return `
+                    <div class="result-item">
+                        <div class="result-meta">${escapeHtml(edge.relation)} · weight ${escapeHtml(edge.weight ?? 1)}</div>
+                        <strong>${escapeHtml(other?.label ?? otherId)}</strong>
+                    </div>
+                `;
+            }).join('') || '<p>No graph links found.</p>';
+        }
+
+        async function showLinkGraph() {
+            setActive('[data-view="graph"]');
+            closeSidebar();
+            const content = document.getElementById('content');
+            content.innerHTML = '<div class="loading">Loading link graph</div>';
+            const graph = await loadJson('data/link-graph.json');
+            window.linkGraphData = graph;
+            const selectable = graph.nodes
+                .filter(node => node.kind === 'module' || node.kind === 'appendix')
+                .sort((a, b) => a.label.localeCompare(b.label));
+            content.innerHTML = `
+                <h1>Link Graph</h1>
+                <p>${graph.nodes.length} nodes and ${graph.edges.length} links across modules, glossary terms, resources, and appendices.</p>
+                <div class="tool-row">
+                    <select id="graph-select" class="tool-input" onchange="drawGraph(this.value)">
+                        ${selectable.map(node => `<option value="${escapeHtml(node.id)}">${escapeHtml(node.label)}</option>`).join('')}
+                    </select>
+                    <a href="data/link-graph.json" target="_blank" rel="noopener">Download graph JSON</a>
+                </div>
+                <div class="graph-wrap">
+                    <svg id="graph-canvas" class="graph-svg" viewBox="0 0 760 520"></svg>
+                </div>
+                <h2>Connected Items</h2>
+                <div id="graph-list"></div>
+            `;
+            drawGraph(selectable[0]?.id ?? 'module-01');
+        }
         
         function showHome() {
+            setActive('[data-view="home"]');
+            closeSidebar();
             document.getElementById('content').innerHTML = `
                 <h1>CNC Engineering Course</h1>
                 <p>A comprehensive professional guide to designing, building, and optimizing CNC gantry systems.</p>
                 <p><a href="PDFs/CNC-Engineering-Course-Compendium.pdf" target="_blank" rel="noopener"><strong>Download the complete 3,190-page compendium PDF</strong></a></p>
+                <p><a href="#" onclick="showGlossary(); return false;">Search the glossary</a> · <a href="#" onclick="showResources(); return false;">Browse resources</a> · <a href="#" onclick="showLinkGraph(); return false;">Explore the link graph</a></p>
                 
                 <h2>Course Structure</h2>
                 <p>This course contains <strong>26 in-depth modules</strong> covering every aspect of CNC machine design and operation.</p>

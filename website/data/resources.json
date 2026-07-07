@@ -1,0 +1,862 @@
+[
+  {
+    "id": "resource-cnc-fundamentals-cnc-programming-handbook-3rd-ed",
+    "title": "CNC Programming Handbook (3rd Ed.)",
+    "category": "CNC Fundamentals",
+    "url": "",
+    "description": "Peter Smid | Industrial Press | 2007 | G-code, programming, comprehensive reference",
+    "fields": {
+      "Title": "CNC Programming Handbook (3rd Ed.)",
+      "Author(s)": "Peter Smid",
+      "Publisher": "Industrial Press",
+      "Year": "2007",
+      "Focus": "G-code, programming, comprehensive reference"
+    }
+  },
+  {
+    "id": "resource-cnc-fundamentals-machinery-s-handbook-31st-ed",
+    "title": "Machinery's Handbook (31st Ed.)",
+    "category": "CNC Fundamentals",
+    "url": "",
+    "description": "Erik Oberg et al. | Industrial Press | 2020 | Machining data, materials, processes (Bible of machining)",
+    "fields": {
+      "Title": "Machinery's Handbook (31st Ed.)",
+      "Author(s)": "Erik Oberg et al.",
+      "Publisher": "Industrial Press",
+      "Year": "2020",
+      "Focus": "Machining data, materials, processes (Bible of machining)"
+    }
+  },
+  {
+    "id": "resource-cnc-fundamentals-cnc-control-setup-for-milling-and-turning",
+    "title": "CNC Control Setup for Milling and Turning",
+    "category": "CNC Fundamentals",
+    "url": "",
+    "description": "Peter Smid | Industrial Press | 2010 | Machine setup, work offsets, tool management",
+    "fields": {
+      "Title": "CNC Control Setup for Milling and Turning",
+      "Author(s)": "Peter Smid",
+      "Publisher": "Industrial Press",
+      "Year": "2010",
+      "Focus": "Machine setup, work offsets, tool management"
+    }
+  },
+  {
+    "id": "resource-cnc-fundamentals-build-your-own-cnc-machine",
+    "title": "Build Your Own CNC Machine",
+    "category": "CNC Fundamentals",
+    "url": "",
+    "description": "James Floyd Kelly | Que | 2009 | DIY CNC construction, beginner-friendly",
+    "fields": {
+      "Title": "Build Your Own CNC Machine",
+      "Author(s)": "James Floyd Kelly",
+      "Publisher": "Que",
+      "Year": "2009",
+      "Focus": "DIY CNC construction, beginner-friendly"
+    }
+  },
+  {
+    "id": "resource-cnc-fundamentals-desktop-cnc-machining",
+    "title": "Desktop CNC Machining",
+    "category": "CNC Fundamentals",
+    "url": "",
+    "description": "James Floyd Kelly | Que | 2015 | Small CNC routers, hobbyist projects",
+    "fields": {
+      "Title": "Desktop CNC Machining",
+      "Author(s)": "James Floyd Kelly",
+      "Publisher": "Que",
+      "Year": "2015",
+      "Focus": "Small CNC routers, hobbyist projects"
+    }
+  },
+  {
+    "id": "resource-mechanical-design-and-motion-control-precision-machine-design",
+    "title": "Precision Machine Design",
+    "category": "Mechanical Design and Motion Control",
+    "url": "",
+    "description": "Alexander H. Slocum | MIT, error budgeting, kinematic design principles",
+    "fields": {
+      "Title": "Precision Machine Design",
+      "Author(s)": "Alexander H. Slocum",
+      "Focus": "MIT, error budgeting, kinematic design principles"
+    }
+  },
+  {
+    "id": "resource-mechanical-design-and-motion-control-machine-design-an-integrated-approach-6th-ed",
+    "title": "Machine Design: An Integrated Approach (6th Ed.)",
+    "category": "Mechanical Design and Motion Control",
+    "url": "",
+    "description": "Robert L. Norton | Mechanical components, shafts, bearings, gears",
+    "fields": {
+      "Title": "Machine Design: An Integrated Approach (6th Ed.)",
+      "Author(s)": "Robert L. Norton",
+      "Focus": "Mechanical components, shafts, bearings, gears"
+    }
+  },
+  {
+    "id": "resource-mechanical-design-and-motion-control-linear-motion-tips",
+    "title": "Linear Motion Tips",
+    "category": "Mechanical Design and Motion Control",
+    "url": "",
+    "description": "Thomson Industries | Linear guides, ball screws, selection guide (free PDF)",
+    "fields": {
+      "Title": "Linear Motion Tips",
+      "Author(s)": "Thomson Industries",
+      "Focus": "Linear guides, ball screws, selection guide (free PDF)"
+    }
+  },
+  {
+    "id": "resource-mechanical-design-and-motion-control-the-way-things-work",
+    "title": "The Way Things Work",
+    "category": "Mechanical Design and Motion Control",
+    "url": "",
+    "description": "David Macaulay | Mechanisms explained visually (excellent for understanding basics)",
+    "fields": {
+      "Title": "The Way Things Work",
+      "Author(s)": "David Macaulay",
+      "Focus": "Mechanisms explained visually (excellent for understanding basics)"
+    }
+  },
+  {
+    "id": "resource-electronics-and-control-systems-practical-electronics-for-inventors-4th-ed",
+    "title": "Practical Electronics for Inventors (4th Ed.)",
+    "category": "Electronics and Control Systems",
+    "url": "",
+    "description": "Paul Scherz, Simon Monk | Circuits, motors, sensors, microcontrollers",
+    "fields": {
+      "Title": "Practical Electronics for Inventors (4th Ed.)",
+      "Author(s)": "Paul Scherz, Simon Monk",
+      "Focus": "Circuits, motors, sensors, microcontrollers"
+    }
+  },
+  {
+    "id": "resource-electronics-and-control-systems-understanding-plc-programming",
+    "title": "Understanding PLC Programming",
+    "category": "Electronics and Control Systems",
+    "url": "",
+    "description": "Festo Didactic | Industrial control, ladder logic",
+    "fields": {
+      "Title": "Understanding PLC Programming",
+      "Author(s)": "Festo Didactic",
+      "Focus": "Industrial control, ladder logic"
+    }
+  },
+  {
+    "id": "resource-electronics-and-control-systems-step-and-direction-motor-control",
+    "title": "Step and Direction Motor Control",
+    "category": "Electronics and Control Systems",
+    "url": "",
+    "description": "Douglas W. Jones | Stepper motor theory, control methods",
+    "fields": {
+      "Title": "Step and Direction Motor Control",
+      "Author(s)": "Douglas W. Jones",
+      "Focus": "Stepper motor theory, control methods"
+    }
+  },
+  {
+    "id": "resource-electronics-and-control-systems-electric-motors-and-drives-5th-ed",
+    "title": "Electric Motors and Drives (5th Ed.)",
+    "category": "Electronics and Control Systems",
+    "url": "",
+    "description": "Austin Hughes, Bill Drury | AC/DC motors, VFDs, servo systems",
+    "fields": {
+      "Title": "Electric Motors and Drives (5th Ed.)",
+      "Author(s)": "Austin Hughes, Bill Drury",
+      "Focus": "AC/DC motors, VFDs, servo systems"
+    }
+  },
+  {
+    "id": "resource-machining-and-manufacturing-metal-cutting-theory-and-practice-3rd-ed",
+    "title": "Metal Cutting Theory and Practice (3rd Ed.)",
+    "category": "Machining and Manufacturing",
+    "url": "",
+    "description": "David A. Stephenson, John S. Agapiou | Cutting forces, tool wear, chip formation",
+    "fields": {
+      "Title": "Metal Cutting Theory and Practice (3rd Ed.)",
+      "Author(s)": "David A. Stephenson, John S. Agapiou",
+      "Focus": "Cutting forces, tool wear, chip formation"
+    }
+  },
+  {
+    "id": "resource-machining-and-manufacturing-manufacturing-processes-for-engineering-materials-6th-ed",
+    "title": "Manufacturing Processes for Engineering Materials (6th Ed.)",
+    "category": "Machining and Manufacturing",
+    "url": "",
+    "description": "Serope Kalpakjian, Steven Schmid | Overview of all manufacturing methods",
+    "fields": {
+      "Title": "Manufacturing Processes for Engineering Materials (6th Ed.)",
+      "Author(s)": "Serope Kalpakjian, Steven Schmid",
+      "Focus": "Overview of all manufacturing methods"
+    }
+  },
+  {
+    "id": "resource-machining-and-manufacturing-fundamentals-of-machining-and-machine-tools-3rd-ed",
+    "title": "Fundamentals of Machining and Machine Tools (3rd Ed.)",
+    "category": "Machining and Manufacturing",
+    "url": "",
+    "description": "Geoffrey Boothroyd, Winston A. Knight | Traditional and CNC machining processes",
+    "fields": {
+      "Title": "Fundamentals of Machining and Machine Tools (3rd Ed.)",
+      "Author(s)": "Geoffrey Boothroyd, Winston A. Knight",
+      "Focus": "Traditional and CNC machining processes"
+    }
+  },
+  {
+    "id": "resource-forums-and-communities-cnczone",
+    "title": "CNCzone",
+    "category": "Forums and Communities",
+    "url": "https://cnczone.com",
+    "description": "cnczone.com | All CNC topics, DIY to industrial | 500k+",
+    "fields": {
+      "Platform": "CNCzone",
+      "URL": "cnczone.com",
+      "Focus": "All CNC topics, DIY to industrial",
+      "Active Users": "500k+"
+    }
+  },
+  {
+    "id": "resource-forums-and-communities-practical-machinist",
+    "title": "Practical Machinist",
+    "category": "Forums and Communities",
+    "url": "https://practicalmachinist.com",
+    "description": "practicalmachinist.com | Manual and CNC machining, professional | 300k+",
+    "fields": {
+      "Platform": "Practical Machinist",
+      "URL": "practicalmachinist.com",
+      "Focus": "Manual and CNC machining, professional",
+      "Active Users": "300k+"
+    }
+  },
+  {
+    "id": "resource-forums-and-communities-linuxcnc-forum",
+    "title": "LinuxCNC Forum",
+    "category": "Forums and Communities",
+    "url": "https://forum.linuxcnc.org",
+    "description": "forum.linuxcnc.org | LinuxCNC software, HAL, hardware | 50k+",
+    "fields": {
+      "Platform": "LinuxCNC Forum",
+      "URL": "forum.linuxcnc.org",
+      "Focus": "LinuxCNC software, HAL, hardware",
+      "Active Users": "50k+"
+    }
+  },
+  {
+    "id": "resource-forums-and-communities-r-cnc-reddit",
+    "title": "r/CNC (Reddit)",
+    "category": "Forums and Communities",
+    "url": "https://reddit.com/r/CNC",
+    "description": "reddit.com/r/CNC | Projects, troubleshooting, beginner-friendly | 100k+",
+    "fields": {
+      "Platform": "r/CNC (Reddit)",
+      "URL": "reddit.com/r/CNC",
+      "Focus": "Projects, troubleshooting, beginner-friendly",
+      "Active Users": "100k+"
+    }
+  },
+  {
+    "id": "resource-forums-and-communities-r-hobbycnc-reddit",
+    "title": "r/hobbycnc (Reddit)",
+    "category": "Forums and Communities",
+    "url": "https://reddit.com/r/hobbycnc",
+    "description": "reddit.com/r/hobbycnc | DIY CNC routers, 3D printers | 70k+",
+    "fields": {
+      "Platform": "r/hobbycnc (Reddit)",
+      "URL": "reddit.com/r/hobbycnc",
+      "Focus": "DIY CNC routers, 3D printers",
+      "Active Users": "70k+"
+    }
+  },
+  {
+    "id": "resource-forums-and-communities-buildyourcnc-forum",
+    "title": "BuildYourCNC Forum",
+    "category": "Forums and Communities",
+    "url": "https://buildyourcnc.com/forum",
+    "description": "buildyourcnc.com/forum | DIY CNC kits, community support | 20k+",
+    "fields": {
+      "Platform": "BuildYourCNC Forum",
+      "URL": "buildyourcnc.com/forum",
+      "Focus": "DIY CNC kits, community support",
+      "Active Users": "20k+"
+    }
+  },
+  {
+    "id": "resource-youtube-channels-nyc-cnc",
+    "title": "NYC CNC",
+    "category": "YouTube Channels",
+    "url": "",
+    "description": "600k+ | CNC milling, shop projects, tool reviews | Beginners to intermediate",
+    "fields": {
+      "Channel": "NYC CNC",
+      "Subscribers": "600k+",
+      "Focus": "CNC milling, shop projects, tool reviews",
+      "Recommended For": "Beginners to intermediate"
+    }
+  },
+  {
+    "id": "resource-youtube-channels-tormach",
+    "title": "Tormach",
+    "category": "YouTube Channels",
+    "url": "",
+    "description": "100k+ | CNC mills, software tutorials, techniques | PCNC users, general CNC",
+    "fields": {
+      "Channel": "Tormach",
+      "Subscribers": "100k+",
+      "Focus": "CNC mills, software tutorials, techniques",
+      "Recommended For": "PCNC users, general CNC"
+    }
+  },
+  {
+    "id": "resource-youtube-channels-this-old-tony",
+    "title": "This Old Tony",
+    "category": "YouTube Channels",
+    "url": "https://1.5M+",
+    "description": "1.5M+ | Manual machining, CNC, humor | Beginners, entertainment + education",
+    "fields": {
+      "Channel": "This Old Tony",
+      "Subscribers": "1.5M+",
+      "Focus": "Manual machining, CNC, humor",
+      "Recommended For": "Beginners, entertainment + education"
+    }
+  },
+  {
+    "id": "resource-youtube-channels-clickspring",
+    "title": "Clickspring",
+    "category": "YouTube Channels",
+    "url": "https://1.2M+",
+    "description": "1.2M+ | Precision clockmaking, machining art | Inspiration, precision techniques",
+    "fields": {
+      "Channel": "Clickspring",
+      "Subscribers": "1.2M+",
+      "Focus": "Precision clockmaking, machining art",
+      "Recommended For": "Inspiration, precision techniques"
+    }
+  },
+  {
+    "id": "resource-youtube-channels-abom79",
+    "title": "Abom79",
+    "category": "YouTube Channels",
+    "url": "",
+    "description": "800k+ | Manual machining, tool grinding, repair | Traditional machining skills",
+    "fields": {
+      "Channel": "Abom79",
+      "Subscribers": "800k+",
+      "Focus": "Manual machining, tool grinding, repair",
+      "Recommended For": "Traditional machining skills"
+    }
+  },
+  {
+    "id": "resource-youtube-channels-joe-pieczynski",
+    "title": "Joe Pieczynski",
+    "category": "YouTube Channels",
+    "url": "",
+    "description": "400k+ | Inspection, metrology, quality control | Measurement techniques",
+    "fields": {
+      "Channel": "Joe Pieczynski",
+      "Subscribers": "400k+",
+      "Focus": "Inspection, metrology, quality control",
+      "Recommended For": "Measurement techniques"
+    }
+  },
+  {
+    "id": "resource-youtube-channels-winston-moy",
+    "title": "Winston Moy",
+    "category": "YouTube Channels",
+    "url": "",
+    "description": "300k+ | CNC projects, tool reviews, DIY | Hobbyists, practical projects",
+    "fields": {
+      "Channel": "Winston Moy",
+      "Subscribers": "300k+",
+      "Focus": "CNC projects, tool reviews, DIY",
+      "Recommended For": "Hobbyists, practical projects"
+    }
+  },
+  {
+    "id": "resource-youtube-channels-edge-precision",
+    "title": "Edge Precision",
+    "category": "YouTube Channels",
+    "url": "",
+    "description": "200k+ | Advanced machining, CAM programming | Intermediate to advanced",
+    "fields": {
+      "Channel": "Edge Precision",
+      "Subscribers": "200k+",
+      "Focus": "Advanced machining, CAM programming",
+      "Recommended For": "Intermediate to advanced"
+    }
+  },
+  {
+    "id": "resource-cad-cam-software-tutorials-fusion-360",
+    "title": "Fusion 360",
+    "category": "CAD/CAM Software Tutorials",
+    "url": "https://autodesk.com/products/fusion-360/learn",
+    "description": "autodesk.com/products/fusion-360/learn | YouTube: Autodesk Fusion 360, Lars Christensen",
+    "fields": {
+      "Software": "Fusion 360",
+      "Official Tutorials": "autodesk.com/products/fusion-360/learn",
+      "Community Resources": "YouTube: Autodesk Fusion 360, Lars Christensen"
+    }
+  },
+  {
+    "id": "resource-cad-cam-software-tutorials-freecad",
+    "title": "FreeCAD",
+    "category": "CAD/CAM Software Tutorials",
+    "url": "https://wiki.freecadweb.org",
+    "description": "wiki.freecadweb.org | YouTube: Joko Engineering, Adventures in Creation",
+    "fields": {
+      "Software": "FreeCAD",
+      "Official Tutorials": "wiki.freecadweb.org",
+      "Community Resources": "YouTube: Joko Engineering, Adventures in Creation"
+    }
+  },
+  {
+    "id": "resource-cad-cam-software-tutorials-solidworks",
+    "title": "SolidWorks",
+    "category": "CAD/CAM Software Tutorials",
+    "url": "https://solidworks.com/support/learn",
+    "description": "solidworks.com/support/learn | LinkedIn Learning, GrabCAD Tutorials",
+    "fields": {
+      "Software": "SolidWorks",
+      "Official Tutorials": "solidworks.com/support/learn",
+      "Community Resources": "LinkedIn Learning, GrabCAD Tutorials"
+    }
+  },
+  {
+    "id": "resource-cad-cam-software-tutorials-inkscape-2d",
+    "title": "Inkscape (2D)",
+    "category": "CAD/CAM Software Tutorials",
+    "url": "https://inkscape.org/learn",
+    "description": "inkscape.org/learn | YouTube: Logos By Nick, TJ FREE",
+    "fields": {
+      "Software": "Inkscape (2D)",
+      "Official Tutorials": "inkscape.org/learn",
+      "Community Resources": "YouTube: Logos By Nick, TJ FREE"
+    }
+  },
+  {
+    "id": "resource-cad-cam-software-tutorials-f-engrave",
+    "title": "F-Engrave",
+    "category": "CAD/CAM Software Tutorials",
+    "url": "https://scorchworks.com/Fengrave/fengrave.html",
+    "description": "scorchworks.com/Fengrave/fengrave.html | V-carving, engravings (free software)",
+    "fields": {
+      "Software": "F-Engrave",
+      "Official Tutorials": "scorchworks.com/Fengrave/fengrave.html",
+      "Community Resources": "V-carving, engravings (free software)"
+    }
+  },
+  {
+    "id": "resource-free-online-references-engineers-edge",
+    "title": "Engineers Edge",
+    "category": "Free Online References",
+    "url": "https://engineersedge.com",
+    "description": "engineersedge.com | Formulas, conversions, material properties",
+    "fields": {
+      "Resource": "Engineers Edge",
+      "URL": "engineersedge.com",
+      "Content": "Formulas, conversions, material properties"
+    }
+  },
+  {
+    "id": "resource-free-online-references-efunda",
+    "title": "Efunda",
+    "category": "Free Online References",
+    "url": "https://efunda.com",
+    "description": "efunda.com | Engineering fundamentals, calculators",
+    "fields": {
+      "Resource": "Efunda",
+      "URL": "efunda.com",
+      "Content": "Engineering fundamentals, calculators"
+    }
+  },
+  {
+    "id": "resource-free-online-references-zeus-precision-charts",
+    "title": "Zeus Precision Charts",
+    "category": "Free Online References",
+    "url": "https://zeusinc.com/reference-material",
+    "description": "zeusinc.com/reference-material | Wire gauge charts, material properties (PDF)",
+    "fields": {
+      "Resource": "Zeus Precision Charts",
+      "URL": "zeusinc.com/reference-material",
+      "Content": "Wire gauge charts, material properties (PDF)"
+    }
+  },
+  {
+    "id": "resource-free-online-references-machinist-s-calculator",
+    "title": "Machinist's Calculator",
+    "category": "Free Online References",
+    "url": "https://machinistcalculator.com",
+    "description": "machinistcalculator.com | Feeds/speeds, thread data, bolt torque",
+    "fields": {
+      "Resource": "Machinist's Calculator",
+      "URL": "machinistcalculator.com",
+      "Content": "Feeds/speeds, thread data, bolt torque"
+    }
+  },
+  {
+    "id": "resource-free-online-references-little-machine-shop",
+    "title": "Little Machine Shop",
+    "category": "Free Online References",
+    "url": "https://littlemachineshop.com/reference",
+    "description": "littlemachineshop.com/reference | Miniature machine tools, techniques",
+    "fields": {
+      "Resource": "Little Machine Shop",
+      "URL": "littlemachineshop.com/reference",
+      "Content": "Miniature machine tools, techniques"
+    }
+  },
+  {
+    "id": "resource-standards-organizations-iso-international-organization-for-standardization",
+    "title": "ISO (International Organization for Standardization)",
+    "category": "Standards Organizations",
+    "url": "",
+    "description": "Global standards (machinery, safety) | Paid (iso.org)",
+    "fields": {
+      "Organization": "ISO (International Organization for Standardization)",
+      "Focus": "Global standards (machinery, safety)",
+      "Access": "Paid (iso.org)"
+    }
+  },
+  {
+    "id": "resource-standards-organizations-ansi-american-national-standards-institute",
+    "title": "ANSI (American National Standards Institute)",
+    "category": "Standards Organizations",
+    "url": "",
+    "description": "USA standards | Paid (ansi.org)",
+    "fields": {
+      "Organization": "ANSI (American National Standards Institute)",
+      "Focus": "USA standards",
+      "Access": "Paid (ansi.org)"
+    }
+  },
+  {
+    "id": "resource-standards-organizations-nist-national-institute-of-standards-and-technology",
+    "title": "NIST (National Institute of Standards and Technology)",
+    "category": "Standards Organizations",
+    "url": "",
+    "description": "USA measurements, calibration | Free (nist.gov)",
+    "fields": {
+      "Organization": "NIST (National Institute of Standards and Technology)",
+      "Focus": "USA measurements, calibration",
+      "Access": "Free (nist.gov)"
+    }
+  },
+  {
+    "id": "resource-standards-organizations-iec-international-electrotechnical-commission",
+    "title": "IEC (International Electrotechnical Commission)",
+    "category": "Standards Organizations",
+    "url": "",
+    "description": "Electrical standards | Paid (iec.ch)",
+    "fields": {
+      "Organization": "IEC (International Electrotechnical Commission)",
+      "Focus": "Electrical standards",
+      "Access": "Paid (iec.ch)"
+    }
+  },
+  {
+    "id": "resource-standards-organizations-nfpa-national-fire-protection-association",
+    "title": "NFPA (National Fire Protection Association)",
+    "category": "Standards Organizations",
+    "url": "",
+    "description": "Electrical codes (NFPA 79) | Paid (nfpa.org)",
+    "fields": {
+      "Organization": "NFPA (National Fire Protection Association)",
+      "Focus": "Electrical codes (NFPA 79)",
+      "Access": "Paid (nfpa.org)"
+    }
+  },
+  {
+    "id": "resource-free-and-open-source-software-linuxcnc",
+    "title": "LinuxCNC",
+    "category": "Free and Open-Source Software",
+    "url": "",
+    "description": "CNC Control | Linux | Advanced users, custom machines",
+    "fields": {
+      "Software": "LinuxCNC",
+      "Type": "CNC Control",
+      "Platform": "Linux",
+      "Best For": "Advanced users, custom machines"
+    }
+  },
+  {
+    "id": "resource-free-and-open-source-software-freecad",
+    "title": "FreeCAD",
+    "category": "Free and Open-Source Software",
+    "url": "",
+    "description": "3D CAD | Win/Mac/Linux | Parametric modeling, open-source projects",
+    "fields": {
+      "Software": "FreeCAD",
+      "Type": "3D CAD",
+      "Platform": "Win/Mac/Linux",
+      "Best For": "Parametric modeling, open-source projects"
+    }
+  },
+  {
+    "id": "resource-free-and-open-source-software-inkscape",
+    "title": "Inkscape",
+    "category": "Free and Open-Source Software",
+    "url": "",
+    "description": "2D Vector | Win/Mac/Linux | V-carving, 2D design, laser cutting",
+    "fields": {
+      "Software": "Inkscape",
+      "Type": "2D Vector",
+      "Platform": "Win/Mac/Linux",
+      "Best For": "V-carving, 2D design, laser cutting"
+    }
+  },
+  {
+    "id": "resource-free-and-open-source-software-dxf2gcode",
+    "title": "dxf2gcode",
+    "category": "Free and Open-Source Software",
+    "url": "",
+    "description": "CAM (2D) | Win/Linux | 2D profiles, DXF to G-code",
+    "fields": {
+      "Software": "dxf2gcode",
+      "Type": "CAM (2D)",
+      "Platform": "Win/Linux",
+      "Best For": "2D profiles, DXF to G-code"
+    }
+  },
+  {
+    "id": "resource-free-and-open-source-software-pycam",
+    "title": "PyCAM",
+    "category": "Free and Open-Source Software",
+    "url": "",
+    "description": "CAM (3D) | Win/Mac/Linux | 3D toolpaths, STL to G-code",
+    "fields": {
+      "Software": "PyCAM",
+      "Type": "CAM (3D)",
+      "Platform": "Win/Mac/Linux",
+      "Best For": "3D toolpaths, STL to G-code"
+    }
+  },
+  {
+    "id": "resource-free-and-open-source-software-bcnc",
+    "title": "bCNC",
+    "category": "Free and Open-Source Software",
+    "url": "",
+    "description": "G-code Sender | Win/Mac/Linux | GRBL control, simple interface",
+    "fields": {
+      "Software": "bCNC",
+      "Type": "G-code Sender",
+      "Platform": "Win/Mac/Linux",
+      "Best For": "GRBL control, simple interface"
+    }
+  },
+  {
+    "id": "resource-free-and-open-source-software-universal-gcode-sender",
+    "title": "Universal Gcode Sender",
+    "category": "Free and Open-Source Software",
+    "url": "",
+    "description": "G-code Sender | Win/Mac/Linux | GRBL/TinyG, real-time visualization",
+    "fields": {
+      "Software": "Universal Gcode Sender",
+      "Type": "G-code Sender",
+      "Platform": "Win/Mac/Linux",
+      "Best For": "GRBL/TinyG, real-time visualization"
+    }
+  },
+  {
+    "id": "resource-commercial-software-free-trials-available-fusion-360",
+    "title": "Fusion 360",
+    "category": "Commercial Software (Free Trials Available)",
+    "url": "",
+    "description": "CAD/CAM | Free (personal use) | Cloud-based, full-featured CAM",
+    "fields": {
+      "Software": "Fusion 360",
+      "Type": "CAD/CAM",
+      "Trial Length": "Free (personal use)",
+      "Notes": "Cloud-based, full-featured CAM"
+    }
+  },
+  {
+    "id": "resource-commercial-software-free-trials-available-vectric-vcarve",
+    "title": "Vectric VCarve",
+    "category": "Commercial Software (Free Trials Available)",
+    "url": "",
+    "description": "CAM (2.5D) | 30 days | Wood carving, sign-making",
+    "fields": {
+      "Software": "Vectric VCarve",
+      "Type": "CAM (2.5D)",
+      "Trial Length": "30 days",
+      "Notes": "Wood carving, sign-making"
+    }
+  },
+  {
+    "id": "resource-commercial-software-free-trials-available-aspire",
+    "title": "Aspire",
+    "category": "Commercial Software (Free Trials Available)",
+    "url": "",
+    "description": "CAM (3D relief) | 30 days | Advanced 3D carving (by Vectric)",
+    "fields": {
+      "Software": "Aspire",
+      "Type": "CAM (3D relief)",
+      "Trial Length": "30 days",
+      "Notes": "Advanced 3D carving (by Vectric)"
+    }
+  },
+  {
+    "id": "resource-commercial-software-free-trials-available-solidcam",
+    "title": "SolidCAM",
+    "category": "Commercial Software (Free Trials Available)",
+    "url": "",
+    "description": "CAM | 30 days | Professional CAM for SolidWorks",
+    "fields": {
+      "Software": "SolidCAM",
+      "Type": "CAM",
+      "Trial Length": "30 days",
+      "Notes": "Professional CAM for SolidWorks"
+    }
+  },
+  {
+    "id": "resource-commercial-software-free-trials-available-mastercam",
+    "title": "Mastercam",
+    "category": "Commercial Software (Free Trials Available)",
+    "url": "",
+    "description": "CAM | Contact for demo | Industry-standard, expensive",
+    "fields": {
+      "Software": "Mastercam",
+      "Type": "CAM",
+      "Trial Length": "Contact for demo",
+      "Notes": "Industry-standard, expensive"
+    }
+  },
+  {
+    "id": "resource-recommended-suppliers-books-and-resources-industrial-press",
+    "title": "Industrial Press",
+    "category": "Recommended Suppliers (Books and Resources)",
+    "url": "https://industrialpress.com",
+    "description": "Technical books, Machinery's Handbook | industrialpress.com | Publisher of machining references",
+    "fields": {
+      "Vendor": "Industrial Press",
+      "Products": "Technical books, Machinery's Handbook",
+      "URL": "industrialpress.com",
+      "Notes": "Publisher of machining references"
+    }
+  },
+  {
+    "id": "resource-recommended-suppliers-books-and-resources-sme-society-of-manufacturing-engineers",
+    "title": "SME (Society of Manufacturing Engineers)",
+    "category": "Recommended Suppliers (Books and Resources)",
+    "url": "https://sme.org",
+    "description": "Books, videos, training | sme.org | Professional development, courses",
+    "fields": {
+      "Vendor": "SME (Society of Manufacturing Engineers)",
+      "Products": "Books, videos, training",
+      "URL": "sme.org",
+      "Notes": "Professional development, courses"
+    }
+  },
+  {
+    "id": "resource-recommended-suppliers-books-and-resources-tooling-u-sme",
+    "title": "Tooling U-SME",
+    "category": "Recommended Suppliers (Books and Resources)",
+    "url": "https://toolingu.com",
+    "description": "Online training courses | toolingu.com | Structured learning paths (paid)",
+    "fields": {
+      "Vendor": "Tooling U-SME",
+      "Products": "Online training courses",
+      "URL": "toolingu.com",
+      "Notes": "Structured learning paths (paid)"
+    }
+  },
+  {
+    "id": "resource-recommended-suppliers-books-and-resources-amazon",
+    "title": "Amazon",
+    "category": "Recommended Suppliers (Books and Resources)",
+    "url": "https://amazon.com",
+    "description": "All technical books | amazon.com | Often cheaper than direct publishers",
+    "fields": {
+      "Vendor": "Amazon",
+      "Products": "All technical books",
+      "URL": "amazon.com",
+      "Notes": "Often cheaper than direct publishers"
+    }
+  },
+  {
+    "id": "resource-recommended-suppliers-books-and-resources-thriftbooks",
+    "title": "ThriftBooks",
+    "category": "Recommended Suppliers (Books and Resources)",
+    "url": "https://thriftbooks.com",
+    "description": "Used technical books | thriftbooks.com | Budget option for older editions",
+    "fields": {
+      "Vendor": "ThriftBooks",
+      "Products": "Used technical books",
+      "URL": "thriftbooks.com",
+      "Notes": "Budget option for older editions"
+    }
+  },
+  {
+    "id": "resource-podcasts-the-manufacturing-show",
+    "title": "The Manufacturing Show",
+    "category": "Podcasts",
+    "url": "",
+    "description": "Multiple hosts | Industry trends, technology | Weekly",
+    "fields": {
+      "Podcast": "The Manufacturing Show",
+      "Host(s)": "Multiple hosts",
+      "Focus": "Industry trends, technology",
+      "Frequency": "Weekly"
+    }
+  },
+  {
+    "id": "resource-podcasts-making-chips",
+    "title": "Making Chips",
+    "category": "Podcasts",
+    "url": "",
+    "description": "Jim Carr, Jason Zenger | Manufacturing stories, CNC | Weekly",
+    "fields": {
+      "Podcast": "Making Chips",
+      "Host(s)": "Jim Carr, Jason Zenger",
+      "Focus": "Manufacturing stories, CNC",
+      "Frequency": "Weekly"
+    }
+  },
+  {
+    "id": "resource-podcasts-the-fabricator-podcast",
+    "title": "The Fabricator Podcast",
+    "category": "Podcasts",
+    "url": "",
+    "description": "The Fabricator staff | Metal fabrication, cutting | Monthly",
+    "fields": {
+      "Podcast": "The Fabricator Podcast",
+      "Host(s)": "The Fabricator staff",
+      "Focus": "Metal fabrication, cutting",
+      "Frequency": "Monthly"
+    }
+  },
+  {
+    "id": "resource-documentary-series-how-it-s-made",
+    "title": "How It's Made",
+    "category": "Documentary Series",
+    "url": "",
+    "description": "YouTube/TV | Manufacturing processes (consumer products)",
+    "fields": {
+      "Series": "How It's Made",
+      "Platform": "YouTube/TV",
+      "Content": "Manufacturing processes (consumer products)"
+    }
+  },
+  {
+    "id": "resource-documentary-series-ultimate-factories",
+    "title": "Ultimate Factories",
+    "category": "Documentary Series",
+    "url": "",
+    "description": "National Geographic | Large-scale industrial manufacturing",
+    "fields": {
+      "Series": "Ultimate Factories",
+      "Platform": "National Geographic",
+      "Content": "Large-scale industrial manufacturing"
+    }
+  },
+  {
+    "id": "resource-documentary-series-the-secret-life-of-machines",
+    "title": "The Secret Life of Machines",
+    "category": "Documentary Series",
+    "url": "",
+    "description": "YouTube | Mechanisms explained (vintage, excellent)",
+    "fields": {
+      "Series": "The Secret Life of Machines",
+      "Platform": "YouTube",
+      "Content": "Mechanisms explained (vintage, excellent)"
+    }
+  }
+]

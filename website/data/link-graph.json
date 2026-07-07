@@ -1,0 +1,6696 @@
+{
+  "nodes": [
+    {
+      "id": "appendix-glossary",
+      "label": "Glossary",
+      "kind": "appendix",
+      "group": "Appendices"
+    },
+    {
+      "id": "appendix-resources",
+      "label": "Recommended Resources",
+      "kind": "appendix",
+      "group": "Appendices"
+    },
+    {
+      "id": "module-01",
+      "label": "Module 01: Mechanical Frame and Structure",
+      "kind": "module",
+      "group": "Foundation Modules"
+    },
+    {
+      "id": "module-02",
+      "label": "Module 02: Vertical Axis and Z-Stage",
+      "kind": "module",
+      "group": "Foundation Modules"
+    },
+    {
+      "id": "module-03",
+      "label": "Module 03: Linear Motion Systems",
+      "kind": "module",
+      "group": "Foundation Modules"
+    },
+    {
+      "id": "module-04",
+      "label": "Module 04: Control Electronics",
+      "kind": "module",
+      "group": "Foundation Modules"
+    },
+    {
+      "id": "module-05",
+      "label": "Module 05: Plasma Cutting",
+      "kind": "module",
+      "group": "Tool-Specific Modules"
+    },
+    {
+      "id": "module-06",
+      "label": "Module 06: Spindle and Rotary Tools",
+      "kind": "module",
+      "group": "Tool-Specific Modules"
+    },
+    {
+      "id": "module-07",
+      "label": "Module 07: Fiber Laser",
+      "kind": "module",
+      "group": "Tool-Specific Modules"
+    },
+    {
+      "id": "module-08",
+      "label": "Module 08: Waterjet Cutting",
+      "kind": "module",
+      "group": "Tool-Specific Modules"
+    },
+    {
+      "id": "module-09",
+      "label": "Module 09: Pick and Place Robot",
+      "kind": "module",
+      "group": "Advanced and Hybrid Systems"
+    },
+    {
+      "id": "module-10",
+      "label": "Module 10: Robotic Arm",
+      "kind": "module",
+      "group": "Advanced and Hybrid Systems"
+    },
+    {
+      "id": "module-11",
+      "label": "Module 11: Large-Format FDM 3D Printing",
+      "kind": "module",
+      "group": "Advanced and Hybrid Systems"
+    },
+    {
+      "id": "module-12",
+      "label": "Module 12: Water-Jet Guided Laser Cutting",
+      "kind": "module",
+      "group": "Advanced and Hybrid Systems"
+    },
+    {
+      "id": "module-13",
+      "label": "Module 13: EMI/EMC for Motion Control",
+      "kind": "module",
+      "group": "Control, Software, and Process Engineering"
+    },
+    {
+      "id": "module-14",
+      "label": "Module 14: LinuxCNC HAL and Real-Time Control",
+      "kind": "module",
+      "group": "Control, Software, and Process Engineering"
+    },
+    {
+      "id": "module-15",
+      "label": "Module 15: G-Code Standards and Post-Processing",
+      "kind": "module",
+      "group": "Control, Software, and Process Engineering"
+    },
+    {
+      "id": "module-16",
+      "label": "Module 16: CAD Design for Manufacturable Parts",
+      "kind": "module",
+      "group": "Control, Software, and Process Engineering"
+    },
+    {
+      "id": "module-17",
+      "label": "Module 17: Advanced Materials: Composites and Ceramics",
+      "kind": "module",
+      "group": "Control, Software, and Process Engineering"
+    },
+    {
+      "id": "module-18",
+      "label": "Module 18: Industry 4.0 for CNC Manufacturing",
+      "kind": "module",
+      "group": "Control, Software, and Process Engineering"
+    },
+    {
+      "id": "module-19",
+      "label": "Module 19: Advanced Control Systems",
+      "kind": "module",
+      "group": "Control, Software, and Process Engineering"
+    },
+    {
+      "id": "module-20",
+      "label": "Module 20: Feeds and Speeds",
+      "kind": "module",
+      "group": "Control, Software, and Process Engineering"
+    },
+    {
+      "id": "module-21",
+      "label": "Module 21: Metrology and Precision Measurement",
+      "kind": "module",
+      "group": "Professional and Business Modules"
+    },
+    {
+      "id": "module-22",
+      "label": "Module 22: Quality Management Systems (QMS)",
+      "kind": "module",
+      "group": "Professional and Business Modules"
+    },
+    {
+      "id": "module-23",
+      "label": "Module 23: Shop Organization and Management",
+      "kind": "module",
+      "group": "Professional and Business Modules"
+    },
+    {
+      "id": "module-24",
+      "label": "Module 24: L.E.A.N. Strategies for CNC Manufacturing",
+      "kind": "module",
+      "group": "Professional and Business Modules"
+    },
+    {
+      "id": "module-25",
+      "label": "Module 25: Work-Life Balance in CNC Manufacturing",
+      "kind": "module",
+      "group": "Professional and Business Modules"
+    },
+    {
+      "id": "module-26",
+      "label": "Module 26: CNC Business Ownership and Management",
+      "kind": "module",
+      "group": "Professional and Business Modules"
+    },
+    {
+      "id": "term-backlash",
+      "label": "Backlash",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-ball-screw",
+      "label": "Ball Screw",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-bearing-types",
+      "label": "Bearing Types",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-cantilever",
+      "label": "Cantilever",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-compliance",
+      "label": "Compliance",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-critical-damping",
+      "label": "Critical Damping",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-datum",
+      "label": "Datum",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-degrees-of-freedom-dof",
+      "label": "Degrees of Freedom (DOF)",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-dynamic-load-rating-c",
+      "label": "Dynamic Load Rating (C)",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-elastic-modulus-young-s-modulus",
+      "label": "Elastic Modulus (Young's Modulus)",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-fastener-preload",
+      "label": "Fastener Preload",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-gantry",
+      "label": "Gantry",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-hysteresis",
+      "label": "Hysteresis",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-inertia-moment-of",
+      "label": "Inertia (Moment of)",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-kerf",
+      "label": "Kerf",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-kinematic-coupling",
+      "label": "Kinematic Coupling",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-lead",
+      "label": "Lead",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-linear-guide-profiled-rail",
+      "label": "Linear Guide (Profiled Rail)",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-load-capacity",
+      "label": "Load Capacity",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-natural-frequency",
+      "label": "Natural Frequency",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-pitch",
+      "label": "Pitch",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-preload",
+      "label": "Preload",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-rack-and-pinion",
+      "label": "Rack and Pinion",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-repeatability",
+      "label": "Repeatability",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-resolution",
+      "label": "Resolution",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-runout-tir",
+      "label": "Runout (TIR)",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-static-load-rating-c",
+      "label": "Static Load Rating (C\u2080)",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-stiffness",
+      "label": "Stiffness",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-straightness",
+      "label": "Straightness",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-structural-loop",
+      "label": "Structural Loop",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-thermal-growth",
+      "label": "Thermal Growth",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-tramming",
+      "label": "Tramming",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-torsional-rigidity",
+      "label": "Torsional Rigidity",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-whipping",
+      "label": "Whipping",
+      "kind": "term",
+      "group": "Mechanical Design Terms"
+    },
+    {
+      "id": "term-ac-servo-motor",
+      "label": "AC Servo Motor",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-absolute-encoder",
+      "label": "Absolute Encoder",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-bus-voltage",
+      "label": "Bus Voltage",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-commutation",
+      "label": "Commutation",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-current-loop",
+      "label": "Current Loop",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-duty-cycle",
+      "label": "Duty Cycle",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-electromagnetic-compatibility-emc",
+      "label": "Electromagnetic Compatibility (EMC)",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-electromagnetic-interference-emi",
+      "label": "Electromagnetic Interference (EMI)",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-encoder",
+      "label": "Encoder",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-ethercat",
+      "label": "EtherCAT",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-field-oriented-control-foc",
+      "label": "Field-Oriented Control (FOC)",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-grounding",
+      "label": "Grounding",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-hall-effect-sensor",
+      "label": "Hall Effect Sensor",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-holding-torque",
+      "label": "Holding Torque",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-incremental-encoder",
+      "label": "Incremental Encoder",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-inductance",
+      "label": "Inductance",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-inrush-current",
+      "label": "Inrush Current",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-isolation-optical",
+      "label": "Isolation (Optical)",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-jerk",
+      "label": "Jerk",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-latency",
+      "label": "Latency",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-microstepping",
+      "label": "Microstepping",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-mosfet",
+      "label": "MOSFET",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-optical-isolation",
+      "label": "Optical Isolation",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-pid-control",
+      "label": "PID Control",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-position-loop",
+      "label": "Position Loop",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-power-factor",
+      "label": "Power Factor",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-pwm-pulse-width-modulation",
+      "label": "PWM (Pulse Width Modulation)",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-regenerative-braking",
+      "label": "Regenerative Braking",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-resolver",
+      "label": "Resolver",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-rms-root-mean-square",
+      "label": "RMS (Root Mean Square)",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-servo",
+      "label": "Servo",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-shielding",
+      "label": "Shielding",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-slip",
+      "label": "Slip",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-stepper-motor",
+      "label": "Stepper Motor",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-transistor-ratings",
+      "label": "Transistor Ratings",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-trajectory-planning",
+      "label": "Trajectory Planning",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-tuning",
+      "label": "Tuning",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-velocity-loop",
+      "label": "Velocity Loop",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-vfd-variable-frequency-drive",
+      "label": "VFD (Variable Frequency Drive)",
+      "kind": "term",
+      "group": "Electrical and Control Terms"
+    },
+    {
+      "id": "term-absolute-positioning-g90",
+      "label": "Absolute Positioning (G90)",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-arc-circular-interpolation",
+      "label": "Arc (Circular Interpolation)",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-automatic-tool-changer-atc",
+      "label": "Automatic Tool Changer (ATC)",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-axis-naming",
+      "label": "Axis Naming",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-canned-cycles",
+      "label": "Canned Cycles",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-compensation",
+      "label": "Compensation",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-contour-error-following-error",
+      "label": "Contour Error (Following Error)",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-coordinate-system",
+      "label": "Coordinate System",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-dry-run",
+      "label": "Dry Run",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-dxf-drawing-exchange-format",
+      "label": "DXF (Drawing Exchange Format)",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-feed-rate",
+      "label": "Feed Rate",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-feed-per-tooth-chipload",
+      "label": "Feed Per Tooth (Chipload)",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-g-code",
+      "label": "G-Code",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-hal-hardware-abstraction-layer",
+      "label": "HAL (Hardware Abstraction Layer)",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-home-switch",
+      "label": "Home Switch",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-incremental-positioning-g91",
+      "label": "Incremental Positioning (G91)",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-interpolation",
+      "label": "Interpolation",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-inverse-kinematics",
+      "label": "Inverse Kinematics",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-jog-mode",
+      "label": "Jog Mode",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-look-ahead",
+      "label": "Look-Ahead",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-m-code",
+      "label": "M-Code",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-machine-coordinates",
+      "label": "Machine Coordinates",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-mdi-manual-data-input",
+      "label": "MDI (Manual Data Input)",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-modal",
+      "label": "Modal",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-offsets",
+      "label": "Offsets",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-override",
+      "label": "Override",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-parametric-programming",
+      "label": "Parametric Programming",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-post-processor",
+      "label": "Post-Processor",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-probe-touch-probe",
+      "label": "Probe (Touch Probe)",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-program-stop",
+      "label": "Program Stop",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-rapid-g00",
+      "label": "Rapid (G00)",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-real-time",
+      "label": "Real-Time",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-scaling-g51",
+      "label": "Scaling (G51)",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-single-block",
+      "label": "Single Block",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-spindle-synchronization",
+      "label": "Spindle Synchronization",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-subprogram",
+      "label": "Subprogram",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-tool-offset",
+      "label": "Tool Offset",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-tool-table",
+      "label": "Tool Table",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-trajectory-planner",
+      "label": "Trajectory Planner",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-work-offset-g54-g59",
+      "label": "Work Offset (G54-G59)",
+      "kind": "term",
+      "group": "CNC Control and Programming Terms"
+    },
+    {
+      "id": "term-abrasive-waterjet-awj",
+      "label": "Abrasive Waterjet (AWJ)",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "term-adaptive-clearing",
+      "label": "Adaptive Clearing",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-built-up-edge-bue",
+      "label": "Built-Up Edge (BUE)",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-chip-evacuation",
+      "label": "Chip Evacuation",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-chipload",
+      "label": "Chipload",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-chatter",
+      "label": "Chatter",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-climb-milling-down-milling",
+      "label": "Climb Milling (Down Milling)",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-conventional-milling-up-milling",
+      "label": "Conventional Milling (Up Milling)",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-coolant",
+      "label": "Coolant",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-cutter-compensation",
+      "label": "Cutter Compensation",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-cutting-force",
+      "label": "Cutting Force",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-cutting-speed-vc",
+      "label": "Cutting Speed (Vc)",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-depth-of-cut-doc",
+      "label": "Depth of Cut (DOC)",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-edm-electrical-discharge-machining",
+      "label": "EDM (Electrical Discharge Machining)",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-feeds-and-speeds",
+      "label": "Feeds and Speeds",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-fixture",
+      "label": "Fixture",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-flood-coolant",
+      "label": "Flood Coolant",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-garnet-abrasive",
+      "label": "Garnet (Abrasive)",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-heat-affected-zone-haz",
+      "label": "Heat-Affected Zone (HAZ)",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "term-high-speed-machining-hsm",
+      "label": "High-Speed Machining (HSM)",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-lead-in-lead-out",
+      "label": "Lead-In/Lead-Out",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-material-removal-rate-mrr",
+      "label": "Material Removal Rate (MRR)",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-minimum-quantity-lubrication-mql",
+      "label": "Minimum Quantity Lubrication (MQL)",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-nesting",
+      "label": "Nesting",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-pierce",
+      "label": "Pierce",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-power-spindle",
+      "label": "Power (Spindle)",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-radial-immersion",
+      "label": "Radial Immersion",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-roughing",
+      "label": "Roughing",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-scallop-height",
+      "label": "Scallop Height",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-speeds-and-feeds",
+      "label": "Speeds and Feeds",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-sfm-surface-feet-per-minute",
+      "label": "SFM (Surface Feet per Minute)",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-stepover",
+      "label": "Stepover",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-surface-finish-ra",
+      "label": "Surface Finish (Ra)",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-through-spindle-coolant-tsc",
+      "label": "Through-Spindle Coolant (TSC)",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-trochoidal-milling",
+      "label": "Trochoidal Milling",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-width-of-cut-woc",
+      "label": "Width of Cut (WOC)",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-work-hardening",
+      "label": "Work Hardening",
+      "kind": "term",
+      "group": "Machining and Cutting Terms"
+    },
+    {
+      "id": "term-alloy",
+      "label": "Alloy",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-annealing",
+      "label": "Annealing",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-austenite",
+      "label": "Austenite",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-carbide-cemented-carbide",
+      "label": "Carbide (Cemented Carbide)",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-case-hardening",
+      "label": "Case Hardening",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-cast-iron",
+      "label": "Cast Iron",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-ferrite",
+      "label": "Ferrite",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-grain-size",
+      "label": "Grain Size",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-hardness",
+      "label": "Hardness",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-heat-treatment",
+      "label": "Heat Treatment",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-high-speed-steel-hss",
+      "label": "High-Speed Steel (HSS)",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-martensite",
+      "label": "Martensite",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-precipitation-hardening",
+      "label": "Precipitation Hardening",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-quenching",
+      "label": "Quenching",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-rockwell-hardness-hrc",
+      "label": "Rockwell Hardness (HRC)",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-stainless-steel",
+      "label": "Stainless Steel",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-temper",
+      "label": "Temper",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-tempering",
+      "label": "Tempering",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-thermal-conductivity",
+      "label": "Thermal Conductivity",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-toughness",
+      "label": "Toughness",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-ultimate-tensile-strength-uts",
+      "label": "Ultimate Tensile Strength (UTS)",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-yield-strength",
+      "label": "Yield Strength",
+      "kind": "term",
+      "group": "Material and Metallurgy Terms"
+    },
+    {
+      "id": "term-arc-flash",
+      "label": "Arc Flash",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-ansi-american-national-standards-institute",
+      "label": "ANSI (American National Standards Institute)",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-ce-marking",
+      "label": "CE Marking",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-confined-space",
+      "label": "Confined Space",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-double-insulation",
+      "label": "Double Insulation",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-e-stop-emergency-stop",
+      "label": "E-Stop (Emergency Stop)",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-enabling-device",
+      "label": "Enabling Device",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-fall-protection",
+      "label": "Fall Protection",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-ground-fault-circuit-interrupter-gfci",
+      "label": "Ground Fault Circuit Interrupter (GFCI)",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-guarding",
+      "label": "Guarding",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-hazard-analysis",
+      "label": "Hazard Analysis",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-interlock",
+      "label": "Interlock",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-iso-international-organization-for-standardization",
+      "label": "ISO (International Organization for Standardization)",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-light-curtain",
+      "label": "Light Curtain",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-lockout-tagout-loto",
+      "label": "Lockout/Tagout (LOTO)",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-machine-guarding",
+      "label": "Machine Guarding",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-nfpa-national-fire-protection-association",
+      "label": "NFPA (National Fire Protection Association)",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-osha-occupational-safety-and-health-administration",
+      "label": "OSHA (Occupational Safety and Health Administration)",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-pel-permissible-exposure-limit",
+      "label": "PEL (Permissible Exposure Limit)",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-performance-level-pl",
+      "label": "Performance Level (PL)",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-ppe-personal-protective-equipment",
+      "label": "PPE (Personal Protective Equipment)",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-residual-current-device-rcd",
+      "label": "Residual Current Device (RCD)",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-risk-assessment",
+      "label": "Risk Assessment",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-safety-category",
+      "label": "Safety Category",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-safety-integrity-level-sil",
+      "label": "Safety Integrity Level (SIL)",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-safety-relay",
+      "label": "Safety Relay",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-two-hand-control",
+      "label": "Two-Hand Control",
+      "kind": "term",
+      "group": "Safety and Regulatory Terms"
+    },
+    {
+      "id": "term-accuracy",
+      "label": "Accuracy",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-autocollimator",
+      "label": "Autocollimator",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-calibration",
+      "label": "Calibration",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-coordinate-measuring-machine-cmm",
+      "label": "Coordinate Measuring Machine (CMM)",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-dial-indicator",
+      "label": "Dial Indicator",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-feeler-gauge",
+      "label": "Feeler Gauge",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-gauge-block-jo-block",
+      "label": "Gauge Block (Jo Block)",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-interferometry-laser",
+      "label": "Interferometry (Laser)",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-micrometer",
+      "label": "Micrometer",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-parallax-error",
+      "label": "Parallax Error",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-precision",
+      "label": "Precision",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-straightedge",
+      "label": "Straightedge",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-surface-plate",
+      "label": "Surface Plate",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-test-indicator-dial-test-indicator",
+      "label": "Test Indicator (Dial Test Indicator)",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-tolerance",
+      "label": "Tolerance",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-traceability",
+      "label": "Traceability",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-vernier-scale",
+      "label": "Vernier Scale",
+      "kind": "term",
+      "group": "Measurement and Metrology Terms"
+    },
+    {
+      "id": "term-assist-gas",
+      "label": "Assist Gas",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "term-beam-divergence",
+      "label": "Beam Divergence",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "term-consumables-plasma",
+      "label": "Consumables (Plasma)",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "term-cutting-height",
+      "label": "Cutting Height",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "term-dross",
+      "label": "Dross",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "term-focal-length",
+      "label": "Focal Length",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "term-hypertherm",
+      "label": "Hypertherm",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "term-kerf-width",
+      "label": "Kerf Width",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "term-nozzle-plasma",
+      "label": "Nozzle (Plasma)",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "term-orifice-waterjet",
+      "label": "Orifice (Waterjet)",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "term-pierce-plasma-laser",
+      "label": "Pierce (Plasma/Laser)",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "term-power-density",
+      "label": "Power Density",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "term-preheat-plasma",
+      "label": "Preheat (Plasma)",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "term-taper-cut-edge",
+      "label": "Taper (Cut Edge)",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "term-thc-torch-height-control",
+      "label": "THC (Torch Height Control)",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "term-transfer-arc",
+      "label": "Transfer Arc",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "term-wavelength",
+      "label": "Wavelength",
+      "kind": "term",
+      "group": "Plasma, Laser, and Waterjet Terms"
+    },
+    {
+      "id": "resource-cnc-fundamentals-cnc-programming-handbook-3rd-ed",
+      "label": "CNC Programming Handbook (3rd Ed.)",
+      "kind": "resource",
+      "group": "CNC Fundamentals"
+    },
+    {
+      "id": "resource-cnc-fundamentals-machinery-s-handbook-31st-ed",
+      "label": "Machinery's Handbook (31st Ed.)",
+      "kind": "resource",
+      "group": "CNC Fundamentals"
+    },
+    {
+      "id": "resource-cnc-fundamentals-cnc-control-setup-for-milling-and-turning",
+      "label": "CNC Control Setup for Milling and Turning",
+      "kind": "resource",
+      "group": "CNC Fundamentals"
+    },
+    {
+      "id": "resource-cnc-fundamentals-build-your-own-cnc-machine",
+      "label": "Build Your Own CNC Machine",
+      "kind": "resource",
+      "group": "CNC Fundamentals"
+    },
+    {
+      "id": "resource-cnc-fundamentals-desktop-cnc-machining",
+      "label": "Desktop CNC Machining",
+      "kind": "resource",
+      "group": "CNC Fundamentals"
+    },
+    {
+      "id": "resource-mechanical-design-and-motion-control-precision-machine-design",
+      "label": "Precision Machine Design",
+      "kind": "resource",
+      "group": "Mechanical Design and Motion Control"
+    },
+    {
+      "id": "resource-mechanical-design-and-motion-control-machine-design-an-integrated-approach-6th-ed",
+      "label": "Machine Design: An Integrated Approach (6th Ed.)",
+      "kind": "resource",
+      "group": "Mechanical Design and Motion Control"
+    },
+    {
+      "id": "resource-mechanical-design-and-motion-control-linear-motion-tips",
+      "label": "Linear Motion Tips",
+      "kind": "resource",
+      "group": "Mechanical Design and Motion Control"
+    },
+    {
+      "id": "resource-mechanical-design-and-motion-control-the-way-things-work",
+      "label": "The Way Things Work",
+      "kind": "resource",
+      "group": "Mechanical Design and Motion Control"
+    },
+    {
+      "id": "resource-electronics-and-control-systems-practical-electronics-for-inventors-4th-ed",
+      "label": "Practical Electronics for Inventors (4th Ed.)",
+      "kind": "resource",
+      "group": "Electronics and Control Systems"
+    },
+    {
+      "id": "resource-electronics-and-control-systems-understanding-plc-programming",
+      "label": "Understanding PLC Programming",
+      "kind": "resource",
+      "group": "Electronics and Control Systems"
+    },
+    {
+      "id": "resource-electronics-and-control-systems-step-and-direction-motor-control",
+      "label": "Step and Direction Motor Control",
+      "kind": "resource",
+      "group": "Electronics and Control Systems"
+    },
+    {
+      "id": "resource-electronics-and-control-systems-electric-motors-and-drives-5th-ed",
+      "label": "Electric Motors and Drives (5th Ed.)",
+      "kind": "resource",
+      "group": "Electronics and Control Systems"
+    },
+    {
+      "id": "resource-machining-and-manufacturing-metal-cutting-theory-and-practice-3rd-ed",
+      "label": "Metal Cutting Theory and Practice (3rd Ed.)",
+      "kind": "resource",
+      "group": "Machining and Manufacturing"
+    },
+    {
+      "id": "resource-machining-and-manufacturing-manufacturing-processes-for-engineering-materials-6th-ed",
+      "label": "Manufacturing Processes for Engineering Materials (6th Ed.)",
+      "kind": "resource",
+      "group": "Machining and Manufacturing"
+    },
+    {
+      "id": "resource-machining-and-manufacturing-fundamentals-of-machining-and-machine-tools-3rd-ed",
+      "label": "Fundamentals of Machining and Machine Tools (3rd Ed.)",
+      "kind": "resource",
+      "group": "Machining and Manufacturing"
+    },
+    {
+      "id": "resource-forums-and-communities-cnczone",
+      "label": "CNCzone",
+      "kind": "resource",
+      "group": "Forums and Communities"
+    },
+    {
+      "id": "resource-forums-and-communities-practical-machinist",
+      "label": "Practical Machinist",
+      "kind": "resource",
+      "group": "Forums and Communities"
+    },
+    {
+      "id": "resource-forums-and-communities-linuxcnc-forum",
+      "label": "LinuxCNC Forum",
+      "kind": "resource",
+      "group": "Forums and Communities"
+    },
+    {
+      "id": "resource-forums-and-communities-r-cnc-reddit",
+      "label": "r/CNC (Reddit)",
+      "kind": "resource",
+      "group": "Forums and Communities"
+    },
+    {
+      "id": "resource-forums-and-communities-r-hobbycnc-reddit",
+      "label": "r/hobbycnc (Reddit)",
+      "kind": "resource",
+      "group": "Forums and Communities"
+    },
+    {
+      "id": "resource-forums-and-communities-buildyourcnc-forum",
+      "label": "BuildYourCNC Forum",
+      "kind": "resource",
+      "group": "Forums and Communities"
+    },
+    {
+      "id": "resource-youtube-channels-nyc-cnc",
+      "label": "NYC CNC",
+      "kind": "resource",
+      "group": "YouTube Channels"
+    },
+    {
+      "id": "resource-youtube-channels-tormach",
+      "label": "Tormach",
+      "kind": "resource",
+      "group": "YouTube Channels"
+    },
+    {
+      "id": "resource-youtube-channels-this-old-tony",
+      "label": "This Old Tony",
+      "kind": "resource",
+      "group": "YouTube Channels"
+    },
+    {
+      "id": "resource-youtube-channels-clickspring",
+      "label": "Clickspring",
+      "kind": "resource",
+      "group": "YouTube Channels"
+    },
+    {
+      "id": "resource-youtube-channels-abom79",
+      "label": "Abom79",
+      "kind": "resource",
+      "group": "YouTube Channels"
+    },
+    {
+      "id": "resource-youtube-channels-joe-pieczynski",
+      "label": "Joe Pieczynski",
+      "kind": "resource",
+      "group": "YouTube Channels"
+    },
+    {
+      "id": "resource-youtube-channels-winston-moy",
+      "label": "Winston Moy",
+      "kind": "resource",
+      "group": "YouTube Channels"
+    },
+    {
+      "id": "resource-youtube-channels-edge-precision",
+      "label": "Edge Precision",
+      "kind": "resource",
+      "group": "YouTube Channels"
+    },
+    {
+      "id": "resource-cad-cam-software-tutorials-fusion-360",
+      "label": "Fusion 360",
+      "kind": "resource",
+      "group": "CAD/CAM Software Tutorials"
+    },
+    {
+      "id": "resource-cad-cam-software-tutorials-freecad",
+      "label": "FreeCAD",
+      "kind": "resource",
+      "group": "CAD/CAM Software Tutorials"
+    },
+    {
+      "id": "resource-cad-cam-software-tutorials-solidworks",
+      "label": "SolidWorks",
+      "kind": "resource",
+      "group": "CAD/CAM Software Tutorials"
+    },
+    {
+      "id": "resource-cad-cam-software-tutorials-inkscape-2d",
+      "label": "Inkscape (2D)",
+      "kind": "resource",
+      "group": "CAD/CAM Software Tutorials"
+    },
+    {
+      "id": "resource-cad-cam-software-tutorials-f-engrave",
+      "label": "F-Engrave",
+      "kind": "resource",
+      "group": "CAD/CAM Software Tutorials"
+    },
+    {
+      "id": "resource-free-online-references-engineers-edge",
+      "label": "Engineers Edge",
+      "kind": "resource",
+      "group": "Free Online References"
+    },
+    {
+      "id": "resource-free-online-references-efunda",
+      "label": "Efunda",
+      "kind": "resource",
+      "group": "Free Online References"
+    },
+    {
+      "id": "resource-free-online-references-zeus-precision-charts",
+      "label": "Zeus Precision Charts",
+      "kind": "resource",
+      "group": "Free Online References"
+    },
+    {
+      "id": "resource-free-online-references-machinist-s-calculator",
+      "label": "Machinist's Calculator",
+      "kind": "resource",
+      "group": "Free Online References"
+    },
+    {
+      "id": "resource-free-online-references-little-machine-shop",
+      "label": "Little Machine Shop",
+      "kind": "resource",
+      "group": "Free Online References"
+    },
+    {
+      "id": "resource-standards-organizations-iso-international-organization-for-standardization",
+      "label": "ISO (International Organization for Standardization)",
+      "kind": "resource",
+      "group": "Standards Organizations"
+    },
+    {
+      "id": "resource-standards-organizations-ansi-american-national-standards-institute",
+      "label": "ANSI (American National Standards Institute)",
+      "kind": "resource",
+      "group": "Standards Organizations"
+    },
+    {
+      "id": "resource-standards-organizations-nist-national-institute-of-standards-and-technology",
+      "label": "NIST (National Institute of Standards and Technology)",
+      "kind": "resource",
+      "group": "Standards Organizations"
+    },
+    {
+      "id": "resource-standards-organizations-iec-international-electrotechnical-commission",
+      "label": "IEC (International Electrotechnical Commission)",
+      "kind": "resource",
+      "group": "Standards Organizations"
+    },
+    {
+      "id": "resource-standards-organizations-nfpa-national-fire-protection-association",
+      "label": "NFPA (National Fire Protection Association)",
+      "kind": "resource",
+      "group": "Standards Organizations"
+    },
+    {
+      "id": "resource-free-and-open-source-software-linuxcnc",
+      "label": "LinuxCNC",
+      "kind": "resource",
+      "group": "Free and Open-Source Software"
+    },
+    {
+      "id": "resource-free-and-open-source-software-freecad",
+      "label": "FreeCAD",
+      "kind": "resource",
+      "group": "Free and Open-Source Software"
+    },
+    {
+      "id": "resource-free-and-open-source-software-inkscape",
+      "label": "Inkscape",
+      "kind": "resource",
+      "group": "Free and Open-Source Software"
+    },
+    {
+      "id": "resource-free-and-open-source-software-dxf2gcode",
+      "label": "dxf2gcode",
+      "kind": "resource",
+      "group": "Free and Open-Source Software"
+    },
+    {
+      "id": "resource-free-and-open-source-software-pycam",
+      "label": "PyCAM",
+      "kind": "resource",
+      "group": "Free and Open-Source Software"
+    },
+    {
+      "id": "resource-free-and-open-source-software-bcnc",
+      "label": "bCNC",
+      "kind": "resource",
+      "group": "Free and Open-Source Software"
+    },
+    {
+      "id": "resource-free-and-open-source-software-universal-gcode-sender",
+      "label": "Universal Gcode Sender",
+      "kind": "resource",
+      "group": "Free and Open-Source Software"
+    },
+    {
+      "id": "resource-commercial-software-free-trials-available-fusion-360",
+      "label": "Fusion 360",
+      "kind": "resource",
+      "group": "Commercial Software (Free Trials Available)"
+    },
+    {
+      "id": "resource-commercial-software-free-trials-available-vectric-vcarve",
+      "label": "Vectric VCarve",
+      "kind": "resource",
+      "group": "Commercial Software (Free Trials Available)"
+    },
+    {
+      "id": "resource-commercial-software-free-trials-available-aspire",
+      "label": "Aspire",
+      "kind": "resource",
+      "group": "Commercial Software (Free Trials Available)"
+    },
+    {
+      "id": "resource-commercial-software-free-trials-available-solidcam",
+      "label": "SolidCAM",
+      "kind": "resource",
+      "group": "Commercial Software (Free Trials Available)"
+    },
+    {
+      "id": "resource-commercial-software-free-trials-available-mastercam",
+      "label": "Mastercam",
+      "kind": "resource",
+      "group": "Commercial Software (Free Trials Available)"
+    },
+    {
+      "id": "resource-recommended-suppliers-books-and-resources-industrial-press",
+      "label": "Industrial Press",
+      "kind": "resource",
+      "group": "Recommended Suppliers (Books and Resources)"
+    },
+    {
+      "id": "resource-recommended-suppliers-books-and-resources-sme-society-of-manufacturing-engineers",
+      "label": "SME (Society of Manufacturing Engineers)",
+      "kind": "resource",
+      "group": "Recommended Suppliers (Books and Resources)"
+    },
+    {
+      "id": "resource-recommended-suppliers-books-and-resources-tooling-u-sme",
+      "label": "Tooling U-SME",
+      "kind": "resource",
+      "group": "Recommended Suppliers (Books and Resources)"
+    },
+    {
+      "id": "resource-recommended-suppliers-books-and-resources-amazon",
+      "label": "Amazon",
+      "kind": "resource",
+      "group": "Recommended Suppliers (Books and Resources)"
+    },
+    {
+      "id": "resource-recommended-suppliers-books-and-resources-thriftbooks",
+      "label": "ThriftBooks",
+      "kind": "resource",
+      "group": "Recommended Suppliers (Books and Resources)"
+    },
+    {
+      "id": "resource-podcasts-the-manufacturing-show",
+      "label": "The Manufacturing Show",
+      "kind": "resource",
+      "group": "Podcasts"
+    },
+    {
+      "id": "resource-podcasts-making-chips",
+      "label": "Making Chips",
+      "kind": "resource",
+      "group": "Podcasts"
+    },
+    {
+      "id": "resource-podcasts-the-fabricator-podcast",
+      "label": "The Fabricator Podcast",
+      "kind": "resource",
+      "group": "Podcasts"
+    },
+    {
+      "id": "resource-documentary-series-how-it-s-made",
+      "label": "How It's Made",
+      "kind": "resource",
+      "group": "Documentary Series"
+    },
+    {
+      "id": "resource-documentary-series-ultimate-factories",
+      "label": "Ultimate Factories",
+      "kind": "resource",
+      "group": "Documentary Series"
+    },
+    {
+      "id": "resource-documentary-series-the-secret-life-of-machines",
+      "label": "The Secret Life of Machines",
+      "kind": "resource",
+      "group": "Documentary Series"
+    }
+  ],
+  "edges": [
+    {
+      "source": "appendix-glossary",
+      "target": "term-backlash",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-ball-screw",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-bearing-types",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-cantilever",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-compliance",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-critical-damping",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-datum",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-degrees-of-freedom-dof",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-dynamic-load-rating-c",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-elastic-modulus-young-s-modulus",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-fastener-preload",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-gantry",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-hysteresis",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-inertia-moment-of",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-kerf",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-kinematic-coupling",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-lead",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-linear-guide-profiled-rail",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-load-capacity",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-natural-frequency",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-pitch",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-preload",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-rack-and-pinion",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-repeatability",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-resolution",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-runout-tir",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-static-load-rating-c",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-stiffness",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-straightness",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-structural-loop",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-thermal-growth",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-tramming",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-torsional-rigidity",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-whipping",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-ac-servo-motor",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-absolute-encoder",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-bus-voltage",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-commutation",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-current-loop",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-duty-cycle",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-electromagnetic-compatibility-emc",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-electromagnetic-interference-emi",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-encoder",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-ethercat",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-field-oriented-control-foc",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-grounding",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-hall-effect-sensor",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-holding-torque",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-incremental-encoder",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-inductance",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-inrush-current",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-isolation-optical",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-jerk",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-latency",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-microstepping",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-mosfet",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-optical-isolation",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-pid-control",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-position-loop",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-power-factor",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-pwm-pulse-width-modulation",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-regenerative-braking",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-resolver",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-rms-root-mean-square",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-servo",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-shielding",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-slip",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-stepper-motor",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-transistor-ratings",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-trajectory-planning",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-tuning",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-velocity-loop",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-vfd-variable-frequency-drive",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-absolute-positioning-g90",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-arc-circular-interpolation",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-automatic-tool-changer-atc",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-axis-naming",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-canned-cycles",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-compensation",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-contour-error-following-error",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-coordinate-system",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-dry-run",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-dxf-drawing-exchange-format",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-feed-rate",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-feed-per-tooth-chipload",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-g-code",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-hal-hardware-abstraction-layer",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-home-switch",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-incremental-positioning-g91",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-interpolation",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-inverse-kinematics",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-jog-mode",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-look-ahead",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-m-code",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-machine-coordinates",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-mdi-manual-data-input",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-modal",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-offsets",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-override",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-parametric-programming",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-post-processor",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-probe-touch-probe",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-program-stop",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-rapid-g00",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-real-time",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-scaling-g51",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-single-block",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-spindle-synchronization",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-subprogram",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-tool-offset",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-tool-table",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-trajectory-planner",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-work-offset-g54-g59",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-abrasive-waterjet-awj",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-adaptive-clearing",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-built-up-edge-bue",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-chip-evacuation",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-chipload",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-chatter",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-climb-milling-down-milling",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-conventional-milling-up-milling",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-coolant",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-cutter-compensation",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-cutting-force",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-cutting-speed-vc",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-depth-of-cut-doc",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-edm-electrical-discharge-machining",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-feeds-and-speeds",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-fixture",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-flood-coolant",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-garnet-abrasive",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-heat-affected-zone-haz",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-high-speed-machining-hsm",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-kerf",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-lead-in-lead-out",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-material-removal-rate-mrr",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-minimum-quantity-lubrication-mql",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-nesting",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-pierce",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-power-spindle",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-radial-immersion",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-roughing",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-scallop-height",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-speeds-and-feeds",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-sfm-surface-feet-per-minute",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-stepover",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-surface-finish-ra",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-through-spindle-coolant-tsc",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-trochoidal-milling",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-width-of-cut-woc",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-work-hardening",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-alloy",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-annealing",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-austenite",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-carbide-cemented-carbide",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-case-hardening",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-cast-iron",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-ferrite",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-grain-size",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-hardness",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-heat-treatment",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-high-speed-steel-hss",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-martensite",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-precipitation-hardening",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-quenching",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-rockwell-hardness-hrc",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-stainless-steel",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-temper",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-tempering",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-thermal-conductivity",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-toughness",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-ultimate-tensile-strength-uts",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-yield-strength",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-arc-flash",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-ansi-american-national-standards-institute",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-ce-marking",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-confined-space",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-double-insulation",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-e-stop-emergency-stop",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-enabling-device",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-fall-protection",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-ground-fault-circuit-interrupter-gfci",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-guarding",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-hazard-analysis",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-interlock",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-iso-international-organization-for-standardization",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-light-curtain",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-lockout-tagout-loto",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-machine-guarding",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-nfpa-national-fire-protection-association",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-osha-occupational-safety-and-health-administration",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-pel-permissible-exposure-limit",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-performance-level-pl",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-ppe-personal-protective-equipment",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-residual-current-device-rcd",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-risk-assessment",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-safety-category",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-safety-integrity-level-sil",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-safety-relay",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-two-hand-control",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-accuracy",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-autocollimator",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-calibration",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-coordinate-measuring-machine-cmm",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-dial-indicator",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-feeler-gauge",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-gauge-block-jo-block",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-interferometry-laser",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-micrometer",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-parallax-error",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-precision",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-repeatability",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-resolution",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-straightedge",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-surface-plate",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-test-indicator-dial-test-indicator",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-tolerance",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-traceability",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-vernier-scale",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-abrasive-waterjet-awj",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-assist-gas",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-beam-divergence",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-consumables-plasma",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-cutting-height",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-dross",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-focal-length",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-heat-affected-zone-haz",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-hypertherm",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-kerf-width",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-nozzle-plasma",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-orifice-waterjet",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-pierce-plasma-laser",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-power-density",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-preheat-plasma",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-taper-cut-edge",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-thc-torch-height-control",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-transfer-arc",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-glossary",
+      "target": "term-wavelength",
+      "relation": "defines",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-cnc-fundamentals-cnc-programming-handbook-3rd-ed",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-cnc-fundamentals-machinery-s-handbook-31st-ed",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-cnc-fundamentals-cnc-control-setup-for-milling-and-turning",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-cnc-fundamentals-build-your-own-cnc-machine",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-cnc-fundamentals-desktop-cnc-machining",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-mechanical-design-and-motion-control-precision-machine-design",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-mechanical-design-and-motion-control-machine-design-an-integrated-approach-6th-ed",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-mechanical-design-and-motion-control-linear-motion-tips",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-mechanical-design-and-motion-control-the-way-things-work",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-electronics-and-control-systems-practical-electronics-for-inventors-4th-ed",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-electronics-and-control-systems-understanding-plc-programming",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-electronics-and-control-systems-step-and-direction-motor-control",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-electronics-and-control-systems-electric-motors-and-drives-5th-ed",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-machining-and-manufacturing-metal-cutting-theory-and-practice-3rd-ed",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-machining-and-manufacturing-manufacturing-processes-for-engineering-materials-6th-ed",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-machining-and-manufacturing-fundamentals-of-machining-and-machine-tools-3rd-ed",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-forums-and-communities-cnczone",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-forums-and-communities-practical-machinist",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-forums-and-communities-linuxcnc-forum",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-forums-and-communities-r-cnc-reddit",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-forums-and-communities-r-hobbycnc-reddit",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-forums-and-communities-buildyourcnc-forum",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-youtube-channels-nyc-cnc",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-youtube-channels-tormach",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-youtube-channels-this-old-tony",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-youtube-channels-clickspring",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-youtube-channels-abom79",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-youtube-channels-joe-pieczynski",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-youtube-channels-winston-moy",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-youtube-channels-edge-precision",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-cad-cam-software-tutorials-fusion-360",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-cad-cam-software-tutorials-freecad",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-cad-cam-software-tutorials-solidworks",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-cad-cam-software-tutorials-inkscape-2d",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-cad-cam-software-tutorials-f-engrave",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-free-online-references-engineers-edge",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-free-online-references-efunda",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-free-online-references-zeus-precision-charts",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-free-online-references-machinist-s-calculator",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-free-online-references-little-machine-shop",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-standards-organizations-iso-international-organization-for-standardization",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-standards-organizations-ansi-american-national-standards-institute",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-standards-organizations-nist-national-institute-of-standards-and-technology",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-standards-organizations-iec-international-electrotechnical-commission",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-standards-organizations-nfpa-national-fire-protection-association",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-free-and-open-source-software-linuxcnc",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-free-and-open-source-software-freecad",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-free-and-open-source-software-inkscape",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-free-and-open-source-software-dxf2gcode",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-free-and-open-source-software-pycam",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-free-and-open-source-software-bcnc",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-free-and-open-source-software-universal-gcode-sender",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-commercial-software-free-trials-available-fusion-360",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-commercial-software-free-trials-available-vectric-vcarve",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-commercial-software-free-trials-available-aspire",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-commercial-software-free-trials-available-solidcam",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-commercial-software-free-trials-available-mastercam",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-recommended-suppliers-books-and-resources-industrial-press",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-recommended-suppliers-books-and-resources-sme-society-of-manufacturing-engineers",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-recommended-suppliers-books-and-resources-tooling-u-sme",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-recommended-suppliers-books-and-resources-amazon",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-recommended-suppliers-books-and-resources-thriftbooks",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-podcasts-the-manufacturing-show",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-podcasts-making-chips",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-podcasts-the-fabricator-podcast",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-documentary-series-how-it-s-made",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-documentary-series-ultimate-factories",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "appendix-resources",
+      "target": "resource-documentary-series-the-secret-life-of-machines",
+      "relation": "lists",
+      "weight": 1
+    },
+    {
+      "source": "module-01",
+      "target": "term-stiffness",
+      "relation": "mentions",
+      "weight": 159
+    },
+    {
+      "source": "module-01",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 131
+    },
+    {
+      "source": "module-01",
+      "target": "term-gantry",
+      "relation": "mentions",
+      "weight": 108
+    },
+    {
+      "source": "module-01",
+      "target": "term-preload",
+      "relation": "mentions",
+      "weight": 104
+    },
+    {
+      "source": "module-01",
+      "target": "term-servo",
+      "relation": "mentions",
+      "weight": 78
+    },
+    {
+      "source": "module-01",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 62
+    },
+    {
+      "source": "module-01",
+      "target": "term-datum",
+      "relation": "mentions",
+      "weight": 37
+    },
+    {
+      "source": "module-01",
+      "target": "term-straightness",
+      "relation": "mentions",
+      "weight": 36
+    },
+    {
+      "source": "module-01",
+      "target": "term-cast-iron",
+      "relation": "mentions",
+      "weight": 36
+    },
+    {
+      "source": "module-01",
+      "target": "term-compensation",
+      "relation": "mentions",
+      "weight": 27
+    },
+    {
+      "source": "module-01",
+      "target": "term-backlash",
+      "relation": "mentions",
+      "weight": 25
+    },
+    {
+      "source": "module-01",
+      "target": "term-natural-frequency",
+      "relation": "mentions",
+      "weight": 25
+    },
+    {
+      "source": "module-01",
+      "target": "term-tolerance",
+      "relation": "mentions",
+      "weight": 21
+    },
+    {
+      "source": "module-01",
+      "target": "term-pitch",
+      "relation": "mentions",
+      "weight": 19
+    },
+    {
+      "source": "module-01",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 18
+    },
+    {
+      "source": "module-01",
+      "target": "term-compliance",
+      "relation": "mentions",
+      "weight": 16
+    },
+    {
+      "source": "module-01",
+      "target": "term-repeatability",
+      "relation": "mentions",
+      "weight": 13
+    },
+    {
+      "source": "module-01",
+      "target": "term-modal",
+      "relation": "mentions",
+      "weight": 13
+    },
+    {
+      "source": "module-02",
+      "target": "term-servo",
+      "relation": "mentions",
+      "weight": 91
+    },
+    {
+      "source": "module-02",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 91
+    },
+    {
+      "source": "module-02",
+      "target": "term-stiffness",
+      "relation": "mentions",
+      "weight": 66
+    },
+    {
+      "source": "module-02",
+      "target": "term-preload",
+      "relation": "mentions",
+      "weight": 58
+    },
+    {
+      "source": "module-02",
+      "target": "term-backlash",
+      "relation": "mentions",
+      "weight": 36
+    },
+    {
+      "source": "module-02",
+      "target": "term-compensation",
+      "relation": "mentions",
+      "weight": 36
+    },
+    {
+      "source": "module-02",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 34
+    },
+    {
+      "source": "module-02",
+      "target": "term-coolant",
+      "relation": "mentions",
+      "weight": 33
+    },
+    {
+      "source": "module-02",
+      "target": "term-cantilever",
+      "relation": "mentions",
+      "weight": 30
+    },
+    {
+      "source": "module-02",
+      "target": "term-ball-screw",
+      "relation": "mentions",
+      "weight": 27
+    },
+    {
+      "source": "module-02",
+      "target": "term-natural-frequency",
+      "relation": "mentions",
+      "weight": 27
+    },
+    {
+      "source": "module-02",
+      "target": "term-tuning",
+      "relation": "mentions",
+      "weight": 25
+    },
+    {
+      "source": "module-02",
+      "target": "term-pitch",
+      "relation": "mentions",
+      "weight": 20
+    },
+    {
+      "source": "module-02",
+      "target": "term-encoder",
+      "relation": "mentions",
+      "weight": 20
+    },
+    {
+      "source": "module-02",
+      "target": "term-dial-indicator",
+      "relation": "mentions",
+      "weight": 20
+    },
+    {
+      "source": "module-02",
+      "target": "term-repeatability",
+      "relation": "mentions",
+      "weight": 16
+    },
+    {
+      "source": "module-02",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 16
+    },
+    {
+      "source": "module-02",
+      "target": "term-cast-iron",
+      "relation": "mentions",
+      "weight": 13
+    },
+    {
+      "source": "module-03",
+      "target": "term-stiffness",
+      "relation": "mentions",
+      "weight": 250
+    },
+    {
+      "source": "module-03",
+      "target": "term-preload",
+      "relation": "mentions",
+      "weight": 190
+    },
+    {
+      "source": "module-03",
+      "target": "term-backlash",
+      "relation": "mentions",
+      "weight": 169
+    },
+    {
+      "source": "module-03",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 133
+    },
+    {
+      "source": "module-03",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 122
+    },
+    {
+      "source": "module-03",
+      "target": "term-lead",
+      "relation": "mentions",
+      "weight": 121
+    },
+    {
+      "source": "module-03",
+      "target": "term-compensation",
+      "relation": "mentions",
+      "weight": 107
+    },
+    {
+      "source": "module-03",
+      "target": "term-servo",
+      "relation": "mentions",
+      "weight": 85
+    },
+    {
+      "source": "module-03",
+      "target": "term-ball-screw",
+      "relation": "mentions",
+      "weight": 81
+    },
+    {
+      "source": "module-03",
+      "target": "term-gantry",
+      "relation": "mentions",
+      "weight": 76
+    },
+    {
+      "source": "module-03",
+      "target": "term-tolerance",
+      "relation": "mentions",
+      "weight": 60
+    },
+    {
+      "source": "module-03",
+      "target": "term-pitch",
+      "relation": "mentions",
+      "weight": 56
+    },
+    {
+      "source": "module-03",
+      "target": "term-encoder",
+      "relation": "mentions",
+      "weight": 53
+    },
+    {
+      "source": "module-03",
+      "target": "term-compliance",
+      "relation": "mentions",
+      "weight": 40
+    },
+    {
+      "source": "module-03",
+      "target": "term-straightness",
+      "relation": "mentions",
+      "weight": 33
+    },
+    {
+      "source": "module-03",
+      "target": "term-load-capacity",
+      "relation": "mentions",
+      "weight": 31
+    },
+    {
+      "source": "module-03",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 27
+    },
+    {
+      "source": "module-03",
+      "target": "term-natural-frequency",
+      "relation": "mentions",
+      "weight": 20
+    },
+    {
+      "source": "module-04",
+      "target": "term-servo",
+      "relation": "mentions",
+      "weight": 117
+    },
+    {
+      "source": "module-04",
+      "target": "term-encoder",
+      "relation": "mentions",
+      "weight": 107
+    },
+    {
+      "source": "module-04",
+      "target": "term-real-time",
+      "relation": "mentions",
+      "weight": 47
+    },
+    {
+      "source": "module-04",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 33
+    },
+    {
+      "source": "module-04",
+      "target": "term-tuning",
+      "relation": "mentions",
+      "weight": 32
+    },
+    {
+      "source": "module-04",
+      "target": "term-coolant",
+      "relation": "mentions",
+      "weight": 29
+    },
+    {
+      "source": "module-04",
+      "target": "term-latency",
+      "relation": "mentions",
+      "weight": 28
+    },
+    {
+      "source": "module-04",
+      "target": "term-safety-relay",
+      "relation": "mentions",
+      "weight": 27
+    },
+    {
+      "source": "module-04",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 22
+    },
+    {
+      "source": "module-04",
+      "target": "term-bus-voltage",
+      "relation": "mentions",
+      "weight": 20
+    },
+    {
+      "source": "module-04",
+      "target": "term-grounding",
+      "relation": "mentions",
+      "weight": 20
+    },
+    {
+      "source": "module-04",
+      "target": "term-ethercat",
+      "relation": "mentions",
+      "weight": 19
+    },
+    {
+      "source": "module-04",
+      "target": "term-repeatability",
+      "relation": "mentions",
+      "weight": 18
+    },
+    {
+      "source": "module-04",
+      "target": "term-shielding",
+      "relation": "mentions",
+      "weight": 17
+    },
+    {
+      "source": "module-04",
+      "target": "term-ferrite",
+      "relation": "mentions",
+      "weight": 16
+    },
+    {
+      "source": "module-04",
+      "target": "term-ball-screw",
+      "relation": "mentions",
+      "weight": 15
+    },
+    {
+      "source": "module-04",
+      "target": "term-lead",
+      "relation": "mentions",
+      "weight": 15
+    },
+    {
+      "source": "module-04",
+      "target": "term-current-loop",
+      "relation": "mentions",
+      "weight": 15
+    },
+    {
+      "source": "module-05",
+      "target": "term-pierce",
+      "relation": "mentions",
+      "weight": 83
+    },
+    {
+      "source": "module-05",
+      "target": "term-kerf",
+      "relation": "mentions",
+      "weight": 78
+    },
+    {
+      "source": "module-05",
+      "target": "term-dross",
+      "relation": "mentions",
+      "weight": 64
+    },
+    {
+      "source": "module-05",
+      "target": "term-lead",
+      "relation": "mentions",
+      "weight": 26
+    },
+    {
+      "source": "module-05",
+      "target": "term-duty-cycle",
+      "relation": "mentions",
+      "weight": 17
+    },
+    {
+      "source": "module-05",
+      "target": "term-feed-rate",
+      "relation": "mentions",
+      "weight": 17
+    },
+    {
+      "source": "module-05",
+      "target": "term-nesting",
+      "relation": "mentions",
+      "weight": 17
+    },
+    {
+      "source": "module-05",
+      "target": "term-kerf-width",
+      "relation": "mentions",
+      "weight": 17
+    },
+    {
+      "source": "module-05",
+      "target": "term-hypertherm",
+      "relation": "mentions",
+      "weight": 12
+    },
+    {
+      "source": "module-05",
+      "target": "term-compensation",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-05",
+      "target": "term-calibration",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-05",
+      "target": "term-compliance",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-05",
+      "target": "term-real-time",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-05",
+      "target": "term-coolant",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-05",
+      "target": "term-shielding",
+      "relation": "mentions",
+      "weight": 9
+    },
+    {
+      "source": "module-05",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 9
+    },
+    {
+      "source": "module-05",
+      "target": "term-stainless-steel",
+      "relation": "mentions",
+      "weight": 7
+    },
+    {
+      "source": "module-05",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 7
+    },
+    {
+      "source": "module-06",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 105
+    },
+    {
+      "source": "module-06",
+      "target": "term-coolant",
+      "relation": "mentions",
+      "weight": 89
+    },
+    {
+      "source": "module-06",
+      "target": "term-preload",
+      "relation": "mentions",
+      "weight": 72
+    },
+    {
+      "source": "module-06",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 48
+    },
+    {
+      "source": "module-06",
+      "target": "term-stiffness",
+      "relation": "mentions",
+      "weight": 32
+    },
+    {
+      "source": "module-06",
+      "target": "term-thermal-growth",
+      "relation": "mentions",
+      "weight": 30
+    },
+    {
+      "source": "module-06",
+      "target": "term-tolerance",
+      "relation": "mentions",
+      "weight": 24
+    },
+    {
+      "source": "module-06",
+      "target": "term-interlock",
+      "relation": "mentions",
+      "weight": 20
+    },
+    {
+      "source": "module-06",
+      "target": "term-duty-cycle",
+      "relation": "mentions",
+      "weight": 19
+    },
+    {
+      "source": "module-06",
+      "target": "term-encoder",
+      "relation": "mentions",
+      "weight": 18
+    },
+    {
+      "source": "module-06",
+      "target": "term-servo",
+      "relation": "mentions",
+      "weight": 15
+    },
+    {
+      "source": "module-06",
+      "target": "term-feed-rate",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-06",
+      "target": "term-compliance",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-06",
+      "target": "term-power-factor",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-06",
+      "target": "term-chatter",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-06",
+      "target": "term-repeatability",
+      "relation": "mentions",
+      "weight": 9
+    },
+    {
+      "source": "module-06",
+      "target": "term-slip",
+      "relation": "mentions",
+      "weight": 9
+    },
+    {
+      "source": "module-06",
+      "target": "term-pitch",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-07",
+      "target": "term-pierce",
+      "relation": "mentions",
+      "weight": 64
+    },
+    {
+      "source": "module-07",
+      "target": "term-kerf",
+      "relation": "mentions",
+      "weight": 59
+    },
+    {
+      "source": "module-07",
+      "target": "term-wavelength",
+      "relation": "mentions",
+      "weight": 42
+    },
+    {
+      "source": "module-07",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 26
+    },
+    {
+      "source": "module-07",
+      "target": "term-focal-length",
+      "relation": "mentions",
+      "weight": 23
+    },
+    {
+      "source": "module-07",
+      "target": "term-stainless-steel",
+      "relation": "mentions",
+      "weight": 22
+    },
+    {
+      "source": "module-07",
+      "target": "term-dross",
+      "relation": "mentions",
+      "weight": 22
+    },
+    {
+      "source": "module-07",
+      "target": "term-kerf-width",
+      "relation": "mentions",
+      "weight": 22
+    },
+    {
+      "source": "module-07",
+      "target": "term-power-density",
+      "relation": "mentions",
+      "weight": 20
+    },
+    {
+      "source": "module-07",
+      "target": "term-assist-gas",
+      "relation": "mentions",
+      "weight": 18
+    },
+    {
+      "source": "module-07",
+      "target": "term-lead",
+      "relation": "mentions",
+      "weight": 17
+    },
+    {
+      "source": "module-07",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 15
+    },
+    {
+      "source": "module-07",
+      "target": "term-coolant",
+      "relation": "mentions",
+      "weight": 13
+    },
+    {
+      "source": "module-07",
+      "target": "term-compensation",
+      "relation": "mentions",
+      "weight": 12
+    },
+    {
+      "source": "module-07",
+      "target": "term-tolerance",
+      "relation": "mentions",
+      "weight": 12
+    },
+    {
+      "source": "module-07",
+      "target": "term-servo",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-07",
+      "target": "term-interlock",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-07",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-08",
+      "target": "term-kerf",
+      "relation": "mentions",
+      "weight": 76
+    },
+    {
+      "source": "module-08",
+      "target": "term-hardness",
+      "relation": "mentions",
+      "weight": 50
+    },
+    {
+      "source": "module-08",
+      "target": "term-kerf-width",
+      "relation": "mentions",
+      "weight": 35
+    },
+    {
+      "source": "module-08",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 32
+    },
+    {
+      "source": "module-08",
+      "target": "term-feed-rate",
+      "relation": "mentions",
+      "weight": 29
+    },
+    {
+      "source": "module-08",
+      "target": "term-tolerance",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-08",
+      "target": "term-stainless-steel",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-08",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-08",
+      "target": "term-calibration",
+      "relation": "mentions",
+      "weight": 7
+    },
+    {
+      "source": "module-08",
+      "target": "term-compliance",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-08",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-08",
+      "target": "term-compensation",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-08",
+      "target": "term-gantry",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-08",
+      "target": "term-lead",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-08",
+      "target": "term-servo",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-08",
+      "target": "term-interlock",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-08",
+      "target": "term-wavelength",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-08",
+      "target": "term-duty-cycle",
+      "relation": "mentions",
+      "weight": 4
+    },
+    {
+      "source": "module-09",
+      "target": "term-calibration",
+      "relation": "mentions",
+      "weight": 37
+    },
+    {
+      "source": "module-09",
+      "target": "term-encoder",
+      "relation": "mentions",
+      "weight": 22
+    },
+    {
+      "source": "module-09",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 22
+    },
+    {
+      "source": "module-09",
+      "target": "term-repeatability",
+      "relation": "mentions",
+      "weight": 19
+    },
+    {
+      "source": "module-09",
+      "target": "term-servo",
+      "relation": "mentions",
+      "weight": 15
+    },
+    {
+      "source": "module-09",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 13
+    },
+    {
+      "source": "module-09",
+      "target": "term-inverse-kinematics",
+      "relation": "mentions",
+      "weight": 12
+    },
+    {
+      "source": "module-09",
+      "target": "term-fixture",
+      "relation": "mentions",
+      "weight": 12
+    },
+    {
+      "source": "module-09",
+      "target": "term-real-time",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-09",
+      "target": "term-risk-assessment",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-09",
+      "target": "term-backlash",
+      "relation": "mentions",
+      "weight": 9
+    },
+    {
+      "source": "module-09",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 9
+    },
+    {
+      "source": "module-09",
+      "target": "term-gantry",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-09",
+      "target": "term-tuning",
+      "relation": "mentions",
+      "weight": 7
+    },
+    {
+      "source": "module-09",
+      "target": "term-guarding",
+      "relation": "mentions",
+      "weight": 7
+    },
+    {
+      "source": "module-09",
+      "target": "term-ball-screw",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-09",
+      "target": "term-compliance",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-09",
+      "target": "term-pitch",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-10",
+      "target": "term-encoder",
+      "relation": "mentions",
+      "weight": 50
+    },
+    {
+      "source": "module-10",
+      "target": "term-calibration",
+      "relation": "mentions",
+      "weight": 30
+    },
+    {
+      "source": "module-10",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 28
+    },
+    {
+      "source": "module-10",
+      "target": "term-compliance",
+      "relation": "mentions",
+      "weight": 22
+    },
+    {
+      "source": "module-10",
+      "target": "term-backlash",
+      "relation": "mentions",
+      "weight": 21
+    },
+    {
+      "source": "module-10",
+      "target": "term-servo",
+      "relation": "mentions",
+      "weight": 20
+    },
+    {
+      "source": "module-10",
+      "target": "term-stiffness",
+      "relation": "mentions",
+      "weight": 17
+    },
+    {
+      "source": "module-10",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 17
+    },
+    {
+      "source": "module-10",
+      "target": "term-fixture",
+      "relation": "mentions",
+      "weight": 16
+    },
+    {
+      "source": "module-10",
+      "target": "term-repeatability",
+      "relation": "mentions",
+      "weight": 14
+    },
+    {
+      "source": "module-10",
+      "target": "term-real-time",
+      "relation": "mentions",
+      "weight": 13
+    },
+    {
+      "source": "module-10",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 12
+    },
+    {
+      "source": "module-10",
+      "target": "term-compensation",
+      "relation": "mentions",
+      "weight": 12
+    },
+    {
+      "source": "module-10",
+      "target": "term-inverse-kinematics",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-10",
+      "target": "term-preload",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-10",
+      "target": "term-enabling-device",
+      "relation": "mentions",
+      "weight": 9
+    },
+    {
+      "source": "module-10",
+      "target": "term-risk-assessment",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-10",
+      "target": "term-ethercat",
+      "relation": "mentions",
+      "weight": 7
+    },
+    {
+      "source": "module-11",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 59
+    },
+    {
+      "source": "module-11",
+      "target": "term-compensation",
+      "relation": "mentions",
+      "weight": 44
+    },
+    {
+      "source": "module-11",
+      "target": "term-calibration",
+      "relation": "mentions",
+      "weight": 43
+    },
+    {
+      "source": "module-11",
+      "target": "term-gantry",
+      "relation": "mentions",
+      "weight": 35
+    },
+    {
+      "source": "module-11",
+      "target": "term-servo",
+      "relation": "mentions",
+      "weight": 23
+    },
+    {
+      "source": "module-11",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 22
+    },
+    {
+      "source": "module-11",
+      "target": "term-tolerance",
+      "relation": "mentions",
+      "weight": 19
+    },
+    {
+      "source": "module-11",
+      "target": "term-tuning",
+      "relation": "mentions",
+      "weight": 16
+    },
+    {
+      "source": "module-11",
+      "target": "term-g-code",
+      "relation": "mentions",
+      "weight": 15
+    },
+    {
+      "source": "module-11",
+      "target": "term-backlash",
+      "relation": "mentions",
+      "weight": 14
+    },
+    {
+      "source": "module-11",
+      "target": "term-lead",
+      "relation": "mentions",
+      "weight": 13
+    },
+    {
+      "source": "module-11",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 13
+    },
+    {
+      "source": "module-11",
+      "target": "term-microstepping",
+      "relation": "mentions",
+      "weight": 12
+    },
+    {
+      "source": "module-11",
+      "target": "term-pitch",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-11",
+      "target": "term-jerk",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-11",
+      "target": "term-cantilever",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-11",
+      "target": "term-compliance",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-11",
+      "target": "term-encoder",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-12",
+      "target": "term-kerf",
+      "relation": "mentions",
+      "weight": 51
+    },
+    {
+      "source": "module-12",
+      "target": "term-feed-rate",
+      "relation": "mentions",
+      "weight": 23
+    },
+    {
+      "source": "module-12",
+      "target": "term-kerf-width",
+      "relation": "mentions",
+      "weight": 23
+    },
+    {
+      "source": "module-12",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 17
+    },
+    {
+      "source": "module-12",
+      "target": "term-tolerance",
+      "relation": "mentions",
+      "weight": 14
+    },
+    {
+      "source": "module-12",
+      "target": "term-stainless-steel",
+      "relation": "mentions",
+      "weight": 12
+    },
+    {
+      "source": "module-12",
+      "target": "term-g-code",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-12",
+      "target": "term-straightness",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-12",
+      "target": "term-interlock",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-12",
+      "target": "term-pierce",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-12",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-12",
+      "target": "term-wavelength",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-12",
+      "target": "term-real-time",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-12",
+      "target": "term-hardness",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-12",
+      "target": "term-calibration",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-12",
+      "target": "term-dross",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-12",
+      "target": "term-compliance",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-12",
+      "target": "term-compensation",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-13",
+      "target": "term-compliance",
+      "relation": "mentions",
+      "weight": 116
+    },
+    {
+      "source": "module-13",
+      "target": "term-shielding",
+      "relation": "mentions",
+      "weight": 104
+    },
+    {
+      "source": "module-13",
+      "target": "term-grounding",
+      "relation": "mentions",
+      "weight": 95
+    },
+    {
+      "source": "module-13",
+      "target": "term-encoder",
+      "relation": "mentions",
+      "weight": 82
+    },
+    {
+      "source": "module-13",
+      "target": "term-inductance",
+      "relation": "mentions",
+      "weight": 61
+    },
+    {
+      "source": "module-13",
+      "target": "term-ferrite",
+      "relation": "mentions",
+      "weight": 42
+    },
+    {
+      "source": "module-13",
+      "target": "term-servo",
+      "relation": "mentions",
+      "weight": 37
+    },
+    {
+      "source": "module-13",
+      "target": "term-ce-marking",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-13",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-13",
+      "target": "term-ethercat",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-13",
+      "target": "term-mosfet",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-13",
+      "target": "term-gantry",
+      "relation": "mentions",
+      "weight": 3
+    },
+    {
+      "source": "module-13",
+      "target": "term-lead",
+      "relation": "mentions",
+      "weight": 3
+    },
+    {
+      "source": "module-13",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 3
+    },
+    {
+      "source": "module-13",
+      "target": "term-calibration",
+      "relation": "mentions",
+      "weight": 3
+    },
+    {
+      "source": "module-13",
+      "target": "term-wavelength",
+      "relation": "mentions",
+      "weight": 3
+    },
+    {
+      "source": "module-13",
+      "target": "term-hysteresis",
+      "relation": "mentions",
+      "weight": 2
+    },
+    {
+      "source": "module-13",
+      "target": "term-bus-voltage",
+      "relation": "mentions",
+      "weight": 2
+    },
+    {
+      "source": "module-14",
+      "target": "term-servo",
+      "relation": "mentions",
+      "weight": 317
+    },
+    {
+      "source": "module-14",
+      "target": "term-encoder",
+      "relation": "mentions",
+      "weight": 208
+    },
+    {
+      "source": "module-14",
+      "target": "term-real-time",
+      "relation": "mentions",
+      "weight": 74
+    },
+    {
+      "source": "module-14",
+      "target": "term-latency",
+      "relation": "mentions",
+      "weight": 68
+    },
+    {
+      "source": "module-14",
+      "target": "term-tuning",
+      "relation": "mentions",
+      "weight": 45
+    },
+    {
+      "source": "module-14",
+      "target": "term-coolant",
+      "relation": "mentions",
+      "weight": 32
+    },
+    {
+      "source": "module-14",
+      "target": "term-g-code",
+      "relation": "mentions",
+      "weight": 23
+    },
+    {
+      "source": "module-14",
+      "target": "term-backlash",
+      "relation": "mentions",
+      "weight": 22
+    },
+    {
+      "source": "module-14",
+      "target": "term-hysteresis",
+      "relation": "mentions",
+      "weight": 15
+    },
+    {
+      "source": "module-14",
+      "target": "term-duty-cycle",
+      "relation": "mentions",
+      "weight": 15
+    },
+    {
+      "source": "module-14",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-14",
+      "target": "term-feed-rate",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-14",
+      "target": "term-safety-relay",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-14",
+      "target": "term-compensation",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-14",
+      "target": "term-ethercat",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-14",
+      "target": "term-override",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-14",
+      "target": "term-tolerance",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-14",
+      "target": "term-tool-table",
+      "relation": "mentions",
+      "weight": 7
+    },
+    {
+      "source": "module-15",
+      "target": "term-g-code",
+      "relation": "mentions",
+      "weight": 93
+    },
+    {
+      "source": "module-15",
+      "target": "term-coolant",
+      "relation": "mentions",
+      "weight": 69
+    },
+    {
+      "source": "module-15",
+      "target": "term-offsets",
+      "relation": "mentions",
+      "weight": 59
+    },
+    {
+      "source": "module-15",
+      "target": "term-feed-rate",
+      "relation": "mentions",
+      "weight": 56
+    },
+    {
+      "source": "module-15",
+      "target": "term-modal",
+      "relation": "mentions",
+      "weight": 55
+    },
+    {
+      "source": "module-15",
+      "target": "term-subprogram",
+      "relation": "mentions",
+      "weight": 45
+    },
+    {
+      "source": "module-15",
+      "target": "term-compensation",
+      "relation": "mentions",
+      "weight": 43
+    },
+    {
+      "source": "module-15",
+      "target": "term-canned-cycles",
+      "relation": "mentions",
+      "weight": 23
+    },
+    {
+      "source": "module-15",
+      "target": "term-post-processor",
+      "relation": "mentions",
+      "weight": 23
+    },
+    {
+      "source": "module-15",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 18
+    },
+    {
+      "source": "module-15",
+      "target": "term-dry-run",
+      "relation": "mentions",
+      "weight": 17
+    },
+    {
+      "source": "module-15",
+      "target": "term-interpolation",
+      "relation": "mentions",
+      "weight": 17
+    },
+    {
+      "source": "module-15",
+      "target": "term-parametric-programming",
+      "relation": "mentions",
+      "weight": 14
+    },
+    {
+      "source": "module-15",
+      "target": "term-tolerance",
+      "relation": "mentions",
+      "weight": 14
+    },
+    {
+      "source": "module-15",
+      "target": "term-roughing",
+      "relation": "mentions",
+      "weight": 13
+    },
+    {
+      "source": "module-15",
+      "target": "term-lead",
+      "relation": "mentions",
+      "weight": 12
+    },
+    {
+      "source": "module-15",
+      "target": "term-single-block",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-15",
+      "target": "term-coordinate-system",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-16",
+      "target": "term-tolerance",
+      "relation": "mentions",
+      "weight": 101
+    },
+    {
+      "source": "module-16",
+      "target": "term-datum",
+      "relation": "mentions",
+      "weight": 62
+    },
+    {
+      "source": "module-16",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 49
+    },
+    {
+      "source": "module-16",
+      "target": "term-kerf",
+      "relation": "mentions",
+      "weight": 32
+    },
+    {
+      "source": "module-16",
+      "target": "term-compensation",
+      "relation": "mentions",
+      "weight": 25
+    },
+    {
+      "source": "module-16",
+      "target": "term-stiffness",
+      "relation": "mentions",
+      "weight": 19
+    },
+    {
+      "source": "module-16",
+      "target": "term-lead",
+      "relation": "mentions",
+      "weight": 16
+    },
+    {
+      "source": "module-16",
+      "target": "term-fixture",
+      "relation": "mentions",
+      "weight": 16
+    },
+    {
+      "source": "module-16",
+      "target": "term-pierce",
+      "relation": "mentions",
+      "weight": 14
+    },
+    {
+      "source": "module-16",
+      "target": "term-g-code",
+      "relation": "mentions",
+      "weight": 12
+    },
+    {
+      "source": "module-16",
+      "target": "term-kerf-width",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-16",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 9
+    },
+    {
+      "source": "module-16",
+      "target": "term-coordinate-system",
+      "relation": "mentions",
+      "weight": 7
+    },
+    {
+      "source": "module-16",
+      "target": "term-yield-strength",
+      "relation": "mentions",
+      "weight": 7
+    },
+    {
+      "source": "module-16",
+      "target": "term-nesting",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-16",
+      "target": "term-heat-treatment",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-16",
+      "target": "term-alloy",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-16",
+      "target": "term-pitch",
+      "relation": "mentions",
+      "weight": 4
+    },
+    {
+      "source": "module-17",
+      "target": "term-coolant",
+      "relation": "mentions",
+      "weight": 57
+    },
+    {
+      "source": "module-17",
+      "target": "term-hardness",
+      "relation": "mentions",
+      "weight": 33
+    },
+    {
+      "source": "module-17",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 23
+    },
+    {
+      "source": "module-17",
+      "target": "term-toughness",
+      "relation": "mentions",
+      "weight": 19
+    },
+    {
+      "source": "module-17",
+      "target": "term-thermal-conductivity",
+      "relation": "mentions",
+      "weight": 14
+    },
+    {
+      "source": "module-17",
+      "target": "term-tolerance",
+      "relation": "mentions",
+      "weight": 12
+    },
+    {
+      "source": "module-17",
+      "target": "term-compliance",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-17",
+      "target": "term-roughing",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-17",
+      "target": "term-stiffness",
+      "relation": "mentions",
+      "weight": 9
+    },
+    {
+      "source": "module-17",
+      "target": "term-feed-rate",
+      "relation": "mentions",
+      "weight": 9
+    },
+    {
+      "source": "module-17",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 7
+    },
+    {
+      "source": "module-17",
+      "target": "term-chatter",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-17",
+      "target": "term-flood-coolant",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-17",
+      "target": "term-grain-size",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-17",
+      "target": "term-backlash",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-17",
+      "target": "term-chip-evacuation",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-17",
+      "target": "term-annealing",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-17",
+      "target": "term-wavelength",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-18",
+      "target": "term-real-time",
+      "relation": "mentions",
+      "weight": 103
+    },
+    {
+      "source": "module-18",
+      "target": "term-latency",
+      "relation": "mentions",
+      "weight": 39
+    },
+    {
+      "source": "module-18",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 37
+    },
+    {
+      "source": "module-18",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 23
+    },
+    {
+      "source": "module-18",
+      "target": "term-compliance",
+      "relation": "mentions",
+      "weight": 21
+    },
+    {
+      "source": "module-18",
+      "target": "term-servo",
+      "relation": "mentions",
+      "weight": 21
+    },
+    {
+      "source": "module-18",
+      "target": "term-compensation",
+      "relation": "mentions",
+      "weight": 18
+    },
+    {
+      "source": "module-18",
+      "target": "term-coolant",
+      "relation": "mentions",
+      "weight": 16
+    },
+    {
+      "source": "module-18",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 13
+    },
+    {
+      "source": "module-18",
+      "target": "term-traceability",
+      "relation": "mentions",
+      "weight": 12
+    },
+    {
+      "source": "module-18",
+      "target": "term-ethercat",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-18",
+      "target": "term-offsets",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-18",
+      "target": "term-encoder",
+      "relation": "mentions",
+      "weight": 9
+    },
+    {
+      "source": "module-18",
+      "target": "term-cutting-force",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-18",
+      "target": "term-chatter",
+      "relation": "mentions",
+      "weight": 7
+    },
+    {
+      "source": "module-18",
+      "target": "term-lead",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-18",
+      "target": "term-tuning",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-18",
+      "target": "term-calibration",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-19",
+      "target": "term-tuning",
+      "relation": "mentions",
+      "weight": 109
+    },
+    {
+      "source": "module-19",
+      "target": "term-encoder",
+      "relation": "mentions",
+      "weight": 98
+    },
+    {
+      "source": "module-19",
+      "target": "term-servo",
+      "relation": "mentions",
+      "weight": 94
+    },
+    {
+      "source": "module-19",
+      "target": "term-jerk",
+      "relation": "mentions",
+      "weight": 46
+    },
+    {
+      "source": "module-19",
+      "target": "term-tolerance",
+      "relation": "mentions",
+      "weight": 44
+    },
+    {
+      "source": "module-19",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 41
+    },
+    {
+      "source": "module-19",
+      "target": "term-real-time",
+      "relation": "mentions",
+      "weight": 39
+    },
+    {
+      "source": "module-19",
+      "target": "term-g-code",
+      "relation": "mentions",
+      "weight": 36
+    },
+    {
+      "source": "module-19",
+      "target": "term-look-ahead",
+      "relation": "mentions",
+      "weight": 34
+    },
+    {
+      "source": "module-19",
+      "target": "term-interpolation",
+      "relation": "mentions",
+      "weight": 28
+    },
+    {
+      "source": "module-19",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 26
+    },
+    {
+      "source": "module-19",
+      "target": "term-backlash",
+      "relation": "mentions",
+      "weight": 23
+    },
+    {
+      "source": "module-19",
+      "target": "term-gantry",
+      "relation": "mentions",
+      "weight": 23
+    },
+    {
+      "source": "module-19",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 23
+    },
+    {
+      "source": "module-19",
+      "target": "term-trajectory-planning",
+      "relation": "mentions",
+      "weight": 22
+    },
+    {
+      "source": "module-19",
+      "target": "term-compensation",
+      "relation": "mentions",
+      "weight": 18
+    },
+    {
+      "source": "module-19",
+      "target": "term-stiffness",
+      "relation": "mentions",
+      "weight": 14
+    },
+    {
+      "source": "module-19",
+      "target": "term-position-loop",
+      "relation": "mentions",
+      "weight": 13
+    },
+    {
+      "source": "module-20",
+      "target": "term-coolant",
+      "relation": "mentions",
+      "weight": 110
+    },
+    {
+      "source": "module-20",
+      "target": "term-feed-rate",
+      "relation": "mentions",
+      "weight": 63
+    },
+    {
+      "source": "module-20",
+      "target": "term-roughing",
+      "relation": "mentions",
+      "weight": 63
+    },
+    {
+      "source": "module-20",
+      "target": "term-cast-iron",
+      "relation": "mentions",
+      "weight": 51
+    },
+    {
+      "source": "module-20",
+      "target": "term-hardness",
+      "relation": "mentions",
+      "weight": 41
+    },
+    {
+      "source": "module-20",
+      "target": "term-toughness",
+      "relation": "mentions",
+      "weight": 24
+    },
+    {
+      "source": "module-20",
+      "target": "term-chip-evacuation",
+      "relation": "mentions",
+      "weight": 15
+    },
+    {
+      "source": "module-20",
+      "target": "term-stepover",
+      "relation": "mentions",
+      "weight": 13
+    },
+    {
+      "source": "module-20",
+      "target": "term-work-hardening",
+      "relation": "mentions",
+      "weight": 13
+    },
+    {
+      "source": "module-20",
+      "target": "term-thermal-conductivity",
+      "relation": "mentions",
+      "weight": 13
+    },
+    {
+      "source": "module-20",
+      "target": "term-flood-coolant",
+      "relation": "mentions",
+      "weight": 12
+    },
+    {
+      "source": "module-20",
+      "target": "term-alloy",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-20",
+      "target": "term-chatter",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-20",
+      "target": "term-stainless-steel",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-20",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 7
+    },
+    {
+      "source": "module-20",
+      "target": "term-g-code",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-20",
+      "target": "term-cutting-force",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-20",
+      "target": "term-feeds-and-speeds",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-21",
+      "target": "term-tolerance",
+      "relation": "mentions",
+      "weight": 93
+    },
+    {
+      "source": "module-21",
+      "target": "term-datum",
+      "relation": "mentions",
+      "weight": 91
+    },
+    {
+      "source": "module-21",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 86
+    },
+    {
+      "source": "module-21",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 75
+    },
+    {
+      "source": "module-21",
+      "target": "term-calibration",
+      "relation": "mentions",
+      "weight": 62
+    },
+    {
+      "source": "module-21",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 52
+    },
+    {
+      "source": "module-21",
+      "target": "term-compensation",
+      "relation": "mentions",
+      "weight": 24
+    },
+    {
+      "source": "module-21",
+      "target": "term-traceability",
+      "relation": "mentions",
+      "weight": 24
+    },
+    {
+      "source": "module-21",
+      "target": "term-repeatability",
+      "relation": "mentions",
+      "weight": 22
+    },
+    {
+      "source": "module-21",
+      "target": "term-micrometer",
+      "relation": "mentions",
+      "weight": 22
+    },
+    {
+      "source": "module-21",
+      "target": "term-pitch",
+      "relation": "mentions",
+      "weight": 12
+    },
+    {
+      "source": "module-21",
+      "target": "term-straightness",
+      "relation": "mentions",
+      "weight": 12
+    },
+    {
+      "source": "module-21",
+      "target": "term-real-time",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-21",
+      "target": "term-surface-plate",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-21",
+      "target": "term-coordinate-system",
+      "relation": "mentions",
+      "weight": 9
+    },
+    {
+      "source": "module-21",
+      "target": "term-wavelength",
+      "relation": "mentions",
+      "weight": 9
+    },
+    {
+      "source": "module-21",
+      "target": "term-coolant",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-21",
+      "target": "term-servo",
+      "relation": "mentions",
+      "weight": 7
+    },
+    {
+      "source": "module-22",
+      "target": "term-calibration",
+      "relation": "mentions",
+      "weight": 115
+    },
+    {
+      "source": "module-22",
+      "target": "term-traceability",
+      "relation": "mentions",
+      "weight": 93
+    },
+    {
+      "source": "module-22",
+      "target": "term-heat-treatment",
+      "relation": "mentions",
+      "weight": 51
+    },
+    {
+      "source": "module-22",
+      "target": "term-compliance",
+      "relation": "mentions",
+      "weight": 46
+    },
+    {
+      "source": "module-22",
+      "target": "term-tolerance",
+      "relation": "mentions",
+      "weight": 42
+    },
+    {
+      "source": "module-22",
+      "target": "term-lead",
+      "relation": "mentions",
+      "weight": 31
+    },
+    {
+      "source": "module-22",
+      "target": "term-hardness",
+      "relation": "mentions",
+      "weight": 27
+    },
+    {
+      "source": "module-22",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 19
+    },
+    {
+      "source": "module-22",
+      "target": "term-micrometer",
+      "relation": "mentions",
+      "weight": 19
+    },
+    {
+      "source": "module-22",
+      "target": "term-coolant",
+      "relation": "mentions",
+      "weight": 17
+    },
+    {
+      "source": "module-22",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 15
+    },
+    {
+      "source": "module-22",
+      "target": "term-repeatability",
+      "relation": "mentions",
+      "weight": 14
+    },
+    {
+      "source": "module-22",
+      "target": "term-risk-assessment",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-22",
+      "target": "term-alloy",
+      "relation": "mentions",
+      "weight": 9
+    },
+    {
+      "source": "module-22",
+      "target": "term-real-time",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-22",
+      "target": "term-offsets",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-22",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-22",
+      "target": "term-fixture",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-23",
+      "target": "term-coolant",
+      "relation": "mentions",
+      "weight": 81
+    },
+    {
+      "source": "module-23",
+      "target": "term-lead",
+      "relation": "mentions",
+      "weight": 72
+    },
+    {
+      "source": "module-23",
+      "target": "term-real-time",
+      "relation": "mentions",
+      "weight": 42
+    },
+    {
+      "source": "module-23",
+      "target": "term-traceability",
+      "relation": "mentions",
+      "weight": 38
+    },
+    {
+      "source": "module-23",
+      "target": "term-calibration",
+      "relation": "mentions",
+      "weight": 28
+    },
+    {
+      "source": "module-23",
+      "target": "term-compliance",
+      "relation": "mentions",
+      "weight": 26
+    },
+    {
+      "source": "module-23",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 23
+    },
+    {
+      "source": "module-23",
+      "target": "term-fixture",
+      "relation": "mentions",
+      "weight": 18
+    },
+    {
+      "source": "module-23",
+      "target": "term-offsets",
+      "relation": "mentions",
+      "weight": 16
+    },
+    {
+      "source": "module-23",
+      "target": "term-tolerance",
+      "relation": "mentions",
+      "weight": 12
+    },
+    {
+      "source": "module-23",
+      "target": "term-slip",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-23",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 7
+    },
+    {
+      "source": "module-23",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-23",
+      "target": "term-roughing",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-23",
+      "target": "term-dry-run",
+      "relation": "mentions",
+      "weight": 4
+    },
+    {
+      "source": "module-23",
+      "target": "term-compensation",
+      "relation": "mentions",
+      "weight": 3
+    },
+    {
+      "source": "module-23",
+      "target": "term-alloy",
+      "relation": "mentions",
+      "weight": 3
+    },
+    {
+      "source": "module-23",
+      "target": "term-micrometer",
+      "relation": "mentions",
+      "weight": 3
+    },
+    {
+      "source": "module-24",
+      "target": "term-lead",
+      "relation": "mentions",
+      "weight": 193
+    },
+    {
+      "source": "module-24",
+      "target": "term-fixture",
+      "relation": "mentions",
+      "weight": 70
+    },
+    {
+      "source": "module-24",
+      "target": "term-coolant",
+      "relation": "mentions",
+      "weight": 27
+    },
+    {
+      "source": "module-24",
+      "target": "term-real-time",
+      "relation": "mentions",
+      "weight": 18
+    },
+    {
+      "source": "module-24",
+      "target": "term-offsets",
+      "relation": "mentions",
+      "weight": 13
+    },
+    {
+      "source": "module-24",
+      "target": "term-compliance",
+      "relation": "mentions",
+      "weight": 9
+    },
+    {
+      "source": "module-24",
+      "target": "term-tolerance",
+      "relation": "mentions",
+      "weight": 9
+    },
+    {
+      "source": "module-24",
+      "target": "term-calibration",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-24",
+      "target": "term-thermal-growth",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-24",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-24",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 4
+    },
+    {
+      "source": "module-24",
+      "target": "term-interlock",
+      "relation": "mentions",
+      "weight": 4
+    },
+    {
+      "source": "module-24",
+      "target": "term-pitch",
+      "relation": "mentions",
+      "weight": 3
+    },
+    {
+      "source": "module-24",
+      "target": "term-roughing",
+      "relation": "mentions",
+      "weight": 3
+    },
+    {
+      "source": "module-24",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 3
+    },
+    {
+      "source": "module-24",
+      "target": "term-backlash",
+      "relation": "mentions",
+      "weight": 2
+    },
+    {
+      "source": "module-24",
+      "target": "term-repeatability",
+      "relation": "mentions",
+      "weight": 2
+    },
+    {
+      "source": "module-24",
+      "target": "term-micrometer",
+      "relation": "mentions",
+      "weight": 2
+    },
+    {
+      "source": "module-25",
+      "target": "term-coolant",
+      "relation": "mentions",
+      "weight": 13
+    },
+    {
+      "source": "module-25",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 8
+    },
+    {
+      "source": "module-25",
+      "target": "term-tolerance",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-25",
+      "target": "term-lead",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-25",
+      "target": "term-pitch",
+      "relation": "mentions",
+      "weight": 2
+    },
+    {
+      "source": "module-25",
+      "target": "term-jerk",
+      "relation": "mentions",
+      "weight": 2
+    },
+    {
+      "source": "module-25",
+      "target": "term-slip",
+      "relation": "mentions",
+      "weight": 2
+    },
+    {
+      "source": "module-25",
+      "target": "term-wavelength",
+      "relation": "mentions",
+      "weight": 2
+    },
+    {
+      "source": "module-25",
+      "target": "term-compliance",
+      "relation": "mentions",
+      "weight": 1
+    },
+    {
+      "source": "module-25",
+      "target": "term-gantry",
+      "relation": "mentions",
+      "weight": 1
+    },
+    {
+      "source": "module-25",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 1
+    },
+    {
+      "source": "module-25",
+      "target": "term-stiffness",
+      "relation": "mentions",
+      "weight": 1
+    },
+    {
+      "source": "module-25",
+      "target": "term-toughness",
+      "relation": "mentions",
+      "weight": 1
+    },
+    {
+      "source": "module-26",
+      "target": "term-lead",
+      "relation": "mentions",
+      "weight": 103
+    },
+    {
+      "source": "module-26",
+      "target": "term-compensation",
+      "relation": "mentions",
+      "weight": 84
+    },
+    {
+      "source": "module-26",
+      "target": "term-compliance",
+      "relation": "mentions",
+      "weight": 82
+    },
+    {
+      "source": "module-26",
+      "target": "term-coolant",
+      "relation": "mentions",
+      "weight": 63
+    },
+    {
+      "source": "module-26",
+      "target": "term-precision",
+      "relation": "mentions",
+      "weight": 52
+    },
+    {
+      "source": "module-26",
+      "target": "term-accuracy",
+      "relation": "mentions",
+      "weight": 20
+    },
+    {
+      "source": "module-26",
+      "target": "term-tolerance",
+      "relation": "mentions",
+      "weight": 19
+    },
+    {
+      "source": "module-26",
+      "target": "term-resolution",
+      "relation": "mentions",
+      "weight": 13
+    },
+    {
+      "source": "module-26",
+      "target": "term-calibration",
+      "relation": "mentions",
+      "weight": 11
+    },
+    {
+      "source": "module-26",
+      "target": "term-fixture",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-26",
+      "target": "term-traceability",
+      "relation": "mentions",
+      "weight": 10
+    },
+    {
+      "source": "module-26",
+      "target": "term-real-time",
+      "relation": "mentions",
+      "weight": 6
+    },
+    {
+      "source": "module-26",
+      "target": "term-micrometer",
+      "relation": "mentions",
+      "weight": 5
+    },
+    {
+      "source": "module-26",
+      "target": "term-grounding",
+      "relation": "mentions",
+      "weight": 4
+    },
+    {
+      "source": "module-26",
+      "target": "term-power-factor",
+      "relation": "mentions",
+      "weight": 4
+    },
+    {
+      "source": "module-26",
+      "target": "term-g-code",
+      "relation": "mentions",
+      "weight": 4
+    },
+    {
+      "source": "module-26",
+      "target": "term-alloy",
+      "relation": "mentions",
+      "weight": 4
+    },
+    {
+      "source": "module-26",
+      "target": "term-hardness",
+      "relation": "mentions",
+      "weight": 4
+    },
+    {
+      "source": "module-15",
+      "target": "resource-cnc-fundamentals-cnc-programming-handbook-3rd-ed",
+      "relation": "resource",
+      "weight": 1
+    },
+    {
+      "source": "module-20",
+      "target": "resource-cnc-fundamentals-machinery-s-handbook-31st-ed",
+      "relation": "resource",
+      "weight": 1
+    },
+    {
+      "source": "module-14",
+      "target": "resource-forums-and-communities-linuxcnc-forum",
+      "relation": "resource",
+      "weight": 1
+    },
+    {
+      "source": "module-21",
+      "target": "resource-youtube-channels-joe-pieczynski",
+      "relation": "resource",
+      "weight": 1
+    },
+    {
+      "source": "module-22",
+      "target": "resource-youtube-channels-joe-pieczynski",
+      "relation": "resource",
+      "weight": 1
+    },
+    {
+      "source": "module-16",
+      "target": "resource-cad-cam-software-tutorials-fusion-360",
+      "relation": "resource",
+      "weight": 1
+    },
+    {
+      "source": "module-16",
+      "target": "resource-cad-cam-software-tutorials-freecad",
+      "relation": "resource",
+      "weight": 1
+    },
+    {
+      "source": "module-20",
+      "target": "resource-standards-organizations-iso-international-organization-for-standardization",
+      "relation": "resource",
+      "weight": 1
+    },
+    {
+      "source": "module-14",
+      "target": "resource-free-and-open-source-software-linuxcnc",
+      "relation": "resource",
+      "weight": 1
+    },
+    {
+      "source": "module-16",
+      "target": "resource-free-and-open-source-software-freecad",
+      "relation": "resource",
+      "weight": 1
+    },
+    {
+      "source": "module-07",
+      "target": "resource-free-and-open-source-software-inkscape",
+      "relation": "resource",
+      "weight": 1
+    },
+    {
+      "source": "module-15",
+      "target": "resource-free-and-open-source-software-dxf2gcode",
+      "relation": "resource",
+      "weight": 1
+    },
+    {
+      "source": "module-15",
+      "target": "resource-free-and-open-source-software-pycam",
+      "relation": "resource",
+      "weight": 1
+    },
+    {
+      "source": "module-15",
+      "target": "resource-free-and-open-source-software-bcnc",
+      "relation": "resource",
+      "weight": 1
+    },
+    {
+      "source": "module-15",
+      "target": "resource-free-and-open-source-software-universal-gcode-sender",
+      "relation": "resource",
+      "weight": 1
+    },
+    {
+      "source": "module-16",
+      "target": "resource-commercial-software-free-trials-available-fusion-360",
+      "relation": "resource",
+      "weight": 1
+    },
+    {
+      "source": "module-20",
+      "target": "resource-recommended-suppliers-books-and-resources-industrial-press",
+      "relation": "resource",
+      "weight": 1
+    }
+  ]
+}
