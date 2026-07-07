@@ -6,41 +6,28 @@ Creates individual PDFs for each module and a comprehensive table of contents
 
 import os
 import subprocess
+import sys
 from pathlib import Path
 
-# Base directory
-BASE_DIR = Path(__file__).parent
-MODULES_DIR = BASE_DIR / "Modules"
-APPENDICES_DIR = MODULES_DIR / "Appendices"
+# Repository directories
+BASE_DIR = Path(__file__).resolve().parents[2]
+BUILD_DIR = BASE_DIR / "build"
+MODULES_DIR = BASE_DIR
+APPENDICES_DIR = BASE_DIR / "Appendices"
 PRINT_DIR = BASE_DIR / "Print"
 PDF_DIR = BASE_DIR / "PDFs"
-HTML_DIR = BASE_DIR / "HTML"
+HTML_DIR = BUILD_DIR / "html"
 
 # Ensure directories exist
 PDF_DIR.mkdir(exist_ok=True)
-HTML_DIR.mkdir(exist_ok=True)
+HTML_DIR.mkdir(parents=True, exist_ok=True)
+sys.path.insert(0, str(BASE_DIR / "tools"))
+
+from course_manifest import get_module, find_module_dir, module_groups  # noqa: E402
 
 def get_module_name(module_num):
     """Get module name from module master outline file"""
-    module_names = {
-        1: "Mechanical Frame & Structure",
-        2: "Vertical Axis & Z-Stage",
-        3: "Linear Motion",
-        4: "Control Electronics",
-        5: "Plasma Cutting",
-        6: "Spindle & Rotary Tools",
-        7: "Fiber Laser",
-        8: "Waterjet Cutting",
-        9: "Pick & Place Robot",
-        10: "Robotic Arm",
-        21: "Metrology and Precision Measurement",
-        22: "Quality Management Systems (QMS)",
-        23: "Shop Organization and Management",
-        24: "L.E.A.N. Strategies for CNC Manufacturing",
-        25: "Work-Life Balance in CNC Manufacturing",
-        26: "CNC Business Ownership and Management"
-    }
-    return module_names.get(module_num, f"Module {module_num}")
+    return get_module(module_num).title
 
 def convert_to_html(markdown_file, output_html, title=""):
     """Convert markdown file to HTML using pandoc"""
@@ -217,21 +204,13 @@ def generate_toc():
 
 ## Course Modules
 
-### Foundation Modules (1-4)
-
 """
-    
-    # Add modules 1-10
-    for i in range(1, 11):
-        module_name = get_module_name(i)
-        toc_content += f"**Module {i:02d}**: {module_name}\n\n"
-    
-    toc_content += "\n### Professional Development Modules (21-26)\n\n"
-    
-    # Add modules 21-26
-    for i in range(21, 27):
-        module_name = get_module_name(i)
-        toc_content += f"**Module {i}**: {module_name}\n\n"
+
+    for group_name, modules in module_groups():
+        toc_content += f"### {group_name}\n\n"
+        for module in modules:
+            toc_content += f"**Module {module.number_text}**: {module.title}\n\n"
+        toc_content += "\n"
     
     toc_content += "\n---\n\n## Appendices\n\n"
     
@@ -287,7 +266,7 @@ def create_print_instructions():
     """Create instructions for printing to PDF"""
     instructions = """# How to Create PDFs from HTML Files
 
-The HTML files have been generated in the `HTML/` directory.
+The HTML files have been generated in the `build/html/` directory.
 
 ## Method 1: Using Chrome/Edge Browser (Recommended)
 
@@ -314,9 +293,9 @@ brew install wkhtmltopdf  # On Mac
 Then run:
 
 ```bash
-cd HTML
+cd build/html
 for file in *.html; do
-    wkhtmltopdf "$file" "../PDFs/${file%.html}.pdf"
+    wkhtmltopdf "$file" "../../PDFs/${file%.html}.pdf"
 done
 ```
 
@@ -329,8 +308,7 @@ The following HTML files are ready for conversion:
 - 02-Acknowledgments.html
 - 03-Thank-You-to-AI.html
 - 04-License.html
-- Module-01 through Module-10 (Foundation modules)
-- Module-21 through Module-26 (Professional modules)
+- Module-01 through Module-26 (all course modules)
 - Appendix-A through Appendix-T (All appendices)
 
 ## Note
@@ -343,7 +321,7 @@ or in batches. The CSS styling ensures professional appearance in print.
     with open(instructions_file, 'w', encoding='utf-8') as f:
         f.write(instructions)
     
-    print("\n✓ Created printing instructions: HTML/README-PRINTING.md")
+    print(f"\n✓ Created printing instructions: {instructions_file}")
 
 def main():
     print("=" * 60)
@@ -378,25 +356,28 @@ def main():
     # Generate Module HTMLs
     print("\n📄 Generating Module HTMLs...")
     
-    for module_num in list(range(1, 11)) + list(range(21, 27)):
-        module_dir = MODULES_DIR / f"Module-{module_num:02d}"
+    for group_name, modules in module_groups():
+        print(f"\n  {group_name}")
+        for module in modules:
+            module_num = module.number
+            module_dir = find_module_dir(MODULES_DIR, module_num)
         
-        if not module_dir.exists():
-            print(f"⚠ Warning: {module_dir} not found")
-            continue
+            if module_dir is None:
+                print(f"⚠ Warning: Module-{module_num:02d} not found")
+                continue
         
-        module_name = get_module_name(module_num)
+            module_name = module.title
         
-        # Create merged module file
-        merged_file = module_dir / f"module-{module_num:02d}-complete.md"
-        merge_module_files(module_dir, merged_file)
+            # Create merged module file
+            merged_file = module_dir / f"module-{module_num:02d}-complete.md"
+            merge_module_files(module_dir, merged_file)
         
-        # Convert to HTML
-        output_html = HTML_DIR / f"Module-{module_num:02d}-{module_name.replace(' ', '-').replace('&', 'and')}.html"
-        convert_to_html(merged_file, output_html, f"Module {module_num}: {module_name}")
+            # Convert to HTML
+            output_html = HTML_DIR / f"{module.export_stem}.html"
+            convert_to_html(merged_file, output_html, f"Module {module_num}: {module_name}")
         
-        # Clean up merged file
-        merged_file.unlink()
+            # Clean up merged file
+            merged_file.unlink()
     
     # Generate Appendix HTMLs
     print("\n📄 Generating Appendix HTMLs...")
@@ -418,7 +399,7 @@ def main():
     print("\nTo convert to PDF:")
     print("  1. Open HTML files in Chrome/Edge")
     print("  2. Press Cmd+P and select 'Save as PDF'")
-    print("  3. Or see HTML/README-PRINTING.md for details")
+    print(f"  3. Or see {HTML_DIR / 'README-PRINTING.md'} for details")
     print("=" * 60)
 
 if __name__ == "__main__":

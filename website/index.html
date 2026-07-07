@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNC Engineering Course</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --bg-secondary: #1e293b;
+            --text: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent: #3b82f6;
+            --accent-hover: #60a5fa;
+            --border: #334155;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+        
+        .layout {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            min-height: 100vh;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            background: var(--bg-secondary);
+            border-right: 1px solid var(--border);
+            padding: 1.5rem;
+            overflow-y: auto;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+        }
+        
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .nav-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .nav-section-title {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            padding-left: 0.5rem;
+        }
+        
+        .nav-item {
+            display: block;
+            padding: 0.6rem 0.75rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.15s;
+            margin-bottom: 2px;
+        }
+        
+        .nav-item:hover {
+            background: var(--border);
+            color: var(--text);
+        }
+        
+        .nav-item.active {
+            background: var(--accent);
+            color: white;
+        }
+        
+        .nav-number {
+            display: inline-block;
+            width: 1.5rem;
+            color: var(--accent);
+            font-weight: 600;
+        }
+        
+        .nav-item.active .nav-number {
+            color: white;
+        }
+        
+        /* Main Content */
+        .main {
+            padding: 2rem 4rem;
+            max-width: 1000px;
+        }
+        
+        .content h1 {
+            font-size: 2.25rem;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.75rem;
+        }
+        
+        .content h2 {
+            font-size: 1.6rem;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--accent-hover);
+        }
+        
+        .content h3 {
+            font-size: 1.3rem;
+            margin: 2rem 0 0.75rem;
+            color: var(--text);
+        }
+        
+        .content h4 {
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.5rem;
+            color: var(--accent-hover);
+        }
+        
+        .content p {
+            margin-bottom: 1.25rem;
+            color: var(--text-muted);
+        }
+        
+        .content ul, .content ol {
+            margin: 0 0 1.25rem 1.5rem;
+            color: var(--text-muted);
+        }
+        
+        .content li {
+            margin-bottom: 0.6rem;
+        }
+        
+        .content li::marker {
+            color: var(--accent);
+        }
+        
+        .content strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+        
+        .content code {
+            background: var(--bg-secondary);
+            padding: 0.2em 0.5em;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: var(--accent-hover);
+            font-family: 'SF Mono', Monaco, monospace;
+        }
+        
+        .content pre {
+            background: var(--bg-secondary);
+            padding: 1.25rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border: 1px solid var(--border);
+        }
+        
+        .content pre code {
+            background: none;
+            padding: 0;
+        }
+        
+        .content blockquote {
+            border-left: 4px solid var(--accent);
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0;
+            background: var(--bg-secondary);
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .content blockquote p {
+            margin: 0;
+        }
+        
+        .content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .content th, .content td {
+            border: 1px solid var(--border);
+            padding: 0.75rem 1rem;
+            text-align: left;
+        }
+        
+        .content th {
+            background: var(--bg-secondary);
+            font-weight: 600;
+            color: var(--text);
+        }
+        
+        .content td {
+            color: var(--text-muted);
+        }
+        
+        .content hr {
+            border: none;
+            border-top: 2px solid var(--border);
+            margin: 3rem 0;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 4rem;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+        
+        .loading::after {
+            content: '';
+            animation: dots 1.5s infinite;
+        }
+        
+        @keyframes dots {
+            0%, 20% { content: '.'; }
+            40% { content: '..'; }
+            60%, 100% { content: '...'; }
+        }
+        
+        /* Mobile */
+        @media (max-width: 900px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                position: fixed;
+                left: -100%;
+                width: 300px;
+                z-index: 100;
+                transition: left 0.3s;
+            }
+            .sidebar.open {
+                left: 0;
+            }
+            .overlay {
+                display: none;
+                position: fixed;
+                inset: 0;
+                background: rgba(0,0,0,0.5);
+                z-index: 99;
+            }
+            .overlay.show {
+                display: block;
+            }
+            .menu-toggle {
+                display: flex !important;
+            }
+            .main {
+                padding: 5rem 1.5rem 2rem;
+            }
+        }
+        
+        .menu-toggle {
+            display: none;
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 101;
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
+    <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+    
+    <div class="layout">
+        <nav class="sidebar" id="sidebar">
+            <div class="logo">⚙️ CNC Engineering Course</div>
+            <div id="nav-content">
+                <p style="color: var(--text-muted); padding: 1rem;">Loading...</p>
+            </div>
+        </nav>
+        
+        <main class="main">
+            <div class="content" id="content">
+                <div class="loading">Loading course content</div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const MODULES = [
+            { num: '01', title: 'Mechanical Frame and Structure', pdf: 'Module-01-Mechanical-Frame-and-Structure.pdf' },
+            { num: '02', title: 'Vertical Axis and Z-Stage', pdf: 'Module-02-Vertical-Axis-and-Z-Stage.pdf' },
+            { num: '03', title: 'Linear Motion Systems', pdf: 'Module-03-Linear-Motion-Systems.pdf' },
+            { num: '04', title: 'Control Electronics', pdf: 'Module-04-Control-Electronics.pdf' },
+            { num: '05', title: 'Plasma Cutting', pdf: 'Module-05-Plasma-Cutting.pdf' },
+            { num: '06', title: 'Spindle and Rotary Tools', pdf: 'Module-06-Spindle-and-Rotary-Tools.pdf' },
+            { num: '07', title: 'Fiber Laser', pdf: 'Module-07-Fiber-Laser.pdf' },
+            { num: '08', title: 'Waterjet Cutting', pdf: 'Module-08-Waterjet-Cutting.pdf' },
+            { num: '09', title: 'Pick and Place Robot', pdf: 'Module-09-Pick-and-Place-Robot.pdf' },
+            { num: '10', title: 'Robotic Arm', pdf: 'Module-10-Robotic-Arm.pdf' },
+            { num: '11', title: 'Large-Format FDM 3D Printing', pdf: 'Module-11-Large-Format-FDM-3D-Printing.pdf' },
+            { num: '12', title: 'Water-Jet Guided Laser Cutting', pdf: 'Module-12-Water-Jet-Guided-Laser-Cutting.pdf' },
+            { num: '13', title: 'EMI/EMC for Motion Control', pdf: 'Module-13-EMI-EMC-for-Motion-Control.pdf' },
+            { num: '14', title: 'LinuxCNC HAL and Real-Time Control', pdf: 'Module-14-LinuxCNC-HAL-and-Real-Time-Control.pdf' },
+            { num: '15', title: 'G-Code Standards and Post-Processing', pdf: 'Module-15-G-Code-Standards-and-Post-Processing.pdf' },
+            { num: '16', title: 'CAD Design for Manufacturable Parts', pdf: 'Module-16-CAD-Design-for-Manufacturable-Parts.pdf' },
+            { num: '17', title: 'Advanced Materials: Composites and Ceramics', pdf: 'Module-17-Advanced-Materials-Composites-and-Ceramics.pdf' },
+            { num: '18', title: 'Industry 4.0 for CNC Manufacturing', pdf: 'Module-18-Industry-4-0-for-CNC-Manufacturing.pdf' },
+            { num: '19', title: 'Advanced Control Systems', pdf: 'Module-19-Advanced-Control-Systems.pdf' },
+            { num: '20', title: 'Feeds and Speeds', pdf: 'Module-20-Feeds-and-Speeds.pdf' },
+            { num: '21', title: 'Metrology and Precision Measurement', pdf: 'Module-21-Metrology-and-Precision-Measurement.pdf' },
+            { num: '22', title: 'Quality Management Systems (QMS)', pdf: 'Module-22-Quality-Management-Systems-QMS.pdf' },
+            { num: '23', title: 'Shop Organization and Management', pdf: 'Module-23-Shop-Organization-and-Management.pdf' },
+            { num: '24', title: 'L.E.A.N. Strategies for CNC Manufacturing', pdf: 'Module-24-LEAN-Strategies-for-CNC-Manufacturing.pdf' },
+            { num: '25', title: 'Work-Life Balance in CNC Manufacturing', pdf: 'Module-25-Work-Life-Balance-in-CNC-Manufacturing.pdf' },
+            { num: '26', title: 'CNC Business Ownership and Management', pdf: 'Module-26-CNC-Business-Ownership-and-Management.pdf' }
+        ];
+        
+        const moduleCache = {};
+        
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('open');
+            document.getElementById('overlay').classList.toggle('show');
+        }
+        
+        function buildNav() {
+            const nav = document.getElementById('nav-content');
+            let html = '<div class="nav-section"><div class="nav-section-title">Course Modules</div>';
+            
+            MODULES.forEach(m => {
+                html += `<a class="nav-item" data-mod="${m.num}" onclick="loadModule('${m.num}')">
+                    <span class="nav-number">${parseInt(m.num)}.</span> ${m.title}
+                </a>`;
+            });
+            
+            html += '</div>';
+            nav.innerHTML = html;
+        }
+        
+        async function loadModule(num) {
+            // Update nav
+            document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
+            document.querySelector(`[data-mod="${num}"]`)?.classList.add('active');
+            
+            // Close mobile sidebar
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            
+            const content = document.getElementById('content');
+            content.innerHTML = '<div class="loading">Loading module</div>';
+            
+            // Check cache
+            if (moduleCache[num]) {
+                content.innerHTML = moduleCache[num];
+                return;
+            }
+            
+            try {
+                // Fetch the pre-generated module content
+                const resp = await fetch(`content/module-${num}.md`);
+                if (!resp.ok) throw new Error('Not found');
+                
+                const md = await resp.text();
+                const module = MODULES.find(m => m.num === num);
+                const pdfLink = module?.pdf
+                    ? `<p><a href="PDFs/${module.pdf}" target="_blank" rel="noopener">Download module PDF</a></p>`
+                    : '';
+                const html = `${pdfLink}${marked.parse(md)}`;
+                moduleCache[num] = html;
+                content.innerHTML = html;
+            } catch (e) {
+                content.innerHTML = `
+                    <h1>Module ${parseInt(num)}: ${MODULES.find(m => m.num === num)?.title}</h1>
+                    <p>Content file not found. Run the build script to generate content.</p>
+                `;
+            }
+        }
+        
+        function showHome() {
+            document.getElementById('content').innerHTML = `
+                <h1>CNC Engineering Course</h1>
+                <p>A comprehensive professional guide to designing, building, and optimizing CNC gantry systems.</p>
+                
+                <h2>Course Structure</h2>
+                <p>This course contains <strong>26 in-depth modules</strong> covering every aspect of CNC machine design and operation.</p>
+                
+                <h3>Foundation Modules (1-4)</h3>
+                <ul>
+                    <li><strong>Module 1:</strong> Mechanical Frame and Structure</li>
+                    <li><strong>Module 2:</strong> Vertical Axis and Z-Stage</li>
+                    <li><strong>Module 3:</strong> Linear Motion Systems</li>
+                    <li><strong>Module 4:</strong> Control Electronics</li>
+                </ul>
+                
+                <h3>Tool-Specific Modules (5-8)</h3>
+                <ul>
+                    <li><strong>Module 5:</strong> Plasma Cutting</li>
+                    <li><strong>Module 6:</strong> Spindle and Rotary Tools</li>
+                    <li><strong>Module 7:</strong> Fiber Laser</li>
+                    <li><strong>Module 8:</strong> Waterjet Cutting</li>
+                </ul>
+                
+                <h3>Advanced and Hybrid Systems (9-12)</h3>
+                <ul>
+                    <li><strong>Module 9:</strong> Pick and Place Robot</li>
+                    <li><strong>Module 10:</strong> Robotic Arm</li>
+                    <li><strong>Module 11:</strong> Large-Format FDM 3D Printing</li>
+                    <li><strong>Module 12:</strong> Water-Jet Guided Laser Cutting</li>
+                </ul>
+                
+                <h3>Control, Software, and Process Engineering (13-20)</h3>
+                <ul>
+                    <li><strong>Module 13:</strong> EMI/EMC for Motion Control</li>
+                    <li><strong>Module 14:</strong> LinuxCNC HAL and Real-Time Control</li>
+                    <li><strong>Module 15:</strong> G-Code Standards and Post-Processing</li>
+                    <li><strong>Module 16:</strong> CAD Design for Manufacturable Parts</li>
+                    <li><strong>Module 17:</strong> Advanced Materials: Composites and Ceramics</li>
+                    <li><strong>Module 18:</strong> Industry 4.0 for CNC Manufacturing</li>
+                    <li><strong>Module 19:</strong> Advanced Control Systems</li>
+                    <li><strong>Module 20:</strong> Feeds and Speeds</li>
+                </ul>
+                
+                <h3>Professional and Business Modules (21-26)</h3>
+                <ul>
+                    <li><strong>Module 21:</strong> Metrology and Precision Measurement</li>
+                    <li><strong>Module 22:</strong> Quality Management Systems (QMS)</li>
+                    <li><strong>Module 23:</strong> Shop Organization and Management</li>
+                    <li><strong>Module 24:</strong> L.E.A.N. Strategies for CNC Manufacturing</li>
+                    <li><strong>Module 25:</strong> Work-Life Balance in CNC Manufacturing</li>
+                    <li><strong>Module 26:</strong> CNC Business Ownership and Management</li>
+                </ul>
+                
+                <hr>
+                
+                <p><strong>Select a module from the sidebar to begin learning.</strong></p>
+            `;
+        }
+        
+        // Initialize
+        buildNav();
+        showHome();
+    </script>
+</body>
+</html>

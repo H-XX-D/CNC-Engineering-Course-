@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.pytest_cache/
+
+# Local environment
+.venv/
+
+# Generated build outputs and local snapshots
+build/tmp_pdf/
+build/html/
+archive/

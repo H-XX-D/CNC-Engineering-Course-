@@ -42,35 +42,47 @@ This course provides in-depth knowledge about designing, building, and optimizin
 ## 📚 Course Modules
 
 ### Foundation Modules (1-4)
-- **Module 1**: Mechanical Frame & Structure
-- **Module 2**: Vertical Axis & Z-Stage
-- **Module 3**: Linear Motion
-- **Module 4**: Control Electronics
+- `Module-01-Mechanical-Frame-and-Structure`
+- `Module-02-Vertical-Axis-and-Z-Stage`
+- `Module-03-Linear-Motion-Systems`
+- `Module-04-Control-Electronics`
 
 ### Tool-Specific Modules (5-8)
-- **Module 5**: Plasma Cutting
-- **Module 6**: Spindle & Rotary Tools
-- **Module 7**: Fiber Laser
-- **Module 8**: Waterjet Cutting
+- `Module-05-Plasma-Cutting`
+- `Module-06-Spindle-and-Rotary-Tools`
+- `Module-07-Fiber-Laser`
+- `Module-08-Waterjet-Cutting`
 
-### Advanced Systems (9-10)
-- **Module 9**: Pick & Place Robot
-- **Module 10**: Robotic Arm
+### Advanced and Hybrid Systems (9-12)
+- `Module-09-Pick-and-Place-Robot`
+- `Module-10-Robotic-Arm`
+- `Module-11-Large-Format-FDM-3D-Printing`
+- `Module-12-Water-Jet-Guided-Laser-Cutting`
 
-### Professional Modules (21-26)
-- **Module 21**: Metrology and Precision Measurement
-- **Module 22**: Quality Management Systems (QMS)
-- **Module 23**: Shop Organization and Management
-- **Module 24**: L.E.A.N. Strategies for CNC Manufacturing
-- **Module 25**: Work-Life Balance in CNC Manufacturing
-- **Module 26**: CNC Business Ownership and Management
+### Control, Software, and Process Engineering (13-20)
+- `Module-13-EMI-EMC-for-Motion-Control`
+- `Module-14-LinuxCNC-HAL-and-Real-Time-Control`
+- `Module-15-G-Code-Standards-and-Post-Processing`
+- `Module-16-CAD-Design-for-Manufacturable-Parts`
+- `Module-17-Advanced-Materials-Composites-and-Ceramics`
+- `Module-18-Industry-4-0-for-CNC-Manufacturing`
+- `Module-19-Advanced-Control-Systems`
+- `Module-20-Feeds-and-Speeds`
+
+### Professional and Business Modules (21-26)
+- `Module-21-Metrology-and-Precision-Measurement`
+- `Module-22-Quality-Management-Systems-QMS`
+- `Module-23-Shop-Organization-and-Management`
+- `Module-24-LEAN-Strategies-for-CNC-Manufacturing`
+- `Module-25-Work-Life-Balance-in-CNC-Manufacturing`
+- `Module-26-CNC-Business-Ownership-and-Management`
 
 ### Appendices
 - **Appendix A-P**: Material Properties, Hardware Specs, Motor Sizing, Linear Motion, Electrical Standards, G-code Reference, Safety Standards, Lubrication, Conversions, Troubleshooting, Vendors, Resources, Glossary, Contact, Updates, Mathematics
 - **Appendix S**: L.E.A.N. Manufacturing Templates (2,910 lines)
 - **Appendix T**: Business Ownership Templates (6,612 lines)
 
-**Total**: 26 Comprehensive Modules + 18 Appendices
+**Total**: 26 Comprehensive Modules + 20 Appendices
 
 ---
 
@@ -83,7 +95,7 @@ This course provides in-depth knowledge about designing, building, and optimizin
    ```
 
 2. **Start with the Course Foreword**
-   - Read `Modules/course-foreword.md` for an introduction and inspiration
+   - Read `Print/course-foreword.md` for an introduction and inspiration
 
 3. **Follow the modules in sequence**
    - Begin with foundational modules (1-4)
@@ -91,7 +103,36 @@ This course provides in-depth knowledge about designing, building, and optimizin
    - Finish with control and programming modules
 
 4. **Reference the appendix**
-   - Use `Modules/course-appendix.md` for formulas, conversions, and troubleshooting
+   - Use the files in `Appendices/` for formulas, conversions, and troubleshooting
+
+---
+
+## Repository Layout
+
+- `Module-01-*` through `Module-26-*` - primary course source, with titled module folders in course order
+- `Appendices/` - formulas, conversions, references, templates, and troubleshooting material
+- `Print/` - front matter used for printable/PDF editions
+- `PDFs/` - generated PDF exports, with compressed copies in `PDFs/optimized/`
+- `Communication/` - AI collaboration notes and project communication files
+- `Legacy-Modules/` - archived older course material kept for reference
+- `tools/pdf/` - PDF and HTML generation utilities
+- `build/` - generated local artifacts such as temporary Markdown, HTML, logs, and LaTeX
+- `website/` - static website build script, content, and viewer
+
+## Build Utilities
+
+Run these from the repository root:
+
+```bash
+python3 tools/pdf/generate_pdfs.py
+python3 tools/pdf/optimize_pdfs.py
+python3 tools/pdf/generate_pdfs_simple.py
+python3 website/build.py
+```
+
+## GitHub Pages
+
+The repository includes `.github/workflows/pages.yml`, which builds `website/content/` from the root-level `Module-XX-*` folders and publishes the static site from `website/`. The workflow also copies `PDFs/` into the Pages artifact so module PDF links work on the live site while the PDF files remain in the repository's `PDFs/` folder.
 
 ---
 
@@ -104,7 +145,7 @@ We welcome contributions from the community! Here's how you can help:
 - **Share Your Builds**: Show us what you've created with this knowledge
 - **Translate**: Help make this course accessible in other languages
 
-Please see the [Course Changelog](Modules/course-changelog.md) for contribution guidelines.
+Please use GitHub issues and pull requests for contribution discussion.
 
 ---
 
@@ -120,7 +161,7 @@ This course and all its materials are licensed under the **Creative Commons Attr
 - **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made
 - **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original
 
-See [LICENSE](LICENSE) for full details or visit: https://creativecommons.org/licenses/by-sa/4.0/
+See https://creativecommons.org/licenses/by-sa/4.0/ for full details.
 
 ---
 
@@ -135,7 +176,7 @@ This course is the result of collaboration between:
 
 Special thanks to all engineers, makers, and educators who contributed advice and feedback.
 
-See [Course Acknowledgments](Modules/course-acknowledgments.md) for full details.
+See [Course Acknowledgments](Print/course-acknowledgments.md) for full details.
 
 ---
 
@@ -151,7 +192,7 @@ See [Course Acknowledgments](Modules/course-acknowledgments.md) for full details
 
 **Current Version**: v1.1
 
-See [Course Changelog](Modules/course-changelog.md) for update history and planned features.
+See `Appendices/appendix-O-updates.md` for update history and planned features.
 
 ---
 

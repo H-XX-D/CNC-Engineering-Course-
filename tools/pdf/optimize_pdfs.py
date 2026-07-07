@@ -4,7 +4,7 @@
 import subprocess
 from pathlib import Path
 
-BASE_DIR = Path(__file__).parent
+BASE_DIR = Path(__file__).resolve().parents[2]
 PDF_DIR = BASE_DIR / "PDFs"
 OPTIMIZED_DIR = PDF_DIR / "optimized"
 

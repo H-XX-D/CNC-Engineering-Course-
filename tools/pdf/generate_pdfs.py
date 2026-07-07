@@ -5,29 +5,34 @@ Creates individual PDFs for each module and a comprehensive table of contents
 """
 
 import re
-import re
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 from typing import Optional, List
 
-# Base directory
-BASE_DIR = Path(__file__).parent
-MODULES_DIR = BASE_DIR / "Modules"
-APPENDICES_DIR = MODULES_DIR / "Appendices"
+# Repository and tool directories
+BASE_DIR = Path(__file__).resolve().parents[2]
+TOOL_DIR = Path(__file__).resolve().parent
+BUILD_DIR = BASE_DIR / "build"
+MODULES_DIR = BASE_DIR
+APPENDICES_DIR = BASE_DIR / "Appendices"
 PRINT_DIR = BASE_DIR / "Print"
 PDF_DIR = BASE_DIR / "PDFs"
 OPTIMIZED_PDF_DIR = PDF_DIR / "optimized"
-TEMP_DIR = BASE_DIR / "tmp_pdf"
-PANDOC_HEADER = BASE_DIR / "pandoc-header.tex"
+TEMP_DIR = BUILD_DIR / "tmp_pdf"
+PANDOC_HEADER = TOOL_DIR / "pandoc-header.tex"
 
 PANDOC = shutil.which("pandoc")
 TECTONIC = shutil.which("tectonic")
+sys.path.insert(0, str(BASE_DIR / "tools"))
+
+from course_manifest import get_module, find_module_dir, module_groups  # noqa: E402
 
 # Ensure PDF directory exists
 PDF_DIR.mkdir(exist_ok=True)
 OPTIMIZED_PDF_DIR.mkdir(exist_ok=True)
-TEMP_DIR.mkdir(exist_ok=True)
+TEMP_DIR.mkdir(parents=True, exist_ok=True)
 
 # Map problematic Unicode characters to ASCII-safe equivalents for LaTeX
 REPLACEMENTS = {
@@ -56,6 +61,7 @@ REPLACEMENTS = {
     "\u2088": "_8",
     "\u2089": "_9",
     "\u03bc": "mu",
+    "\u03bd": "nu",
     "\u03b1": "alpha",
     "\u03b2": "beta",
     "\u03b3": "gamma",
@@ -65,7 +71,6 @@ REPLACEMENTS = {
     "\u03b7": "eta",
     "\u03b8": "theta",
     "\u03bb": "lambda",
-    "\u03bc": "mu",
     "\u03c0": "pi",
     "\u03c1": "rho",
     "\u03c3": "sigma",
@@ -75,29 +80,109 @@ REPLACEMENTS = {
     "\u03c9": "omega",
     "\u0394": "Delta",
     "\u03a9": "Ohms",
-    "𝛥": "$$\\Delta$$",
-    "𝛼": "$$\\alpha$$",
-    "𝛽": "$$\\beta$$",
-    "𝛾": "$$\\gamma$$",
-    "𝛿": "$$\\delta$$",
-    "𝜀": "$$\\epsilon$$",
-    "𝜁": "$$\\zeta$$",
-    "𝜂": "$$\\eta$$",
-    "𝜃": "$$\\theta$$",
-    "𝜆": "$$\\lambda$$",
-    "𝜇": "$$\\mu$$",
-    "𝜈": "$$\\nu$$",
-    "𝜋": "$$\\pi$$",
-    "𝜌": "$$\\rho$$",
-    "𝜎": "$$\\sigma$$",
-    "𝜏": "$$\\tau$$",
-    "𝜙": "$$\\phi$$",
-    "𝜓": "$$\\psi$$",
-    "𝜔": "$$\\omega$$",
-    "𝜖": "$$\\epsilon$$",
-    "𝜛": "$$\\upsilon$$",
-    "𝝅": "$$\\pi$$",
-    "𝝍": "$$\\psi$$",
+    "\u03a6": "Phi",
+    "\u03a3": "Sigma",
+    "\u03c7": "chi",
+    "\xb0": " deg",
+    "\xe6": "ae",
+    "\xe9": "e",
+    "\xe8": "e",
+    "\xf6": "o",
+    "\xfc": "u",
+    "\xd6": "O",
+    "\xdc": "U",
+    "\u0304": "",
+    "\u00b5": "mu",
+    "𝛥": "Delta",
+    "𝛼": "alpha",
+    "𝛽": "beta",
+    "𝛾": "gamma",
+    "𝛿": "delta",
+    "𝜀": "epsilon",
+    "𝜁": "zeta",
+    "𝜂": "eta",
+    "𝜃": "theta",
+    "𝜆": "lambda",
+    "𝜇": "mu",
+    "𝜈": "nu",
+    "𝜋": "pi",
+    "𝜌": "rho",
+    "𝜎": "sigma",
+    "𝜏": "tau",
+    "𝜙": "phi",
+    "𝜓": "psi",
+    "𝜔": "omega",
+    "𝜖": "epsilon",
+    "𝜛": "upsilon",
+    "𝝅": "pi",
+    "𝝍": "psi",
+    "\u2202": "partial",
+    "\u2207": "nabla",
+    "\u2211": "sum",
+    "\u221a": "sqrt",
+    "\u221e": "infinity",
+    "\u222b": "integral",
+    "\u221d": "proportional to",
+    "\u2243": "asymptotically equal",
+    "\u207a": "^+",
+    "\u2099": "_n",
+    "\u209b": "_s",
+    "\u1d40": "^T",
+    "\u1d62": "_i",
+    "\u1d63": "_r",
+    "\u209a": "_p",
+    "\u209c": "_t",
+    "\u2191": "up",
+    "\u2193": "down",
+    "\u2194": "<->",
+    "\u2195": "up/down",
+    "\u2197": "up-right",
+    "\u21a7": "down",
+    "\u21b3": "return",
+    "\u2220": "angle",
+    "\u2225": "parallel",
+    "\u2261": "equivalent",
+    "\u2295": "plus",
+    "\u22a5": "perpendicular",
+    "\u2300": "diameter",
+    "\u2312": "arc",
+    "\u2313": "profile",
+    "\u2316": "position",
+    "\u232d": "cylindricity",
+    "\u2334": "flatness",
+    "\u24c1": "(L)",
+    "\u24c2": "(M)",
+    "\u2022": "-",
+    "\u2113": "l",
+    "\u203e": "-",
+    "\u22c5": "*",
+    "\u2605": "*",
+    "\u26a0": "Warning",
+    "\u2705": "[check]",
+    "\u274c": "[x]",
+    "\ufe0f": "",
+    "\u25cb": "o",
+    "\u25b2": "^",
+    "\u25ba": ">",
+    "\u25c4": "<",
+    "\u2591": " ",
+    "\u2593": "#",
+    "\u2584": "_",
+    "\u2588": "#",
+    "\u258c": "|",
+    "\u2590": "|",
+    "\u2550": "=",
+    "\u256e": "+",
+    "\u256f": "+",
+    "\u2717": "x",
+    "\u2b1c": "[ ]",
+    "\u2460": "(1)",
+    "\u2461": "(2)",
+    "\u2462": "(3)",
+    "\u2463": "(4)",
+    "\u2464": "(5)",
+    "\u2465": "(6)",
+    "\u2466": "(7)",
     "\u2713": "[check]",
     "\u2610": "[ ]",
     "\u25a1": "[ ]",
@@ -125,33 +210,131 @@ REPLACEMENTS = {
     "\u2122": "TM",
     "\u2120": "SM",
     "\xae": "(R)",
+    "\xa2": "cents",
+    "\xbc": "1/4",
+    "\xbd": "1/2",
+    "\xa7": "section",
+    "\xc5": "A",
+    "\xd8": "O",
+    "\xf8": "o",
+    "\xe4": "a",
+    "\u0393": "Gamma",
+    "\u039b": "Lambda",
+    "\u03be": "xi",
+    "\u1e8b": "x-dot",
+    "\u1e8d": "x-ddot",
+    "\u0307": "",
+    "\u0308": "",
+    "\u2011": "-",
+    "\u2019": "'",
+    "\u201c": "\"",
+    "\u201d": "\"",
+    "\u202f": " ",
+    "\u21d2": "=>",
+    "\u2196": "up-left",
+    "\u2198": "down-right",
+    "\u2199": "down-left",
+    "\u2b06": "up",
+    "\u25bc": "down",
+    "\u25c1": "<",
+    "\u25cb": "o",
+    "\u25d0": "half",
+    "\u25b3": "triangle",
+    "\u25b7": ">",
+    "\u25c6": "diamond",
+    "\u2b25": "diamond",
+    "\u25cf": "o",
+    "\u25ce": "target",
+    "\u232f": "runout",
+    "\u23e5": "symmetry",
+    "\u23f1": "timer",
+    "\u2504": "-",
+    "\u254c": "-",
+    "\u2551": "|",
+    "\u2554": "+",
+    "\u2557": "+",
+    "\u255a": "+",
+    "\u255d": "+",
+    "\u2560": "+",
+    "\u2563": "+",
+    "\u2571": "/",
+    "\u2572": "\\",
+    "\u2611": "[x]",
+    "\u263c": "sun",
+    "\u26a1": "power",
+    "\U0001f534": "[red]",
+    "\U0001f7e1": "[yellow]",
+    "\U0001f7e2": "[green]",
+    "\U0001f4f7": "[camera]",
+    "\U0001f389": "[celebration]",
+    "\U0001f53a": "[alert]",
+    "串": "",
+    "联": "",
+    "え": "",
+    "る": "",
+    "カ": "",
+    "ケ": "",
+    "ポ": "",
+    "ヨ": "",
+    "化": "",
+    "善": "",
+    "場": "",
+    "改": "",
+    "板": "",
+    "燈": "",
+    "現": "",
+    "看": "",
+    "行": "",
+    "見": "",
     "\uff0c": ",",
     "\uff1a": ":"
 }
 
 def sanitize_text(text: str) -> str:
     """Replace problematic characters with LaTeX-safe alternatives and handle math delimiters"""
-    # Heuristic: Escape $ in table lines (containing |)
+    # Apply Unicode replacements before math handling so replacement text cannot
+    # introduce new math delimiters.
+    for old, new in REPLACEMENTS.items():
+        text = text.replace(old, new)
+
+    # Normalize plain Windows paths before Pandoc turns backslashes into TeX.
     lines = text.split('\n')
     processed_lines = []
     for line in lines:
-        if '|' in line:
-            processed_line = line.replace('$', r'\$')
+        if re.search(r'[A-Za-z]:\\', line):
+            processed_line = line.replace('\\', '/')
         else:
             processed_line = line
         processed_lines.append(processed_line)
     text = '\n'.join(processed_lines)
-    
-    # Convert display math $$...$$ to \[...\]
-    text = re.sub(r'\$\$(.+?)\$\$', r'\\[\1\\]', text, flags=re.DOTALL)
-    
-    # Convert inline math $...$ to \(...\)
-    text = re.sub(r'(?<!\\)\$(.+?)(?<!\\)\$', r'\\(\1\\)', text)
-    
-    # Apply Unicode replacements
-    for old, new in REPLACEMENTS.items():
-        text = text.replace(old, new)
-    
+
+    text = text.replace(r'\r\n', 'CRLF')
+    text = text.replace(r'\n', 'LF')
+    text = text.replace(r'\0.', '0.')
+    text = text.replace('($$$)', '(high)')
+    text = text.replace('($$)', '(medium)')
+    text = text.replace('($)', '(small)')
+    text = re.sub(r'(?<!\S)\$\$\$[ \t]+(?=[A-Za-z])', 'High cost ', text)
+    text = re.sub(r'(?<!\S)\$\$[ \t]+(?=[A-Za-z])', 'Medium cost ', text)
+    text = re.sub(r'(?<!\S)\$[ \t]+(?=[A-Za-z])', 'Low cost ', text)
+    text = text.replace('in^3/min', 'in3/min')
+    text = text.replace('cm^3/min', 'cm3/min')
+    text = text.replace('mm^3/s', 'mm3/s')
+
+    # Currency and cost notation are common in business/process modules. Escape
+    # those dollars before treating remaining dollar pairs as inline math.
+    text = re.sub(r'(?<![\\$])\$(?!\$)(?=[\d/])', r'\\$', text)
+    text = re.sub(r'\\\$(\d+(?:\.\d+)?\\)', r'$\1', text)
+    text = re.sub(r'\\\$(\d+(?:\.\d+)?)(?=\s+(?:\\(?!text\b)|[A-Z_]))', r'$\1', text)
+
+    def restore_numeric_math(match: re.Match[str]) -> str:
+        expression = match.group(1)
+        if expression.endswith('\\') or r'\$' in expression or r'\text' in expression:
+            return match.group(0)
+        return f'${expression}$'
+
+    text = re.sub(r'\\\$(\d+(?:\.\d+)?(?:\s*[/=+\-]\s*[^$\n]+)?)\$(?!\$)', restore_numeric_math, text)
+
     return text
 
 def sanitize_title(title: str) -> str:
@@ -182,25 +365,7 @@ def prepare_temp_file(source_path: Path, temp_name: Optional[str] = None) -> Pat
 
 def get_module_name(module_num):
     """Get module name from module master outline file"""
-    module_names = {
-        1: "Mechanical Frame & Structure",
-        2: "Vertical Axis & Z-Stage",
-        3: "Linear Motion",
-        4: "Control Electronics",
-        5: "Plasma Cutting",
-        6: "Spindle & Rotary Tools",
-        7: "Fiber Laser",
-        8: "Waterjet Cutting",
-        9: "Pick & Place Robot",
-        10: "Robotic Arm",
-        21: "Metrology and Precision Measurement",
-        22: "Quality Management Systems (QMS)",
-        23: "Shop Organization and Management",
-        24: "L.E.A.N. Strategies for CNC Manufacturing",
-        25: "Work-Life Balance in CNC Manufacturing",
-        26: "CNC Business Ownership and Management"
-    }
-    return module_names.get(module_num, f"Module {module_num}")
+    return get_module(module_num).title
 
 def convert_to_pdf(markdown_file, output_pdf, title: str = "", include_toc: bool = True):
     """Convert markdown file to PDF using pandoc with the Tectonic engine"""
@@ -321,21 +486,13 @@ def generate_toc():
 
 ## Course Modules
 
-### Foundation Modules (1-4)
-
 """
-    
-    # Add modules 1-10
-    for i in range(1, 11):
-        module_name = get_module_name(i)
-        toc_content += f"**Module {i:02d}**: {module_name}\n\n"
-    
-    toc_content += "\n### Professional Development Modules (21-26)\n\n"
-    
-    # Add modules 21-26
-    for i in range(21, 27):
-        module_name = get_module_name(i)
-        toc_content += f"**Module {i}**: {module_name}\n\n"
+
+    for group_name, modules in module_groups():
+        toc_content += f"### {group_name}\n\n"
+        for module in modules:
+            toc_content += f"**Module {module.number_text}**: {module.title}\n\n"
+        toc_content += "\n"
     
     toc_content += "\n---\n\n## Appendices\n\n"
     
@@ -432,23 +589,26 @@ def main():
     # Generate Module PDFs
     print("\n📄 Generating Module PDFs...")
     
-    for module_num in list(range(1, 11)) + list(range(21, 27)):
-        module_dir = MODULES_DIR / f"Module-{module_num:02d}"
+    for group_name, modules in module_groups():
+        print(f"\n  {group_name}")
+        for module in modules:
+            module_num = module.number
+            module_dir = find_module_dir(MODULES_DIR, module_num)
         
-        if not module_dir.exists():
-            print(f"⚠ Warning: {module_dir} not found")
-            continue
+            if module_dir is None:
+                print(f"⚠ Warning: Module-{module_num:02d} not found")
+                continue
         
-        module_name = get_module_name(module_num)
+            module_name = module.title
         
-        # Create merged module file
-        merged_file = TEMP_DIR / f"module-{module_num:02d}-complete.md"
-        merge_module_files(module_dir, merged_file)
-        module_markdowns.append(merged_file)
+            # Create merged module file
+            merged_file = TEMP_DIR / f"module-{module_num:02d}-complete.md"
+            merge_module_files(module_dir, merged_file)
+            module_markdowns.append(merged_file)
         
-        # Convert to PDF
-        output_pdf = PDF_DIR / f"Module-{module_num:02d}-{module_name.replace(' ', '-').replace('&', 'and')}.pdf"
-        convert_to_pdf(merged_file, output_pdf, f"Module {module_num}: {module_name}", include_toc=False)
+            # Convert to PDF
+            output_pdf = PDF_DIR / f"{module.export_stem}.pdf"
+            convert_to_pdf(merged_file, output_pdf, f"Module {module_num}: {module_name}", include_toc=False)
     
     # Generate Appendix PDFs
     print("\n📄 Generating Appendix PDFs...")
