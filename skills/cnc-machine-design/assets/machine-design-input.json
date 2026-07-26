@@ -1,0 +1,416 @@
+{
+  "questionnaire_version": "1.0",
+  "design_stage": "discovery",
+  "project": {
+    "name": null,
+    "machine_id": null,
+    "revision": "0.1",
+    "owner": null,
+    "technical_authority": null,
+    "safety_authority": null,
+    "reviewers": [],
+    "approvers": [],
+    "change_control_location": null
+  },
+  "scope": {
+    "problem_statement": null,
+    "intended_use": null,
+    "foreseeable_misuse": [],
+    "exclusions": [],
+    "users": [],
+    "success_measures": [],
+    "fixed_interfaces": [],
+    "jurisdictions": [],
+    "installation_location": null,
+    "authority_having_jurisdiction": null,
+    "certification_expectations": [],
+    "design_life_years": null,
+    "design_life_hours": null,
+    "design_life_cycles": null
+  },
+  "requirements": [],
+  "assumptions": [],
+  "process": {
+    "machine_types": [],
+    "primary_process": null,
+    "secondary_processes": [],
+    "materials": [],
+    "material_limits": [],
+    "quality_outputs": [],
+    "representative_parts": [],
+    "worst_case_parts": []
+  },
+  "parts": {
+    "minimum_dimensions": {"x": null, "y": null, "z": null, "unit": "mm"},
+    "typical_dimensions": {"x": null, "y": null, "z": null, "unit": "mm"},
+    "maximum_dimensions": {"x": null, "y": null, "z": null, "unit": "mm"},
+    "minimum_mass": {"value": null, "unit": "kg"},
+    "typical_mass": {"value": null, "unit": "kg"},
+    "maximum_mass": {"value": null, "unit": "kg"},
+    "stock_forms": [],
+    "workholding": null,
+    "datum_strategy": null,
+    "loading_method": null
+  },
+  "envelope": {
+    "description": null,
+    "axis_travels": {},
+    "overtravel_clearance": null,
+    "tool_change_clearance": null,
+    "service_clearance": null,
+    "guarding_envelope": null,
+    "coordinate_convention": null
+  },
+  "throughput": {
+    "target_parts_per_hour": null,
+    "maximum_cycle_time_seconds": null,
+    "maximum_setup_time_minutes": null,
+    "maximum_changeover_time_minutes": null,
+    "planned_availability_percent": null,
+    "unattended_operation": null
+  },
+  "duty": {
+    "operating_schedule": null,
+    "continuous_states": [],
+    "intermittent_states": [],
+    "warmup_time_minutes": null,
+    "maintenance_window": null
+  },
+  "performance": {
+    "positioning_accuracy": null,
+    "bidirectional_repeatability": null,
+    "command_resolution": null,
+    "backlash_limit": null,
+    "tool_to_work_deflection_limit": null,
+    "thermal_drift_limit": null,
+    "maximum_contour_error": null,
+    "surface_or_process_quality": [],
+    "maximum_velocity_by_axis": {},
+    "maximum_acceleration_by_axis": {},
+    "maximum_jerk_by_axis": {},
+    "settling_time": null,
+    "minimum_natural_frequency": null,
+    "noise_limit": null
+  },
+  "architecture": {
+    "alternatives": [],
+    "selected": null,
+    "selection_rationale": null,
+    "kinematics": null,
+    "axis_stack": [],
+    "moving_members": [],
+    "force_loop": null,
+    "foundation_interface": null,
+    "transport_and_installation_strategy": null
+  },
+  "load_cases": [],
+  "structure": {
+    "materials": [],
+    "section_strategy": null,
+    "joint_strategy": null,
+    "datum_hierarchy": null,
+    "error_budget_reference": null,
+    "stress_calculation_reference": null,
+    "deflection_calculation_reference": null,
+    "buckling_calculation_reference": null,
+    "fatigue_calculation_reference": null,
+    "modal_analysis_reference": null,
+    "thermal_analysis_reference": null,
+    "fabrication_and_alignment_plan": null
+  },
+  "axes": [
+    {
+      "name": null,
+      "type": null,
+      "orientation": null,
+      "travel": {"value": null, "unit": "mm"},
+      "moving_mass": {"value": null, "unit": "kg"},
+      "maximum_process_force": {"value": null, "unit": "N"},
+      "maximum_velocity": {"value": null, "unit": "mm/s"},
+      "maximum_acceleration": {"value": null, "unit": "mm/s^2"},
+      "maximum_jerk": {"value": null, "unit": "mm/s^3"},
+      "guide": {"type": null, "model": null, "rating_and_life_reference": null},
+      "transmission": {"type": null, "model": null, "sizing_reference": null},
+      "motor": {"type": null, "model": null, "sizing_reference": null},
+      "drive": {"model": null, "control_mode": null, "regeneration_reference": null},
+      "feedback": {"type": null, "model": null, "resolution_and_accuracy": null},
+      "brake_or_counterbalance": null,
+      "home_limits_stops_and_recovery": null,
+      "calculations_reference": null,
+      "verification_reference": null
+    }
+  ],
+  "process_head": {
+    "type": null,
+    "model": null,
+    "mass_and_center_of_gravity": null,
+    "ratings": [],
+    "tooling_or_consumables": [],
+    "media_and_utilities": [],
+    "waste_and_emissions": [],
+    "process_window_reference": null,
+    "qualification_plan": null
+  },
+  "electrical": {
+    "available_power": {"voltage": null, "phase": null, "frequency_hz": null, "capacity": null},
+    "grounding_system": null,
+    "available_fault_current": null,
+    "load_list_reference": null,
+    "single_line_reference": null,
+    "protection_and_sccr_reference": null,
+    "power_supply_and_regeneration_reference": null,
+    "conductor_and_cable_reference": null,
+    "enclosure_rating": null,
+    "enclosure_thermal_reference": null,
+    "grounding_shielding_emc_reference": null,
+    "schematics_reference": null,
+    "io_schedule_reference": null,
+    "spare_capacity_percent": null
+  },
+  "fluid_power": {
+    "pneumatic": {
+      "applicable": null,
+      "pressure_flow_quality_and_duty": null,
+      "actuators_valves_and_controls": null,
+      "stored_energy_isolation_and_dump": null,
+      "leak_pressure_loss_and_failure_behavior": null
+    },
+    "hydraulic": {
+      "applicable": null,
+      "pressure_flow_fluid_and_duty": null,
+      "pump_accumulator_actuators_and_valves": null,
+      "stored_energy_isolation_and_release": null,
+      "containment_filtration_cooling_and_failure_behavior": null
+    },
+    "vacuum": {
+      "applicable": null,
+      "pressure_flow_volume_and_duty": null,
+      "pump_ejector_reservoir_valves_and_sensing": null,
+      "part_retention_and_loss_of_vacuum_behavior": null,
+      "isolation_release_filtration_and_contamination": null
+    }
+  },
+  "controls": {
+    "controller_class": null,
+    "controller_model": null,
+    "real_time_requirements": null,
+    "trajectory_and_interpolation": null,
+    "feedback_architecture": null,
+    "state_machine_reference": null,
+    "fault_response_reference": null,
+    "hmi_reference": null,
+    "software_repository": null,
+    "software_test_reference": null,
+    "configuration_and_release_method": null,
+    "backup_and_restore_method": null
+  },
+  "network_and_data": {
+    "applicable": null,
+    "interfaces_and_protocols": [],
+    "segmentation_and_access": null,
+    "threat_model_reference": null,
+    "logging_and_traceability": null,
+    "retention_and_backup": null,
+    "offline_and_failure_behavior": null
+  },
+  "safety": {
+    "hazard_analysis_method": null,
+    "hazard_log_reference": null,
+    "risk_acceptance_authority": null,
+    "guarding_reference": null,
+    "safety_functions_reference": null,
+    "stop_time_and_distance_reference": null,
+    "energy_isolation_reference": null,
+    "fire_and_emergency_reference": null,
+    "safety_validation_reference": null,
+    "residual_risks": []
+  },
+  "compliance": {
+    "applicability_matrix_reference": null,
+    "regulations_codes_standards": [],
+    "edition_and_date_verified": null,
+    "primary_source_evidence": [],
+    "certification_path": null,
+    "deviations": []
+  },
+  "facility": {
+    "ambient_and_environment": null,
+    "floor_foundation_and_anchors": null,
+    "installation_route_and_lifting": null,
+    "electrical_connection": null,
+    "compressed_air": {"applicable": null, "requirements": null},
+    "water": {"applicable": null, "requirements": null},
+    "drain_and_wastewater": {"applicable": null, "requirements": null},
+    "gases": {"applicable": null, "requirements": null},
+    "extraction_and_ventilation": {"applicable": null, "requirements": null},
+    "cooling_and_hvac": {"applicable": null, "requirements": null},
+    "network": {"applicable": null, "requirements": null},
+    "utility_failure_safe_states": null
+  },
+  "human_factors": {
+    "operator_tasks": [],
+    "maintenance_tasks": [],
+    "loading_height_and_reach": null,
+    "visibility_and_lighting": null,
+    "noise_and_ppe": null,
+    "lifting_and_material_handling": null,
+    "training_requirements": []
+  },
+  "manufacturing": {
+    "make_buy_strategy": null,
+    "supplier_capability_requirements": [],
+    "special_processes": [],
+    "datum_and_tolerance_stack_reference": null,
+    "weld_machine_coat_sequence": null,
+    "assembly_plan_reference": null,
+    "alignment_plan_reference": null,
+    "lifting_shipping_installation_reference": null,
+    "as_built_capture_method": null
+  },
+  "verification": {
+    "requirements_traceability_reference": null,
+    "verification_matrix_reference": null,
+    "metrology_and_uncertainty_reference": null,
+    "factory_acceptance_reference": null,
+    "site_acceptance_reference": null,
+    "commissioning_reference": null,
+    "process_capability_reference": null,
+    "test_evidence": [],
+    "release_approval": null
+  },
+  "reliability_and_maintenance": {
+    "reliability_target": null,
+    "availability_target": null,
+    "repair_time_target": null,
+    "critical_failure_modes_reference": null,
+    "component_life_reference": null,
+    "lubrication_plan_reference": null,
+    "preventive_maintenance_reference": null,
+    "spares_and_obsolescence_reference": null,
+    "decommissioning_reference": null
+  },
+  "commercial": {
+    "capital_ceiling": null,
+    "target_cost": null,
+    "contingency_percent": null,
+    "lifecycle_cost_horizon_years": null,
+    "milestones": [],
+    "long_lead_items": [],
+    "supplier_risks": [],
+    "bom_reference": null
+  },
+  "documentation": {
+    "requirements_reference": null,
+    "calculation_ledger_reference": null,
+    "drawings_reference": null,
+    "electrical_documentation_reference": null,
+    "software_configuration_reference": null,
+    "manufacturing_and_assembly_reference": null,
+    "operation_manual_reference": null,
+    "maintenance_manual_reference": null,
+    "training_reference": null,
+    "as_built_dossier_reference": null
+  },
+  "process_specific": {
+    "spindle": {
+      "applicable": false,
+      "material_and_tool_range": null,
+      "spindle_model": null,
+      "power_torque_speed_envelope": null,
+      "tool_interface_and_runout": null,
+      "vfd_braking_and_cooling": null,
+      "chip_dust_coolant_and_fire_controls": null,
+      "cutting_force_chatter_and_qualification_reference": null
+    },
+    "plasma": {
+      "applicable": false,
+      "source_torch_current_and_duty": null,
+      "material_thickness_window": null,
+      "gas_pressure_flow_and_purity": null,
+      "height_control_and_arc_voltage": null,
+      "work_lead_hf_start_and_emc_controls": null,
+      "table_fume_dross_and_fire_controls": null,
+      "qualification_reference": null
+    },
+    "laser": {
+      "applicable": false,
+      "source_wavelength_power_and_beam_quality": null,
+      "material_thickness_reflectivity_window": null,
+      "optics_focus_head_and_height_control": null,
+      "assist_gas_pressure_flow_and_purity": null,
+      "cooling_fume_and_fire_controls": null,
+      "laser_class_enclosure_interlocks_and_validation": null,
+      "qualification_reference": null
+    },
+    "waterjet": {
+      "applicable": false,
+      "pressure_flow_pump_and_power": null,
+      "material_thickness_window": null,
+      "orifice_mixing_tube_and_abrasive": null,
+      "high_pressure_plumbing_restraint_and_release": null,
+      "water_chiller_catcher_sludge_and_wastewater": null,
+      "noise_kerf_taper_and_maintenance": null,
+      "qualification_reference": null
+    },
+    "water_jet_guided_laser": {
+      "applicable": false,
+      "material_thickness_reflectivity_window": null,
+      "laser_source_wavelength_power_and_beam_quality": null,
+      "water_pressure_flow_quality_and_temperature": null,
+      "optical_coupling_nozzle_orifice_and_jet_stability": null,
+      "focus_standoff_and_height_control": null,
+      "high_pressure_plumbing_restraint_and_release": null,
+      "cooling_enclosure_interlocks_fume_and_wastewater": null,
+      "combined_laser_pressure_hazard_validation": null,
+      "qualification_reference": null
+    },
+    "additive": {
+      "applicable": false,
+      "feedstock_and_handling": null,
+      "extruder_nozzle_flow_and_force": null,
+      "heater_bed_chamber_and_runaway_protection": null,
+      "layer_bead_shrinkage_and_cooling": null,
+      "slicing_and_motion_flow_synchronization": null,
+      "ventilation_fire_and_qualification_reference": null
+    },
+    "robot": {
+      "applicable": false,
+      "payload_inertia_reach_dof_and_singularities": null,
+      "cycle_repeatability_joints_and_drives": null,
+      "end_effector_grip_vacuum_and_retention": null,
+      "vision_lighting_and_calibration": null,
+      "conveyors_fixtures_tracking_and_collision": null,
+      "safeguarded_space_collaboration_and_recovery": null,
+      "qualification_reference": null
+    },
+    "metrology": {
+      "applicable": false,
+      "measurands_feature_material_and_volume": null,
+      "accuracy_uncertainty_and_ratio_policy": null,
+      "sensor_probe_scanner_and_probing_force": null,
+      "kinematics_fixture_datums_and_sampling_path": null,
+      "environment_vibration_and_thermal_control": null,
+      "calibration_artifacts_and_traceability_chain": null,
+      "data_processing_and_uncertainty_budget_reference": null,
+      "verification_and_requalification_reference": null
+    },
+    "hybrid": {
+      "applicable": false,
+      "constituent_processes_and_branch_references": null,
+      "shared_structure_axes_workholding_and_utilities": null,
+      "interface_loads_and_incompatible_media": null,
+      "changeover_cleaning_and_mode_enforcement": null,
+      "combined_energy_hazard_and_collision_analysis": null,
+      "individual_and_combined_mode_qualification_reference": null
+    }
+  },
+  "open_items": [],
+  "approvals": {
+    "discovery": null,
+    "concept": null,
+    "preliminary": null,
+    "detailed": null,
+    "safety_validation": null,
+    "release": null
+  }
+}

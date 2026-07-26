@@ -1,0 +1,4 @@
+interface:
+  display_name: "CNC Machine Design"
+  short_description: "Engineer CNC machines from requirements to release"
+  default_prompt: "Use $cnc-machine-design to turn my machine concept into a complete, traceable design specification."
