@@ -16,4 +16,10 @@ This course and all its materials are licensed under the Creative Commons Attrib
 
 For full details, see: [https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)
 
+## Regulatory and Standards Disclaimer
+
+This course was written and reviewed as of November 2025. References to codes, regulations, directives, and technical standards were believed to be current and accurately cited as of that date for the State of California, applicable United States federal requirements, and any other jurisdictions explicitly identified.
+
+Requirements, adopted editions, and local amendments may change and may vary by machine, process, installation, and intended use. This material is provided for educational purposes and does not constitute legal, certification, compliance, or professional engineering advice. Readers must verify current requirements with the applicable authority having jurisdiction, regulatory agency, standards organization, or qualified professional before designing, constructing, installing, operating, or selling equipment.
+
 ---
