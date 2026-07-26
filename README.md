@@ -115,6 +115,7 @@ This course provides in-depth knowledge about designing, building, and optimizin
 - `PDFs/` - generated PDF exports, with compressed copies in `PDFs/optimized/`
 - `Communication/` - AI collaboration notes and project communication files
 - `Legacy-Modules/` - archived older course material kept for reference
+- `skills/cnc-machine-design/` - installable Codex skill, end-to-end design questionnaire, parameter catalog, and intake auditor
 - `tools/pdf/` - PDF and HTML generation utilities
 - `build/` - generated local artifacts such as temporary Markdown, HTML, logs, and LaTeX
 - `website/` - static website build script, content, and viewer
@@ -129,6 +130,18 @@ python3 tools/pdf/optimize_pdfs.py
 python3 tools/pdf/generate_pdfs_simple.py
 python3 website/build.py
 ```
+
+## CNC Machine Design Skill
+
+The installable [`cnc-machine-design`](skills/cnc-machine-design/SKILL.md) package turns the course into a routed machine-engineering workflow. It includes:
+
+- a branching questionnaire for routers, mills, plasma cutters, lasers, waterjets, additive machines, and robotic cells;
+- a machine-readable intake covering requirements through release;
+- mechanical, electrical, controls, safety, facility, verification, maintenance, cost, and documentation parameter catalogs;
+- course-module routing, calculation gates, and a reusable design-report template;
+- a dependency-free Python auditor that reports missing stage-gated and process-specific inputs.
+
+Copy the `skills/cnc-machine-design/` directory into a Codex skills directory to install it, or invoke it directly from a checkout that supports local skill paths.
 
 ## GitHub Pages
 
