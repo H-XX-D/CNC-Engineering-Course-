@@ -214,6 +214,10 @@ Never use a disclaimer as a substitute for hazard reduction or required complian
 
 - Material/thickness, pressure, flow, pump type, intensifier/direct drive, orifice, mixing tube, abrasive type/mesh/flow, hopper, catcher/tank, water quality, chiller, high-pressure plumbing, whip protection, pressure release, sludge/wastewater, noise, taper/kerf, and maintenance life.
 
+### Water-jet-guided laser
+
+- Material/thickness/reflectivity, laser source/wavelength/power/beam quality, water pressure/flow/quality/temperature, optical coupling, nozzle/orifice, focus and standoff control, jet stability, high-pressure plumbing/restraints/release, cooling, enclosure, laser classification/interlocks, fume/wastewater, combined optical/pressure hazards, and qualification window.
+
 ### Additive/FDM
 
 - Polymer/feedstock, filament/pellet system, nozzle, melt temperature, flow, extruder force, heater power, thermal runaway protection, bed size/flatness/temperature, chamber temperature, ventilation, layer height, bead width, shrinkage/warping, slicing, material handling/drying, fire detection, and print qualification.
@@ -222,6 +226,10 @@ Never use a disclaimer as a substitute for hazard reduction or required complian
 
 - Payload, reach, degrees of freedom, cycle time, repeatability, singularities, inertia, end effector, gripping force/vacuum, part variation, vision, lighting, calibration, conveyors/fixtures, collision zones, collaborative/non-collaborative operation, safeguarded space, force/speed limits, and recovery.
 
+### Inspection/metrology machine
+
+- Measurands, feature/material range, measurement volume, accuracy and uncertainty target, test-uncertainty ratio policy, sensor/probe/scanner type, probing force, kinematics, fixture/datums, environmental control, vibration, thermal soak, calibration artifacts, traceability chain, sampling path, data processing, uncertainty budget, verification, and requalification.
+
 ### Hybrid or novel process
 
-- Complete each applicable branch, then add interface hazards, incompatible media/contamination, changeover, mode confusion, combined energy, software mode enforcement, and cross-process verification.
+- Name every constituent process and complete each applicable branch. Add interface loads, incompatible media/contamination, changeover, shared utilities, mode confusion, combined energy, software mode enforcement, cross-process hazards, and cross-process verification. Novel processes require an added parameter branch and audit rule before detailed design.

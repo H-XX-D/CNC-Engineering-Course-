@@ -135,7 +135,7 @@ python3 website/build.py
 
 The installable [`cnc-machine-design`](skills/cnc-machine-design/SKILL.md) package turns the course into a routed machine-engineering workflow. It includes:
 
-- a branching questionnaire for routers, mills, plasma cutters, lasers, waterjets, additive machines, and robotic cells;
+- a branching questionnaire for routers, mills, plasma cutters, lasers, waterjets, water-jet-guided lasers, additive machines, robotic cells, metrology machines, and hybrid systems;
 - a machine-readable intake covering requirements through release;
 - mechanical, electrical, controls, safety, facility, verification, maintenance, cost, and documentation parameter catalogs;
 - course-module routing, calculation gates, and a reusable design-report template;

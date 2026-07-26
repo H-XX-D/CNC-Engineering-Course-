@@ -8,7 +8,16 @@ import json
 import unittest
 from pathlib import Path
 
-from audit_intake import AXIS_REQUIRED_BY_STAGE, REQUIRED_BY_STAGE, STAGES, audit, get_path, is_filled
+from audit_intake import (
+    AXIS_REQUIRED_BY_STAGE,
+    PROCESS_REQUIRED,
+    REQUIRED_BY_STAGE,
+    STAGES,
+    audit,
+    get_path,
+    is_filled,
+    selected_processes,
+)
 
 
 SKILL_ROOT = Path(__file__).resolve().parents[1]
@@ -60,8 +69,6 @@ def filled_through(stage: str, process: str = "plasma") -> dict:
 
     branch = data["process_specific"][process]
     branch["applicable"] = True
-    from audit_intake import PROCESS_REQUIRED
-
     for candidate in STAGES[1 : target_index + 1]:
         for field in PROCESS_REQUIRED[process].get(candidate, ()):
             branch[field] = "sample"
@@ -109,11 +116,44 @@ class AuditIntakeTests(unittest.TestCase):
         self.assertTrue(any("duplicate 'REQ-001'" in error for error in errors))
 
     def test_every_supported_process_can_close_release_coverage(self) -> None:
-        for process in ("spindle", "plasma", "laser", "waterjet", "additive", "robot"):
+        for process in (
+            "spindle",
+            "plasma",
+            "laser",
+            "waterjet",
+            "water_jet_guided_laser",
+            "additive",
+            "robot",
+            "metrology",
+            "hybrid",
+        ):
             with self.subTest(process=process):
                 errors, warnings = audit(filled_through("release", process), "release")
                 self.assertEqual(errors, [])
                 self.assertEqual(warnings, [])
+
+    def test_every_questionnaire_machine_family_routes_to_a_branch(self) -> None:
+        expected = {
+            "router": "spindle",
+            "mill": "spindle",
+            "plasma": "plasma",
+            "fiber laser": "laser",
+            "abrasive waterjet": "waterjet",
+            "water-jet-guided laser": "water_jet_guided_laser",
+            "additive": "additive",
+            "pick and place": "robot",
+            "robotic arm": "robot",
+            "inspection": "metrology",
+            "hybrid": "hybrid",
+        }
+        for machine_type, branch in expected.items():
+            with self.subTest(machine_type=machine_type):
+                data = {"process": {"machine_types": [machine_type]}}
+                self.assertEqual(selected_processes(data), {branch})
+
+    def test_template_contains_every_audited_process_branch(self) -> None:
+        data = json.loads(TEMPLATE.read_text(encoding="utf-8"))
+        self.assertTrue(set(PROCESS_REQUIRED).issubset(data["process_specific"]))
 
 
 if __name__ == "__main__":

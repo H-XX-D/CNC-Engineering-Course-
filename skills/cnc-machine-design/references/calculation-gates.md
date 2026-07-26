@@ -115,6 +115,10 @@ Gate: the complete motor-drive-transmission-axis system meets motion requirement
 
 - pressure/flow/hydraulic power, orifice and mixing-tube operating window, abrasive flow/storage, reaction load, traverse/process window, high-pressure component ratings/fatigue, accumulator energy, pressure decay, catcher capacity, water/chiller load, and sludge/wastewater.
 
+### Water-jet-guided laser
+
+- laser power/duty and optical limits, water pressure/flow/quality/temperature, coupling efficiency, nozzle/orifice operating window, jet stability, focus/standoff control, high-pressure component ratings/fatigue, stored pressure energy and decay, cooling, laser containment/interlocks, fume/wastewater, and combined optical/pressure fault cases.
+
 ### Additive
 
 - melt/flow rate, extruder force/torque, heater and bed power, warm-up energy/time, chamber loss, thermal runaway detection, motion/flow synchronization, shrinkage, cooling, and sustained duty.
@@ -122,6 +126,14 @@ Gate: the complete motor-drive-transmission-axis system meets motion requirement
 ### Robots and handling
 
 - reach/singularity analysis, payload and inertia tensor, joint torque-speed duty, deflection, gripper force/vacuum, part retention in stop/fault, cycle-time simulation, collision energy, vision resolution/field/depth, calibration uncertainty, and conveyor tracking.
+
+### Inspection and metrology
+
+- measurement-volume kinematics, probe/scanner force and access, sensor range/resolution/accuracy, complete uncertainty budget, environmental and thermal sensitivity, fixture/datum contribution, calibration artifact uncertainty, traceability chain, sampling strategy, algorithm validation, and requalification interval.
+
+### Hybrid processes
+
+- close every constituent process gate, then calculate shared-axis and structural load combinations, utility simultaneity, interface loads, incompatible-media contamination, mode-transition energy, collision envelopes, fault propagation, and worst-case combined operation. Validate both isolated and combined modes.
 
 Gate: vendor ratings, calculations, and representative process trials cover the worst credible material/part/recipe combination.
 

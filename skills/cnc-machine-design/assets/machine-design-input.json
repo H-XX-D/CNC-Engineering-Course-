@@ -352,6 +352,18 @@
       "noise_kerf_taper_and_maintenance": null,
       "qualification_reference": null
     },
+    "water_jet_guided_laser": {
+      "applicable": false,
+      "material_thickness_reflectivity_window": null,
+      "laser_source_wavelength_power_and_beam_quality": null,
+      "water_pressure_flow_quality_and_temperature": null,
+      "optical_coupling_nozzle_orifice_and_jet_stability": null,
+      "focus_standoff_and_height_control": null,
+      "high_pressure_plumbing_restraint_and_release": null,
+      "cooling_enclosure_interlocks_fume_and_wastewater": null,
+      "combined_laser_pressure_hazard_validation": null,
+      "qualification_reference": null
+    },
     "additive": {
       "applicable": false,
       "feedstock_and_handling": null,
@@ -370,6 +382,26 @@
       "conveyors_fixtures_tracking_and_collision": null,
       "safeguarded_space_collaboration_and_recovery": null,
       "qualification_reference": null
+    },
+    "metrology": {
+      "applicable": false,
+      "measurands_feature_material_and_volume": null,
+      "accuracy_uncertainty_and_ratio_policy": null,
+      "sensor_probe_scanner_and_probing_force": null,
+      "kinematics_fixture_datums_and_sampling_path": null,
+      "environment_vibration_and_thermal_control": null,
+      "calibration_artifacts_and_traceability_chain": null,
+      "data_processing_and_uncertainty_budget_reference": null,
+      "verification_and_requalification_reference": null
+    },
+    "hybrid": {
+      "applicable": false,
+      "constituent_processes_and_branch_references": null,
+      "shared_structure_axes_workholding_and_utilities": null,
+      "interface_loads_and_incompatible_media": null,
+      "changeover_cleaning_and_mode_enforcement": null,
+      "combined_energy_hazard_and_collision_analysis": null,
+      "individual_and_combined_mode_qualification_reference": null
     }
   },
   "open_items": [],

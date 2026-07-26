@@ -1,6 +1,6 @@
 ---
 name: cnc-machine-design
-description: Design, specify, review, and validate CNC and mechatronic machines from initial use case through requirements, architecture, engineering calculations, safety, compliance, sourcing, commissioning, and release. Use for CNC routers, mills, plasma cutters, laser cutters, waterjets, additive machines, pick-and-place systems, robotic cells, retrofits, axis upgrades, design reviews, machine requirement documents, parameter intake, trade studies, calculation ledgers, verification plans, and end-to-end machine design questionnaires.
+description: Design, specify, review, and validate CNC and mechatronic machines from initial use case through requirements, architecture, engineering calculations, safety, compliance, sourcing, commissioning, and release. Use for CNC routers, mills, plasma cutters, laser cutters, waterjets, water-jet-guided lasers, additive machines, pick-and-place systems, robotic cells, metrology machines, hybrid machines, retrofits, axis upgrades, design reviews, machine requirement documents, parameter intake, trade studies, calculation ledgers, verification plans, and end-to-end machine design questionnaires.
 ---
 
 # CNC Machine Design

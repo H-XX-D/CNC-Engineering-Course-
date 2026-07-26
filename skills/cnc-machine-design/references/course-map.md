@@ -42,6 +42,8 @@ Read only the branches matching the intended machine or credible alternatives.
 | Robotic arm/cell | `Module-10-Robotic-Arm/` | Kinematics, joints, end effectors, planning, force control, workcell integration and safety |
 | Large-format FDM | `Module-11-Large-Format-FDM-3D-Printing/` | Gantry, extruder, heated bed, materials, thermal management, slicing and print quality |
 | Water-jet-guided laser | `Module-12-Water-Jet-Guided-Laser-Cutting/` | Optical/fluid principles, nozzle, architecture, parameters, integration, safety and applications |
+| Inspection/metrology machine | `Module-21-Metrology-and-Precision-Measurement/` | Measurement architecture, probes/scanners, uncertainty, environmental control, calibration, traceability and acceptance |
+| Hybrid machine | Every applicable process module plus Modules 01-04, 13, 16, 19 and 21 | Shared structure/axes/utilities, mode control, incompatible media, combined hazards and cross-process qualification |
 
 ## Production and lifecycle branches
 

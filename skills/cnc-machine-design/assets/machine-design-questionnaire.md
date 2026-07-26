@@ -284,6 +284,10 @@ For each applicable medium record source, pressure, flow, quality/filtration, te
 
 - Material/thickness; pressure/flow; pump; intensifier/direct drive; orifice/mixing tube; abrasive type/mesh/flow/hopper; catcher/tank; water/chiller; high-pressure plumbing/restraints/release; sludge/wastewater/noise; taper/kerf; maintenance life; qualification cuts:
 
+### 22A. Process-specific branch: water-jet-guided laser
+
+- Material/thickness/reflectivity; laser source/wavelength/power/beam quality; water pressure/flow/quality/temperature; optical coupling; nozzle/orifice; focus/standoff/height control; jet stability; cooling; high-pressure plumbing/restraints/release; enclosure/class/interlocks; fume/wastewater; combined laser/pressure hazards; qualification cuts:
+
 ## 23. Process-specific branch: additive/FDM
 
 - Feedstock; filament/pellet handling/drying; extruder; nozzle; melt/flow; heater/bed/chamber power and temperatures; runaway protection; layer/bead; shrinkage/warping; cooling/ventilation/fire; slicing; motion-flow synchronization; qualification builds:
@@ -291,6 +295,14 @@ For each applicable medium record source, pressure, flow, quality/filtration, te
 ## 24. Process-specific branch: pick-and-place/robotic cell
 
 - Payload/inertia; reach/DOF/singularities; cycle/repeatability; joints/drives; end effector; grip/vacuum/retention; part variation; vision/lighting/calibration; conveyors/fixtures/tracking; collision/safeguarded space/collaboration; recovery; qualification cycle:
+
+### 24A. Process-specific branch: inspection/metrology
+
+- Measurands and feature/material range; measurement volume; accuracy/uncertainty; uncertainty-ratio policy; sensor/probe/scanner; probing force; kinematics; fixtures/datums; environmental and vibration control; thermal soak; calibration artifacts and traceability; sampling path; data processing; uncertainty budget; verification and requalification:
+
+### 24B. Process-specific branch: hybrid machine
+
+- Constituent processes and completed branch references; shared structure/axes/workholding/utilities; interface loads; incompatible media/contamination; changeover and cleaning; mode indication/authorization/enforcement; combined energy and hazards; cross-process collision/interlock analysis; qualification in every individual and combined mode:
 
 ## 25. Open-items register
 

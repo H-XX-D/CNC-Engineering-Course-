@@ -190,6 +190,10 @@ PROCESS_ALIASES = {
     "waterjet": "waterjet",
     "water jet": "waterjet",
     "abrasive_waterjet": "waterjet",
+    "abrasive waterjet": "waterjet",
+    "water_jet_guided_laser": "water_jet_guided_laser",
+    "water jet guided laser": "water_jet_guided_laser",
+    "wjgl": "water_jet_guided_laser",
     "additive": "additive",
     "fdm": "additive",
     "3d_printing": "additive",
@@ -199,6 +203,11 @@ PROCESS_ALIASES = {
     "robotic arm": "robot",
     "pick_and_place": "robot",
     "pick and place": "robot",
+    "inspection": "metrology",
+    "metrology": "metrology",
+    "measurement": "metrology",
+    "cmm": "metrology",
+    "hybrid": "hybrid",
 }
 
 PROCESS_REQUIRED: dict[str, dict[str, tuple[str, ...]]] = {
@@ -226,6 +235,21 @@ PROCESS_REQUIRED: dict[str, dict[str, tuple[str, ...]]] = {
         "detailed": ("high_pressure_plumbing_restraint_and_release", "water_chiller_catcher_sludge_and_wastewater", "noise_kerf_taper_and_maintenance"),
         "release": ("qualification_reference",),
     },
+    "water_jet_guided_laser": {
+        "concept": ("material_thickness_reflectivity_window",),
+        "preliminary": (
+            "laser_source_wavelength_power_and_beam_quality",
+            "water_pressure_flow_quality_and_temperature",
+            "optical_coupling_nozzle_orifice_and_jet_stability",
+            "focus_standoff_and_height_control",
+        ),
+        "detailed": (
+            "high_pressure_plumbing_restraint_and_release",
+            "cooling_enclosure_interlocks_fume_and_wastewater",
+            "combined_laser_pressure_hazard_validation",
+        ),
+        "release": ("qualification_reference",),
+    },
     "additive": {
         "concept": ("feedstock_and_handling",),
         "preliminary": ("extruder_nozzle_flow_and_force", "heater_bed_chamber_and_runaway_protection", "layer_bead_shrinkage_and_cooling"),
@@ -237,6 +261,31 @@ PROCESS_REQUIRED: dict[str, dict[str, tuple[str, ...]]] = {
         "preliminary": ("cycle_repeatability_joints_and_drives", "end_effector_grip_vacuum_and_retention", "vision_lighting_and_calibration"),
         "detailed": ("conveyors_fixtures_tracking_and_collision", "safeguarded_space_collaboration_and_recovery"),
         "release": ("qualification_reference",),
+    },
+    "metrology": {
+        "concept": ("measurands_feature_material_and_volume", "accuracy_uncertainty_and_ratio_policy"),
+        "preliminary": (
+            "sensor_probe_scanner_and_probing_force",
+            "kinematics_fixture_datums_and_sampling_path",
+            "environment_vibration_and_thermal_control",
+        ),
+        "detailed": (
+            "calibration_artifacts_and_traceability_chain",
+            "data_processing_and_uncertainty_budget_reference",
+        ),
+        "release": ("verification_and_requalification_reference",),
+    },
+    "hybrid": {
+        "concept": (
+            "constituent_processes_and_branch_references",
+            "shared_structure_axes_workholding_and_utilities",
+        ),
+        "preliminary": ("interface_loads_and_incompatible_media",),
+        "detailed": (
+            "changeover_cleaning_and_mode_enforcement",
+            "combined_energy_hazard_and_collision_analysis",
+        ),
+        "release": ("individual_and_combined_mode_qualification_reference",),
     },
 }
 
